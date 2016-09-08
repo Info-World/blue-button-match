@@ -1,0 +1,21 @@
+{
+    "primary": [{
+        "path": "medication",
+        "type": "resourceReference",
+        "percent": 20
+    }],
+    "secondary": [{
+        "path": "whenGiven",
+        "type": "object",
+        "percent": 0
+    }],
+    "subArrays": [{
+        "dosage": {
+            "primary": [{
+                "path": "quantity",
+                "type": "object",
+                "percent": 20
+            }]
+        }
+    }]
+}

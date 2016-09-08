@@ -1,0 +1,21 @@
+{
+    "primary": [{
+        "path": "code",
+        "type": "codedEntry",
+        "percent": 40
+    }, {
+        "path": "name",
+        "type": "string",
+        "percent": 40
+    }],
+    "secondary": [],
+    "subArrays": [{
+        "clinicalQuantity": {
+            "primary": [{
+                "path": "subunitQuantity",
+                "type": "object",
+                "percent": 20
+            }]
+        }
+    }]
+}

@@ -1,0 +1,1203 @@
+{
+	"resourceType": "Bundle",
+	"title": "2014 VDT AMB: Consolidated CDA - Ambulatory",
+	"updated": "2016-07-01T09:54:03.174Z",
+	"id": "urn:uuid:6d0f7fb0-5857-4fc8-8b1b-d284bc8f0697",
+	"totalResults": 26,
+	"entry": [{
+		"id": "http://devs:20480/fhir/Composition/18b0c852-076f-4cd7-9a79-d68f8052d9e3",
+		"content": {
+			"resourceType": "Composition",
+			"date": "2016-07-01T10:30:10.000Z",
+			"type": {
+				"coding": [{
+					"system": "http://loinc.org",
+					"code": "34133-9",
+					"display": "Summarization of episode note"
+				}],
+				"text": "Summarization of episode note"
+			},
+			"title": "2014 VDT AMB: Consolidated CDA - Ambulatory",
+			"status": "final",
+			"confidentiality": {
+				"system": "http://hl7.org/fhir/v3/Confidentiality",
+				"code": "N"
+			},
+			"subject": {
+				"reference": "Patient/65044dd0-53d5-4505-8631-595efdfb4848",
+				"display": "Mary Grant"
+			},
+			"author": [{
+				"reference": "#author1"
+			}],
+			"contained": [{
+				"resourceType": "Practitioner",
+				"name": [{
+					"family": ["Green"],
+					"given": ["Martin"]
+				}],
+				"id": "author1"
+			}],
+			"section": [{
+				"content": {
+					"reference": "List/b6b60828-4aa3-4790-b738-d0fd77d27a20",
+					"display": "ADVERSE REACTIONS, ALERTS, ALLERGIES"
+				}
+			}, {
+				"content": {
+					"reference": "List/85623fdc-f702-4495-bc02-a3fd3d03574e",
+					"display": "VITAL SIGNS"
+				}
+			}, {
+				"content": {
+					"reference": "List/b4e52cb9-c11c-4d9a-bc5c-4b6889615ed1",
+					"display": "PROBLEM LIST"
+				}
+			}, {
+				"content": {
+					"reference": "List/8105b5c3-d4a4-4cc9-8e9e-3afad3f4e004",
+					"display": "RESULTS"
+				}
+			}, {
+				"content": {
+					"reference": "List/7f2bf51a-17ad-48f5-8733-0606a9357b72",
+					"display": "HISTORY OF MEDICATION USE"
+				}
+			}]
+		}
+	}, {
+		"id": "http://devs:20480/fhir/Patient/65044dd0-53d5-4505-8631-595efdfb4848",
+		"content": {
+			"resourceType": "Patient",
+			"name": [{
+				"family": ["EMILIAN"],
+				"given": ["FIRST"]
+			}],
+			"identifier": [{
+				"system": "http://hl7.org/fhir/sid/us-ssn",
+				"value": "651651651"
+			}],
+			"gender": {
+				"coding": [{
+					"system": "http://hl7.org/fhir/v3/AdministrativeGender",
+					"code": "F",
+					"display": "Female"
+				}],
+				"text": "Female"
+			},
+			"birthDate": "1990-01-01T15:00:00.000Z",
+			"id": "http://devs:20480/fhir/Patient/65044dd0-53d5-4505-8631-595efdfb4848"
+		}
+	}, {
+		"id": "http://devs:20480/fhir/List/b6b60828-4aa3-4790-b738-d0fd77d27a20",
+		"content": {
+			"resourceType": "List",
+			"code": {
+				"coding": [{
+					"system": "http://loinc.org",
+					"code": "48765-2",
+					"display": "ADVERSE REACTIONS, ALERTS, ALLERGIES"
+				}]
+			},
+			"mode": "snapshot",
+			"entry": [{
+				"item": {
+					"reference": "AllergyIntolerance/698e3945-a941-47e4-8cea-aa63aaa0a636"
+				}
+			}, {
+				"item": {
+					"reference": "AllergyIntolerance/1e175131-f471-4891-b8ae-31805ad97931"
+				}
+			}]
+		}
+	}, {
+		"id": "http://devs:20480/fhir/List/85623fdc-f702-4495-bc02-a3fd3d03574e",
+		"content": {
+			"resourceType": "List",
+			"code": {
+				"coding": [{
+					"system": "http://loinc.org",
+					"code": "8716-3",
+					"display": "VITAL SIGNS"
+				}]
+			},
+			"mode": "snapshot",
+			"entry": [{
+				"item": {
+					"reference": "Observation/17040f3c-bcab-419f-84d6-89dd1e81b6bb"
+				}
+			}, {
+				"item": {
+					"reference": "Observation/36aa3322-fc78-4bbf-abf7-c374165d934e"
+				}
+			}, {
+				"item": {
+					"reference": "Observation/74597fdc-fcc0-40e5-8622-8b4039ddfdf5"
+				}
+			}, {
+				"item": {
+					"reference": "Observation/929f7a6a-922b-4bfd-a518-9a06d08a5071"
+				}
+			}, {
+				"item": {
+					"reference": "Observation/5b3d050b-a0a8-4d20-8bb8-6511081ce06d"
+				}
+			}, {
+				"item": {
+					"reference": "Observation/4783107b-3e84-482b-871f-a901d2322ba4"
+				}
+			}, {
+				"item": {
+					"reference": "Observation/e1adc6b9-0ea2-45a2-b915-969565f8f09b"
+				}
+			}]
+		}
+	}, {
+		"id": "http://devs:20480/fhir/List/b4e52cb9-c11c-4d9a-bc5c-4b6889615ed1",
+		"content": {
+			"resourceType": "List",
+			"code": {
+				"coding": [{
+					"system": "http://loinc.org",
+					"code": "11450-4",
+					"display": "PROBLEM LIST"
+				}]
+			},
+			"mode": "snapshot",
+			"entry": [{
+				"item": {
+					"reference": "Condition/fda97d61-9568-4175-a630-a9fa89b1d43f"
+				}
+			}, {
+				"item": {
+					"reference": "Condition/e120602f-3a28-4b3a-8a7a-c16a7f81435f"
+				}
+			}, {
+				"item": {
+					"reference": "Condition/6b5a7967-0af3-4eb6-9b02-29f71232bd6c"
+				}
+			}]
+		}
+	}, {
+		"id": "http://devs:20480/fhir/List/8105b5c3-d4a4-4cc9-8e9e-3afad3f4e004",
+		"content": {
+			"resourceType": "List",
+			"code": {
+				"coding": [{
+					"system": "http://loinc.org",
+					"code": "30954-2",
+					"display": "RESULTS"
+				}]
+			},
+			"mode": "snapshot",
+			"entry": [{
+				"item": {
+					"reference": "Observation/ac0e8ebb-ffa8-4c17-b8ec-dfc2f2ac1679"
+				}
+			}, {
+				"item": {
+					"reference": "Observation/d4b0632d-8328-44f3-a04d-62ec89ff04c6"
+				}
+			}, {
+				"item": {
+					"reference": "Observation/d7caad16-0646-4be1-ad02-6a27a9d80d29"
+				}
+			}, {
+				"item": {
+					"reference": "Observation/225b63fe-1097-4da7-9e84-92e94574c596"
+				}
+			}]
+		}
+	}, {
+		"id": "http://devs:20480/fhir/List/7f2bf51a-17ad-48f5-8733-0606a9357b72",
+		"content": {
+			"resourceType": "List",
+			"code": {
+				"coding": [{
+					"system": "http://loinc.org",
+					"code": "10160-0",
+					"display": "HISTORY OF MEDICATION USE"
+				}]
+			},
+			"mode": "snapshot",
+			"entry": [{
+				"item": {
+					"reference": "MedicationPrescription/c3f17c7a-4a63-47f3-ac35-153d4ee1d365"
+				}
+			}, {
+				"item": {
+					"reference": "MedicationPrescription/26ec7cf0-0983-48ee-a713-53dac44754a0"
+				}
+			}, {
+				"item": {
+					"reference": "MedicationPrescription/9c48c288-9d3b-42c4-8ff4-7186486018b7"
+				}
+			}]
+		}
+	}, {
+		"id": "http://devs:20480/fhir/AllergyIntolerance/698e3945-a941-47e4-8cea-aa63aaa0a636",
+		"content": {
+			"resourceType": "AllergyIntolerance",
+			"type": "allergy",
+			"recordedDate": "2016-07-01",
+			"status": "confirmed",
+			"patient": {
+				"reference": "Patient/65044dd0-53d5-4505-8631-595efdfb4848",
+				"display": "NEW PATIENT"
+			},
+			"substance": {
+				"coding": [{
+					"code": "2683",
+					"display": "penicillin G benzathine",
+					"system": "urn:oid:2.16.840.1.113883.4.65"
+				}, {
+					"code": "7982",
+					"display": "Penicillin G benzathine",
+					"system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+				}],
+				"text": "penicillin G benzathine"
+			},
+			"reaction": [{
+				"manifestation": [{
+					"coding": [{
+						"system": "http://snomed.info/sct",
+						"code": "247472004",
+						"display": "Hives"
+					}],
+					"text": "Hives"
+				}]
+			}],
+			"extension": [{
+				"url": "http://infoworld.ro/nxt/Profile/extensions#source-section",
+				"valueCodeableConcept": {
+					"coding": [{
+						"system": "http://loinc.org",
+						"code": "48765-2",
+						"display": "ADVERSE REACTIONS, ALERTS, ALLERGIES"
+					}],
+					"text": "ADVERSE REACTIONS, ALERTS, ALLERGIES"
+				}
+			}]
+		}
+	}, {
+		"id": "http://devs:20480/fhir/AllergyIntolerance/1e175131-f471-4891-b8ae-31805ad97931",
+		"content": {
+			"resourceType": "AllergyIntolerance",
+			"type": "allergy",
+			"recordedDate": "2016-07-01",
+			"status": "confirmed",
+			"patient": {
+				"reference": "Patient/65044dd0-53d5-4505-8631-595efdfb4848",
+				"display": "NEW PATIENT"
+			},
+			"substance": {
+				"coding": [{
+					"code": "1587",
+					"display": "aspirin",
+					"system": "urn:oid:2.16.840.1.113883.4.65"
+				}, {
+					"code": "1191",
+					"display": "Aspirin",
+					"system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+				}],
+				"text": "aspirin"
+			},
+			"reaction": [{
+				"manifestation": [{
+					"coding": [{
+						"system": "http://snomed.info/sct",
+						"code": "247472004",
+						"display": "Nausea"
+					}],
+					"text": "Nausea"
+				}]
+			}],
+			"extension": [{
+				"url": "http://infoworld.ro/nxt/Profile/extensions#source-section",
+				"valueCodeableConcept": {
+					"coding": [{
+						"system": "http://loinc.org",
+						"code": "48765-2",
+						"display": "ADVERSE REACTIONS, ALERTS, ALLERGIES"
+					}],
+					"text": "ADVERSE REACTIONS, ALERTS, ALLERGIES"
+				}
+			}]
+		}
+	}, {
+		"id": "http://devs:20480/fhir/Observation/17040f3c-bcab-419f-84d6-89dd1e81b6bb",
+		"content": {
+			"resourceType": "Observation",
+			"name": {
+				"coding": [{
+					"system": "http://loinc.org",
+					"code": "8302-2",
+					"display": "Height"
+				}],
+				"text": "Height"
+			},
+			"valueQuantity": {
+				"value": 64,
+				"units": "[in_us]",
+				"code": "[in_us]",
+				"system": "http://unitsofmeasure.org"
+			},
+			"issued": "2016-07-01",
+			"status": "final",
+			"reliability": "ok",
+			"subject": {
+				"reference": "Patient/65044dd0-53d5-4505-8631-595efdfb4848",
+				"display": "NEW PATIENT"
+			},
+			"extension": [{
+				"url": "http://infoworld.ro/nxt/Profile/extensions#observation-type",
+				"valueCoding": {
+					"code": "8716-3",
+					"display": "Vital signs",
+					"system": "http://loinc.org"
+				}
+			}, {
+				"url": "http://infoworld.ro/nxt/Profile/extensions#source-section",
+				"valueCodeableConcept": {
+					"coding": [{
+						"system": "http://loinc.org",
+						"code": "8716-3",
+						"display": "VITAL SIGNS"
+					}],
+					"text": "VITAL SIGNS"
+				}
+			}],
+			"interpretation": {
+				"coding": [{
+					"system": "http://hl7.org/fhir/v2/0078",
+					"code": "N",
+					"display": "Normal"
+				}],
+				"text": "Normal"
+			}
+		}
+	}, {
+		"id": "http://devs:20480/fhir/Observation/36aa3322-fc78-4bbf-abf7-c374165d934e",
+		"content": {
+			"resourceType": "Observation",
+			"name": {
+				"coding": [{
+					"system": "http://loinc.org",
+					"code": "3141-9",
+					"display": "Patient Body Weight - Measured"
+				}],
+				"text": "Patient Body Weight - Measured"
+			},
+			"valueQuantity": {
+				"value": 160,
+				"units": "[lb_av]",
+				"code": "[lb_av]",
+				"system": "http://unitsofmeasure.org"
+			},
+			"issued": "2016-07-01",
+			"status": "final",
+			"reliability": "ok",
+			"subject": {
+				"reference": "Patient/65044dd0-53d5-4505-8631-595efdfb4848",
+				"display": "NEW PATIENT"
+			},
+			"extension": [{
+				"url": "http://infoworld.ro/nxt/Profile/extensions#observation-type",
+				"valueCoding": {
+					"code": "8716-3",
+					"display": "Vital signs",
+					"system": "http://loinc.org"
+				}
+			}, {
+				"url": "http://infoworld.ro/nxt/Profile/extensions#source-section",
+				"valueCodeableConcept": {
+					"coding": [{
+						"system": "http://loinc.org",
+						"code": "8716-3",
+						"display": "VITAL SIGNS"
+					}],
+					"text": "VITAL SIGNS"
+				}
+			}],
+			"interpretation": {
+				"coding": [{
+					"system": "http://hl7.org/fhir/v2/0078",
+					"code": "N",
+					"display": "Normal"
+				}],
+				"text": "Normal"
+			}
+		}
+	}, {
+		"id": "http://devs:20480/fhir/Observation/74597fdc-fcc0-40e5-8622-8b4039ddfdf5",
+		"content": {
+			"resourceType": "Observation",
+			"name": {
+				"coding": [{
+					"system": "http://loinc.org",
+					"code": "39156-5",
+					"display": "BMI (Body Mass Index)"
+				}],
+				"text": "BMI (Body Mass Index)"
+			},
+			"valueQuantity": {
+				"value": 27.5,
+				"units": "kg/m2",
+				"code": "kg/m2",
+				"system": "http://unitsofmeasure.org"
+			},
+			"issued": "2016-07-01",
+			"status": "final",
+			"reliability": "ok",
+			"subject": {
+				"reference": "Patient/65044dd0-53d5-4505-8631-595efdfb4848",
+				"display": "NEW PATIENT"
+			},
+			"extension": [{
+				"url": "http://infoworld.ro/nxt/Profile/extensions#observation-type",
+				"valueCoding": {
+					"code": "8716-3",
+					"display": "Vital signs",
+					"system": "http://loinc.org"
+				}
+			}, {
+				"url": "http://infoworld.ro/nxt/Profile/extensions#source-section",
+				"valueCodeableConcept": {
+					"coding": [{
+						"system": "http://loinc.org",
+						"code": "8716-3",
+						"display": "VITAL SIGNS"
+					}],
+					"text": "VITAL SIGNS"
+				}
+			}],
+			"interpretation": {
+				"coding": [{
+					"system": "http://hl7.org/fhir/v2/0078",
+					"code": "N",
+					"display": "Normal"
+				}],
+				"text": "Normal"
+			}
+		}
+	}, {
+		"id": "http://devs:20480/fhir/Observation/929f7a6a-922b-4bfd-a518-9a06d08a5071",
+		"content": {
+			"resourceType": "Observation",
+			"name": {
+				"coding": [{
+					"system": "http://loinc.org",
+					"code": "8480-6",
+					"display": "BP Systolic"
+				}],
+				"text": "BP Systolic"
+			},
+			"valueQuantity": {
+				"value": 116,
+				"units": "mm[Hg]",
+				"code": "mm[Hg]",
+				"system": "http://unitsofmeasure.org"
+			},
+			"issued": "2016-07-01",
+			"status": "final",
+			"reliability": "ok",
+			"subject": {
+				"reference": "Patient/65044dd0-53d5-4505-8631-595efdfb4848",
+				"display": "NEW PATIENT"
+			},
+			"extension": [{
+				"url": "http://infoworld.ro/nxt/Profile/extensions#observation-type",
+				"valueCoding": {
+					"code": "8716-3",
+					"display": "Vital signs",
+					"system": "http://loinc.org"
+				}
+			}, {
+				"url": "http://infoworld.ro/nxt/Profile/extensions#source-section",
+				"valueCodeableConcept": {
+					"coding": [{
+						"system": "http://loinc.org",
+						"code": "8716-3",
+						"display": "VITAL SIGNS"
+					}],
+					"text": "VITAL SIGNS"
+				}
+			}],
+			"interpretation": {
+				"coding": [{
+					"system": "http://hl7.org/fhir/v2/0078",
+					"code": "N",
+					"display": "Normal"
+				}],
+				"text": "Normal"
+			}
+		}
+	}, {
+		"id": "http://devs:20480/fhir/Observation/5b3d050b-a0a8-4d20-8bb8-6511081ce06d",
+		"content": {
+			"resourceType": "Observation",
+			"name": {
+				"coding": [{
+					"system": "http://loinc.org",
+					"code": "8462-4",
+					"display": "BP Diastolic"
+				}],
+				"text": "BP Diastolic"
+			},
+			"valueQuantity": {
+				"value": 72,
+				"units": "mm[Hg]",
+				"code": "mm[Hg]",
+				"system": "http://unitsofmeasure.org"
+			},
+			"issued": "2016-07-01",
+			"status": "final",
+			"reliability": "ok",
+			"subject": {
+				"reference": "Patient/65044dd0-53d5-4505-8631-595efdfb4848",
+				"display": "NEW PATIENT"
+			},
+			"extension": [{
+				"url": "http://infoworld.ro/nxt/Profile/extensions#observation-type",
+				"valueCoding": {
+					"code": "8716-3",
+					"display": "Vital signs",
+					"system": "http://loinc.org"
+				}
+			}, {
+				"url": "http://infoworld.ro/nxt/Profile/extensions#source-section",
+				"valueCodeableConcept": {
+					"coding": [{
+						"system": "http://loinc.org",
+						"code": "8716-3",
+						"display": "VITAL SIGNS"
+					}],
+					"text": "VITAL SIGNS"
+				}
+			}],
+			"interpretation": {
+				"coding": [{
+					"system": "http://hl7.org/fhir/v2/0078",
+					"code": "N",
+					"display": "Normal"
+				}],
+				"text": "Normal"
+			}
+		}
+	}, {
+		"id": "http://devs:20480/fhir/Observation/4783107b-3e84-482b-871f-a901d2322ba4",
+		"content": {
+			"resourceType": "Observation",
+			"name": {
+				"coding": [{
+					"system": "http://loinc.org",
+					"code": "55418-8",
+					"display": "Weight and Height tracking panel"
+				}],
+				"text": "Weight and Height tracking panel"
+			},
+			"issued": "2016-07-01",
+			"status": "final",
+			"reliability": "ok",
+			"subject": {
+				"reference": "Patient/65044dd0-53d5-4505-8631-595efdfb4848",
+				"display": "NEW PATIENT"
+			},
+			"extension": [{
+				"url": "http://infoworld.ro/nxt/Profile/extensions#observation-type",
+				"valueCoding": {
+					"code": "8716-3",
+					"display": "Vital signs",
+					"system": "http://loinc.org"
+				}
+			}, {
+				"url": "http://infoworld.ro/nxt/Profile/extensions#source-section",
+				"valueCodeableConcept": {
+					"coding": [{
+						"system": "http://loinc.org",
+						"code": "8716-3",
+						"display": "VITAL SIGNS"
+					}],
+					"text": "VITAL SIGNS"
+				}
+			}],
+			"related": [{
+				"type": "has-component",
+				"target": {
+					"reference": "Observation/17040f3c-bcab-419f-84d6-89dd1e81b6bb"
+				}
+			}, {
+				"type": "has-component",
+				"target": {
+					"reference": "Observation/36aa3322-fc78-4bbf-abf7-c374165d934e"
+				}
+			}, {
+				"type": "has-component",
+				"target": {
+					"reference": "Observation/74597fdc-fcc0-40e5-8622-8b4039ddfdf5"
+				}
+			}]
+		}
+	}, {
+		"id": "http://devs:20480/fhir/Observation/e1adc6b9-0ea2-45a2-b915-969565f8f09b",
+		"content": {
+			"resourceType": "Observation",
+			"name": {
+				"coding": [{
+					"system": "http://loinc.org",
+					"code": "35094-2",
+					"display": "Blood pressure panel"
+				}],
+				"text": "Blood pressure panel"
+			},
+			"issued": "2016-07-01",
+			"status": "final",
+			"reliability": "ok",
+			"subject": {
+				"reference": "Patient/65044dd0-53d5-4505-8631-595efdfb4848",
+				"display": "NEW PATIENT"
+			},
+			"extension": [{
+				"url": "http://infoworld.ro/nxt/Profile/extensions#observation-type",
+				"valueCoding": {
+					"code": "8716-3",
+					"display": "Vital signs",
+					"system": "http://loinc.org"
+				}
+			}, {
+				"url": "http://infoworld.ro/nxt/Profile/extensions#source-section",
+				"valueCodeableConcept": {
+					"coding": [{
+						"system": "http://loinc.org",
+						"code": "8716-3",
+						"display": "VITAL SIGNS"
+					}],
+					"text": "VITAL SIGNS"
+				}
+			}],
+			"related": [{
+				"type": "has-component",
+				"target": {
+					"reference": "Observation/929f7a6a-922b-4bfd-a518-9a06d08a5071"
+				}
+			}, {
+				"type": "has-component",
+				"target": {
+					"reference": "Observation/5b3d050b-a0a8-4d20-8bb8-6511081ce06d"
+				}
+			}]
+		}
+	}, {
+		"id": "http://devs:20480/fhir/Condition/fda97d61-9568-4175-a630-a9fa89b1d43f",
+		"content": {
+			"resourceType": "Condition",
+			"status": "confirmed",
+			"subject": {
+				"reference": "Patient/65044dd0-53d5-4505-8631-595efdfb4848",
+				"display": "NEW PATIENT"
+			},
+			"dateAsserted": "2016-07-01",
+			"onsetDate": "2016-07-01",
+			"extension": [{
+				"url": "http://hl7.org/fhir/ExtensionDefinition/us-core-concernStatus",
+				"valueCodeableConcept": {
+					"coding": [{
+						"system": "http://snomed.info/sct",
+						"code": "55561003",
+						"display": "Active"
+					}],
+					"text": "Active"
+				}
+			}, {
+				"url": "http://infoworld.ro/nxt/Profile/extensions#source-section",
+				"valueCodeableConcept": {
+					"coding": [{
+						"system": "http://loinc.org",
+						"code": "11450-4",
+						"display": "PROBLEM LIST"
+					}],
+					"text": "PROBLEM LIST"
+				}
+			}],
+			"code": {
+				"coding": [{
+					"system": "http://snomed.info/sct",
+					"code": "36971009",
+					"display": "Sinusitis"
+				}],
+				"text": "Sinusitis"
+			}
+		}
+	}, {
+		"id": "http://devs:20480/fhir/Condition/e120602f-3a28-4b3a-8a7a-c16a7f81435f",
+		"content": {
+			"resourceType": "Condition",
+			"status": "confirmed",
+			"subject": {
+				"reference": "Patient/65044dd0-53d5-4505-8631-595efdfb4848",
+				"display": "NEW PATIENT"
+			},
+			"dateAsserted": "2015-11-10",
+			"onsetDate": "2015-11-10",
+			"extension": [{
+				"url": "http://hl7.org/fhir/ExtensionDefinition/us-core-concernStatus",
+				"valueCodeableConcept": {
+					"coding": [{
+						"system": "http://snomed.info/sct",
+						"code": "55561003",
+						"display": "Active"
+					}],
+					"text": "Active"
+				}
+			}, {
+				"url": "http://infoworld.ro/nxt/Profile/extensions#source-section",
+				"valueCodeableConcept": {
+					"coding": [{
+						"system": "http://loinc.org",
+						"code": "11450-4",
+						"display": "PROBLEM LIST"
+					}],
+					"text": "PROBLEM LIST"
+				}
+			}],
+			"code": {
+				"coding": [{
+					"system": "http://snomed.info/sct",
+					"code": "35489007",
+					"display": "Depression"
+				}],
+				"text": "Depression"
+			}
+		}
+	}, {
+		"id": "http://devs:20480/fhir/Condition/6b5a7967-0af3-4eb6-9b02-29f71232bd6c",
+		"content": {
+			"resourceType": "Condition",
+			"status": "confirmed",
+			"subject": {
+				"reference": "Patient/65044dd0-53d5-4505-8631-595efdfb4848",
+				"display": "NEW PATIENT"
+			},
+			"dateAsserted": "2015-04-15",
+			"onsetDate": "2015-04-15",
+			"extension": [{
+				"url": "http://hl7.org/fhir/ExtensionDefinition/us-core-concernStatus",
+				"valueCodeableConcept": {
+					"coding": [{
+						"system": "http://snomed.info/sct",
+						"code": "55561003",
+						"display": "Active"
+					}],
+					"text": "Active"
+				}
+			}, {
+				"url": "http://infoworld.ro/nxt/Profile/extensions#source-section",
+				"valueCodeableConcept": {
+					"coding": [{
+						"system": "http://loinc.org",
+						"code": "11450-4",
+						"display": "PROBLEM LIST"
+					}],
+					"text": "PROBLEM LIST"
+				}
+			}],
+			"code": {
+				"coding": [{
+					"system": "http://snomed.info/sct",
+					"code": "40930008",
+					"display": "Hypothyroidism"
+				}],
+				"text": "Hypothyroidism"
+			}
+		}
+	}, {
+		"id": "http://devs:20480/fhir/Observation/ac0e8ebb-ffa8-4c17-b8ec-dfc2f2ac1679",
+		"content": {
+			"resourceType": "Observation",
+			"name": {
+				"coding": [{
+					"system": "http://loinc.org",
+					"code": "30313-1",
+					"display": "Hemoglobin [Mass/volume] in Arterial blood"
+				}],
+				"text": "Hemoglobin [Mass/volume] in Arterial blood"
+			},
+			"valueQuantity": {
+				"value": 12.8,
+				"units": "g/dl",
+				"code": "g/dl",
+				"system": "http://unitsofmeasure.org"
+			},
+			"issued": "2016-07-01",
+			"status": "final",
+			"reliability": "ok",
+			"subject": {
+				"reference": "Patient/65044dd0-53d5-4505-8631-595efdfb4848",
+				"display": "NEW PATIENT"
+			},
+			"extension": [{
+				"url": "http://infoworld.ro/nxt/Profile/extensions#observation-type",
+				"valueCoding": {
+					"code": "11502-2",
+					"display": "Laboratory report",
+					"system": "http://loinc.org"
+				}
+			}, {
+				"url": "http://infoworld.ro/nxt/Profile/extensions#observation-result-type",
+				"valueCode": "primary"
+			}, {
+				"url": "http://infoworld.ro/nxt/Profile/extensions#source-section",
+				"valueCodeableConcept": {
+					"coding": [{
+						"system": "http://loinc.org",
+						"code": "30954-2",
+						"display": "RESULTS"
+					}],
+					"text": "RESULTS"
+				}
+			}],
+			"interpretation": {
+				"coding": [{
+					"system": "urn:oid:2.16.840.1.113883.5.83",
+					"code": "N",
+					"display": "Normal"
+				}],
+				"text": "Normal"
+			}
+		}
+	}, {
+		"id": "http://devs:20480/fhir/Observation/d4b0632d-8328-44f3-a04d-62ec89ff04c6",
+		"content": {
+			"resourceType": "Observation",
+			"name": {
+				"coding": [{
+					"system": "http://loinc.org",
+					"code": "33765-9",
+					"display": "Leukocytes [#/volume] in Blood Product"
+				}],
+				"text": "Leukocytes [#/volume] in Blood Product"
+			},
+			"valueQuantity": {
+				"value": 17.6,
+				"units": "10^3/ul",
+				"code": "10^3/ul",
+				"system": "http://unitsofmeasure.org"
+			},
+			"issued": "2016-07-01",
+			"status": "final",
+			"reliability": "ok",
+			"subject": {
+				"reference": "Patient/65044dd0-53d5-4505-8631-595efdfb4848",
+				"display": "NEW PATIENT"
+			},
+			"extension": [{
+				"url": "http://infoworld.ro/nxt/Profile/extensions#observation-type",
+				"valueCoding": {
+					"code": "11502-2",
+					"display": "Laboratory report",
+					"system": "http://loinc.org"
+				}
+			}, {
+				"url": "http://infoworld.ro/nxt/Profile/extensions#observation-result-type",
+				"valueCode": "primary"
+			}, {
+				"url": "http://infoworld.ro/nxt/Profile/extensions#source-section",
+				"valueCodeableConcept": {
+					"coding": [{
+						"system": "http://loinc.org",
+						"code": "30954-2",
+						"display": "RESULTS"
+					}],
+					"text": "RESULTS"
+				}
+			}],
+			"interpretation": {
+				"coding": [{
+					"system": "urn:oid:2.16.840.1.113883.5.83",
+					"code": "H",
+					"display": "High"
+				}],
+				"text": "High"
+			}
+		}
+	}, {
+		"id": "http://devs:20480/fhir/Observation/d7caad16-0646-4be1-ad02-6a27a9d80d29",
+		"content": {
+			"resourceType": "Observation",
+			"name": {
+				"coding": [{
+					"system": "http://loinc.org",
+					"code": "26515-7",
+					"display": "Platelets [#/volume] in Blood"
+				}],
+				"text": "Platelets [#/volume] in Blood"
+			},
+			"valueQuantity": {
+				"value": 247,
+				"units": "10^3/ul",
+				"code": "10^3/ul",
+				"system": "http://unitsofmeasure.org"
+			},
+			"issued": "2016-07-01",
+			"status": "final",
+			"reliability": "ok",
+			"subject": {
+				"reference": "Patient/65044dd0-53d5-4505-8631-595efdfb4848",
+				"display": "NEW PATIENT"
+			},
+			"extension": [{
+				"url": "http://infoworld.ro/nxt/Profile/extensions#observation-type",
+				"valueCoding": {
+					"code": "11502-2",
+					"display": "Laboratory report",
+					"system": "http://loinc.org"
+				}
+			}, {
+				"url": "http://infoworld.ro/nxt/Profile/extensions#observation-result-type",
+				"valueCode": "primary"
+			}, {
+				"url": "http://infoworld.ro/nxt/Profile/extensions#source-section",
+				"valueCodeableConcept": {
+					"coding": [{
+						"system": "http://loinc.org",
+						"code": "30954-2",
+						"display": "RESULTS"
+					}],
+					"text": "RESULTS"
+				}
+			}],
+			"interpretation": {
+				"coding": [{
+					"system": "urn:oid:2.16.840.1.113883.5.83",
+					"code": "N",
+					"display": "Normal"
+				}],
+				"text": "Normal"
+			}
+		}
+	}, {
+		"id": "http://devs:20480/fhir/Observation/225b63fe-1097-4da7-9e84-92e94574c596",
+		"content": {
+			"resourceType": "Observation",
+			"name": {
+				"coding": [{
+					"system": "http://loinc.org",
+					"code": "57021-8",
+					"display": "CBC W Auto Differential panel in Blood"
+				}],
+				"text": "CBC W Auto Differential panel in Blood"
+			},
+			"status": "final",
+			"reliability": "ok",
+			"subject": {
+				"reference": "Patient/65044dd0-53d5-4505-8631-595efdfb4848",
+				"display": "NEW PATIENT"
+			},
+			"related": [{
+				"type": "has-component",
+				"target": {
+					"reference": "Observation/ac0e8ebb-ffa8-4c17-b8ec-dfc2f2ac1679"
+				}
+			}, {
+				"type": "has-component",
+				"target": {
+					"reference": "Observation/d4b0632d-8328-44f3-a04d-62ec89ff04c6"
+				}
+			}, {
+				"type": "has-component",
+				"target": {
+					"reference": "Observation/d7caad16-0646-4be1-ad02-6a27a9d80d29"
+				}
+			}],
+			"extension": [{
+				"url": "http://infoworld.ro/nxt/Profile/extensions#observation-type",
+				"valueCoding": {
+					"code": "11502-2",
+					"display": "Laboratory report",
+					"system": "http://loinc.org"
+				}
+			}, {
+				"url": "http://infoworld.ro/nxt/Profile/extensions#source-section",
+				"valueCodeableConcept": {
+					"coding": [{
+						"system": "http://loinc.org",
+						"code": "30954-2",
+						"display": "RESULTS"
+					}],
+					"text": "RESULTS"
+				}
+			}]
+		}
+	}, {
+		"id": "http://devs:20480/fhir/MedicationPrescription/c3f17c7a-4a63-47f3-ac35-153d4ee1d365",
+		"content": {
+			"resourceType": "MedicationPrescription",
+			"status": "active",
+			"patient": {
+				"reference": "Patient/65044dd0-53d5-4505-8631-595efdfb4848",
+				"display": "NEW PATIENT"
+			},
+			"dateWritten": "2016-07-01",
+			"dosageInstruction": [{
+				"text": "Cephalexin 500 MG Oral Capsule, [RxNorm: 309114]",
+				"route": {
+					"coding": [{
+						"system": "urn:oid:2.16.840.1.113883.3.26.1.1",
+						"code": "C38288",
+						"display": "ORAL"
+					}, {
+						"system": "urn:oid:2.16.840.1.113883.5.112",
+						"code": "PO",
+						"display": "Swallow, oral"
+					}],
+					"text": "ORAL"
+				},
+				"doseQuantity": {
+					"value": 500,
+					"units": "mg",
+					"code": "mg",
+					"system": "http://unitsofmeasure.org"
+				},
+				"timingSchedule": {
+					"event": [{
+						"start": "2016-07-01"
+					}],
+					"repeat": {
+						"frequency": 1,
+						"duration": 6,
+						"units": "h"
+					}
+				}
+			}],
+			"extension": [{
+				"url": "http://infoworld.ro/nxt/Profile/extensions#source-section",
+				"valueCodeableConcept": {
+					"coding": [{
+						"system": "http://loinc.org",
+						"code": "10160-0",
+						"display": "HISTORY OF MEDICATION USE"
+					}],
+					"text": "HISTORY OF MEDICATION USE"
+				}
+			}],
+			"medication": {
+				"reference": "Medication/237854",
+				"display": "Cephalexin 500 MG Oral Capsule, [RxNorm: 309114]"
+			}
+		}
+	}, {
+		"id": "http://devs:20480/fhir/MedicationPrescription/26ec7cf0-0983-48ee-a713-53dac44754a0",
+		"content": {
+			"resourceType": "MedicationPrescription",
+			"status": "active",
+			"patient": {
+				"reference": "Patient/65044dd0-53d5-4505-8631-595efdfb4848",
+				"display": "NEW PATIENT"
+			},
+			"dateWritten": "2016-07-01",
+			"dosageInstruction": [{
+				"text": "Fluoxetine 40 MG Oral Capsule, [RxNorm: 313989]",
+				"route": {
+					"coding": [{
+						"system": "urn:oid:2.16.840.1.113883.3.26.1.1",
+						"code": "C38288",
+						"display": "ORAL"
+					}, {
+						"system": "urn:oid:2.16.840.1.113883.5.112",
+						"code": "PO",
+						"display": "Swallow, oral"
+					}],
+					"text": "ORAL"
+				},
+				"doseQuantity": {
+					"value": 40,
+					"units": "mg",
+					"code": "mg",
+					"system": "http://unitsofmeasure.org"
+				},
+				"timingSchedule": {
+					"event": [{
+						"start": "2015-11-10"
+					}],
+					"repeat": {
+						"frequency": 1,
+						"duration": 24,
+						"units": "h"
+					}
+				}
+			}],
+			"extension": [{
+				"url": "http://infoworld.ro/nxt/Profile/extensions#source-section",
+				"valueCodeableConcept": {
+					"coding": [{
+						"system": "http://loinc.org",
+						"code": "10160-0",
+						"display": "HISTORY OF MEDICATION USE"
+					}],
+					"text": "HISTORY OF MEDICATION USE"
+				}
+			}],
+			"medication": {
+				"reference": "Medication/274752",
+				"display": "warfarin oral 1 mg tablet"
+			}
+		}
+	}, {
+		"id": "http://devs:20480/fhir/MedicationPrescription/9c48c288-9d3b-42c4-8ff4-7186486018b7",
+		"content": {
+			"resourceType": "MedicationPrescription",
+			"status": "active",
+			"patient": {
+				"reference": "Patient/65044dd0-53d5-4505-8631-595efdfb4848",
+				"display": "NEW PATIENT"
+			},
+			"dateWritten": "2015-04-15",
+			"dosageInstruction": [{
+				"text": "Levothyroxine Sodium 0.05 MG Oral Tablet [Synthroid], [RxNorm: 966247]",
+				"route": {
+					"coding": [{
+						"system": "urn:oid:2.16.840.1.113883.3.26.1.1",
+						"code": "C38288",
+						"display": "ORAL"
+					}, {
+						"system": "urn:oid:2.16.840.1.113883.5.112",
+						"code": "PO",
+						"display": "Swallow, oral"
+					}],
+					"text": "ORAL"
+				},
+				"doseQuantity": {
+					"value": 0.05,
+					"units": "mg",
+					"code": "mg",
+					"system": "http://unitsofmeasure.org"
+				},
+				"timingSchedule": {
+					"event": [{
+						"start": "2015-04-15"
+					}],
+					"repeat": {
+						"frequency": 1,
+						"duration": 24,
+						"units": "h"
+					}
+				}
+			}],
+			"extension": [{
+				"url": "http://infoworld.ro/nxt/Profile/extensions#source-section",
+				"valueCodeableConcept": {
+					"coding": [{
+						"system": "http://loinc.org",
+						"code": "10160-0",
+						"display": "HISTORY OF MEDICATION USE"
+					}],
+					"text": "HISTORY OF MEDICATION USE"
+				}
+			}],
+			"medication": {
+				"reference": "Medication/257084",
+				"display": "Levothyroxine Sodium 0.05 MG Oral Tablet [Synthroid], [RxNorm: 966247]"
+			}
+		}
+	}]
+}

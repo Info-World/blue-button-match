@@ -1,0 +1,34 @@
+{
+    "primary": [{
+        "path": "birthDate",
+        "type": "dateTime",
+        "percent": 20
+    }, {
+        "path": "gender",
+        "type": "codedEntry",
+        "percent": 20
+    }],
+    "secondary": [],
+    "subArrays": [{
+        "name": {
+            "primary": [{
+                "path": "family",
+                "type": "stringArray",
+                "percent": 20
+            }],
+            "secondary": [{
+                "path": "given",
+                "type": "stringArray",
+                "percent": 20
+            }]
+        }
+    }, {
+        "identifier": {
+            "primary": {
+                "path": "value",
+                "type": "string",
+                "percent": 20
+            }
+        }
+    }]
+}

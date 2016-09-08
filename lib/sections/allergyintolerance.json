@@ -1,0 +1,13 @@
+{
+    "primary": [{
+        "path": "substance",
+        "type": "codedEntry",
+        "percent": 50
+    }],
+    "secondary": [{
+        "path": "recordedDate",
+        "type": "dateTime",
+        "percent": 50
+    }],
+    "subArrays": []
+}

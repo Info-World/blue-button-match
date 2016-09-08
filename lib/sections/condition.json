@@ -1,0 +1,13 @@
+{
+    "primary": [{
+        "path": "code",
+        "type": "codedEntry",
+        "percent": 50
+    }],
+    "secondary": [{
+        "path": "dateAsserted",
+        "type": "dateTime",
+        "percent": 50
+    }],
+    "subArrays": []
+}

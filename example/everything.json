@@ -1,0 +1,2839 @@
+{
+	"resourceType": "Bundle",
+	"meta": {
+		"lastUpdated": "2016-07-01T10:20:17.724Z"
+	},
+	"type": "searchset",
+	"base": "http://devs:20480/fhir/",
+	"entry": [
+		{
+		"resource": {
+			"resourceType": "BoardDataItem",
+			"subject": {
+				"reference": "Patient/4ff14490-2c5d-42d4-911b-a3f4a2c26ec1",
+				"display": "EMILIAN SECOND ATM"
+			},
+			"encounter": {
+				"reference": "Encounter/ad955a7e-2ed1-4d72-bdaa-21650b08dbc3",
+				"display": "ambulatory encounter in CARDIOLOGY - ROOM 1"
+			},
+			"columnType": "encounterVitalSigns",
+			"encounterVitalSigns": [{
+				"id": "Observation/0f010fa0-1c89-46e3-8905-95394988971c",
+				"typeSystem": "http://loinc.org",
+				"typeCode": "8302-2",
+				"display": "Body height",
+				"date": "2016-07-01T09:57:57.085Z",
+				"valueQuantity": {
+					"value": 150,
+					"units": "cm",
+					"system": "http://unitsofmeasure.org",
+					"code": "cm"
+				}
+			}, {
+				"id": "Observation/061d0f6d-71f8-4d5b-92ea-bc3c47fc6af9",
+				"typeSystem": "http://loinc.org",
+				"typeCode": "3141-9",
+				"display": "Weight Measured",
+				"date": "2016-07-01T09:57:57.085Z",
+				"valueQuantity": {
+					"value": 85,
+					"units": "kg",
+					"system": "http://unitsofmeasure.org",
+					"code": "kg"
+				}
+			}, {
+				"id": "Observation/7b89f249-a83d-45ab-b597-138413feaf3b",
+				"typeSystem": "http://loinc.org",
+				"typeCode": "39156-5",
+				"display": "Body mass index (BMI)",
+				"interpretation": "H",
+				"date": "2016-07-01T09:57:57.085Z",
+				"valueQuantity": {
+					"value": 37.78,
+					"units": "kg/m2",
+					"system": "http://unitsofmeasure.org",
+					"code": "kg/m2"
+				}
+			}, {
+				"id": "Observation/85466d97-7a9d-48bb-8627-a1124bba695b",
+				"typeSystem": "http://loinc.org",
+				"typeCode": "8310-5",
+				"display": "Body temperature",
+				"date": "2016-07-01T09:57:57.085Z",
+				"valueQuantity": {
+					"value": 34,
+					"units": "°C",
+					"system": "http://unitsofmeasure.org",
+					"code": "Cel"
+				}
+			}, {
+				"id": "Observation/fb36adaa-d55d-498d-bb0f-f524479ac8e5",
+				"typeSystem": "http://loinc.org",
+				"typeCode": "8480-6",
+				"display": "Systolic blood pressure",
+				"interpretation": "L",
+				"date": "2016-07-01T09:57:57.085Z",
+				"valueQuantity": {
+					"value": 40,
+					"units": "mmHg",
+					"system": "http://unitsofmeasure.org",
+					"code": "mm[Hg]"
+				}
+			}, {
+				"id": "Observation/f423de79-35ba-451e-b98c-bfe785e00dff",
+				"typeSystem": "http://loinc.org",
+				"typeCode": "8462-4",
+				"display": "Diastolic blood pressure",
+				"interpretation": "L",
+				"date": "2016-07-01T09:57:57.085Z",
+				"valueQuantity": {
+					"value": 50,
+					"units": "mmHg",
+					"system": "http://unitsofmeasure.org",
+					"code": "mm[Hg]"
+				}
+			}, {
+				"id": "Observation/f9ff0cc9-6a3a-4aaf-9039-9d713845d064",
+				"typeSystem": "http://loinc.org",
+				"typeCode": "9279-1",
+				"display": "Respiratory rate",
+				"interpretation": "H",
+				"date": "2016-07-01T09:57:57.085Z",
+				"valueQuantity": {
+					"value": 40,
+					"units": "breaths/min",
+					"system": "http://unitsofmeasure.org",
+					"code": "breaths/min"
+				}
+			}, {
+				"id": "Observation/71441e7b-4ae5-4f57-aa5a-34dc4370e5da",
+				"typeSystem": "http://loinc.org",
+				"typeCode": "8867-4",
+				"display": "Heart rate",
+				"interpretation": "N",
+				"date": "2016-07-01T09:57:57.085Z",
+				"valueQuantity": {
+					"value": 60,
+					"units": "beats/min",
+					"system": "http://unitsofmeasure.org",
+					"code": "{H.B.}/min"
+				}
+			}, {
+				"id": "Observation/57aecba9-1d55-49bf-89d3-62bbb44e5c0d",
+				"typeSystem": "http://loinc.org",
+				"typeCode": "59408-5",
+				"display": "SaO2 % BldA PulseOx",
+				"interpretation": "L",
+				"date": "2016-07-01T09:57:57.085Z",
+				"valueQuantity": {
+					"value": 10,
+					"units": "percent",
+					"system": "http://unitsofmeasure.org",
+					"code": "%"
+				}
+			}],
+			"id": "BoardDataItem/08162da9-0b98-472d-a5e1-5f7df1bd8da6"
+		},
+		"search": {
+			"mode": "match"
+		}
+	}, {
+		"resource": {
+			"resourceType": "BoardDataItem",
+			"subject": {
+				"reference": "Patient/4ff14490-2c5d-42d4-911b-a3f4a2c26ec1",
+				"display": "EMILIAN SECOND ATM"
+			},
+			"encounter": {
+				"reference": "Encounter/ad955a7e-2ed1-4d72-bdaa-21650b08dbc3",
+				"display": "ambulatory encounter in CARDIOLOGY - ROOM 1"
+			},
+			"columnType": "orders",
+			"orders": [{
+				"id": "Order/0155ffa9-2942-4f91-9f06-eb68af8215a1",
+				"description": "warfarin oral 1 mg tablet Daily",
+				"type": "Prescription"
+			}],
+			"id": "BoardDataItem/80617d7c-006c-4ab5-a5de-b6700d01c9fd"
+		},
+		"search": {
+			"mode": "match"
+		}
+	}, {
+		"resource": {
+			"resourceType": "BoardDataItem",
+			"subject": {
+				"reference": "Patient/4ff14490-2c5d-42d4-911b-a3f4a2c26ec1",
+				"display": "EMILIAN SECOND ATM"
+			},
+			"encounter": {
+				"reference": "Encounter/ad955a7e-2ed1-4d72-bdaa-21650b08dbc3",
+				"display": "ambulatory encounter in CARDIOLOGY - ROOM 1"
+			},
+			"columnType": "orders",
+			"orders": [{
+				"id": "Order/84cd924c-e83b-474d-96c6-6f46206dc8d1",
+				"description": "Percutaneous transcatheter closure of congenital interatrial communication (ie, Fontan fenestration, atrial septal defect) with implant",
+				"type": "Procedure"
+			}],
+			"id": "BoardDataItem/d656f541-b687-4f9d-9602-53056efa47dc"
+		},
+		"search": {
+			"mode": "match"
+		}
+	}, {
+		"resource": {
+			"resourceType": "BoardDataItem",
+			"subject": {
+				"display": "EMILIANSECOND ATM",
+				"reference": "Patient/4ff14490-2c5d-42d4-911b-a3f4a2c26ec1"
+			},
+			"columnType": "clinicalRemindersAlerts",
+			"clinicalRemindersAlerts": [{
+				"id": "Communication/da760492-7526-4a12-a2fd-25fcf234f723",
+				"description": "OVERWEIGHT",
+				"ruleReference": "CDSRule/1825ef1d-4d1a-4731-909a-446c753a2b7a",
+				"role": [{
+					"reference": "Role/doctor",
+					"display": "Doctor"
+				}, {
+					"reference": "Role/nurse",
+					"display": "Nurse"
+				}]
+			}],
+			"id": "BoardDataItem/f341fdea-899a-45f0-a457-08a54a13029b"
+		},
+		"search": {
+			"mode": "match"
+		}
+	}, {
+		"resource": {
+			"resourceType": "Communication",
+			"category": {
+				"coding": [{
+					"system": "http://infoworld.ro/nxt/CommunicationType",
+					"code": "alert",
+					"display": "Alert"
+				}],
+				"text": "Alert"
+			},
+			"sender": {
+				"reference": "Observation/7b89f249-a83d-45ab-b597-138413feaf3b"
+			},
+			"payload": [{
+				"contentString": "Bibliografy test"
+			}, {
+				"contentReference": {
+					"display": "OVERWEIGHT",
+					"reference": "CDSRule/1825ef1d-4d1a-4731-909a-446c753a2b7a"
+				}
+			}],
+			"status": "in-progress",
+			"sent": "2016-07-01T09:58:42.671Z",
+			"subject": {
+				"display": "EMILIANSECOND ATM",
+				"reference": "Patient/4ff14490-2c5d-42d4-911b-a3f4a2c26ec1"
+			},
+			"extension": [{
+				"url": "http://infoworld.ro/Profile/Communication#Role",
+				"valueResource": {
+					"reference": "Role/doctor",
+					"display": "Doctor"
+				}
+			}, {
+				"url": "http://infoworld.ro/Profile/Communication#Role",
+				"valueResource": {
+					"reference": "Role/nurse",
+					"display": "Nurse"
+				}
+			}],
+			"text": {
+				"div": "<div><p><b>Category:</b>alert</p><p><b>Subject:</b>EMILIANSECOND ATM</p><p><b>Status:</b>in-progress</p><p><b>Sent:</b>2016-07-01T09:58:42.671Z</p><p><b>CDS Rule description:</b>Bibliografy test</p><p><b>CDS Rule:</b>OVERWEIGHT</p><p><b>Sender:</b></p></div>",
+				"status": "generated"
+			},
+			"id": "Communication/da760492-7526-4a12-a2fd-25fcf234f723"
+		},
+		"search": {
+			"mode": "match"
+		}
+	}, {
+		"resource": {
+			"resourceType": "DocumentReference",
+			"masterIdentifier": {
+				"label": "InfoWorld",
+				"system": "http://infoworld.ro/nxt/uid",
+				"value": "d81eaf98-e15d-426f-d644-b75e254de279"
+			},
+			"subject": {
+				"reference": "Patient/4ff14490-2c5d-42d4-911b-a3f4a2c26ec1",
+				"display": "EMILIAN SECOND ATM"
+			},
+			"type": {
+				"coding": [{
+					"system": "http://loinc.org",
+					"code": "34133-9",
+					"display": "Summarization of episode note"
+				}],
+				"text": "Summarization of episode note"
+			},
+			"class": {
+				"coding": [{
+					"code": "summary",
+					"system": "http://infoworld.ro/nxt/document-class",
+					"display": "Summary"
+				}],
+				"text": "Summary"
+			},
+			"author": [{
+				"reference": "Practitioner/63dff52d-3ed5-4db8-bd0c-6c1e1b85d6fb",
+				"display": "MORGAN FREEMAN"
+			}],
+			"created": "2016-06-30T07:07:41.599Z",
+			"indexed": "2016-06-30T07:07:41.599Z",
+			"status": "current",
+			"docStatus": {
+				"coding": [{
+					"code": "preliminary",
+					"system": "http://hl7.org/fhir/composition-status",
+					"display": "preliminary"
+				}],
+				"text": "Preliminary"
+			},
+			"description": "Ambulatory_VDT.xml",
+			"mimeType": "application/hl7-v3+xml",
+			"format": ["2.16.840.1.113883.10.20.22.1.1", "2.16.840.1.113883.10.20.22.1.2"],
+			"location": "Binary/0d720282-e6a1-4227-91e3-f70ae7656a5a",
+			"extension": [{
+				"url": "http://infoworld.ro/Profile/DocumentReference#Encounter",
+				"valueResource": {
+					"reference": "Encounter/ad955a7e-2ed1-4d72-bdaa-21650b08dbc3",
+					"display": "ambulatory encounter in CARDIOLOGY - ROOM 1"
+				}
+			}],
+			"text": {
+				"div": "<div><p><b>Master identifier</b>d81eaf98-e15d-426f-d644-b75e254de279</p><p><b>Identifier</b></p><p><b>Type</b>Summarization of episode note</p><p><b>Subject</b>EMILIAN SECOND ATM</p><p><b>Author</b>MORGAN FREEMAN</p><p><b>Encounter</b>Encounter/ad955a7e-2ed1-4d72-bdaa-21650b08dbc3</p><p><b>Created</b>2016-06-30T07:07:41.599Z</p><p><b>Document status</b>preliminary</p><p><b>Description</b>Ambulatory_VDT.xml</p><p><b>Mime type</b>application/hl7-v3+xml</p></div>",
+				"status": "generated"
+			},
+			"id": "DocumentReference/62272993-9b10-4936-9982-76abb919062f"
+		},
+		"search": {
+			"mode": "match"
+		}
+	}, {
+		"resource": {
+			"resourceType": "Encounter",
+			"class": "ambulatory",
+			"status": "in progress",
+			"period": {
+				"start": "2016-05-18T09:47:36.682Z"
+			},
+			"subject": {
+				"reference": "Patient/4ff14490-2c5d-42d4-911b-a3f4a2c26ec1",
+				"display": "EMILIAN SECOND ATM"
+			},
+			"location": [{
+				"location": {
+					"reference": "Location/145e9f96-7977-4753-8da9-3003601427d8",
+					"display": "ROOM 1"
+				},
+				"period": {
+					"start": "2016-05-18T09:47:58.956Z"
+				},
+				"extension": [{
+					"url": "http://infoworld.ro/nxt/Profile/extensions#encounter-location-type",
+					"valueCode": "ro"
+				}]
+			}],
+			"serviceProvider": {
+				"reference": "Organization/e9ea5686-4c4b-4a74-af66-4cac7580de4a",
+				"display": "CARDIOLOGY"
+			},
+			"participant": [{
+				"individual": {
+					"reference": "Practitioner/63dff52d-3ed5-4db8-bd0c-6c1e1b85d6fb",
+					"display": "MORGAN FREEMAN"
+				},
+				"type": [{
+					"coding": [{
+						"code": "ATND",
+						"system": "http://hl7.org/fhir/v3/ParticipationType",
+						"display": "attender"
+					}],
+					"text": "Attender"
+				}]
+			}],
+			"extension": [{
+				"url": "http://infoworld.ro/nxt/Profile/extensions#encounter-confidentiality",
+				"valueCodeableConcept": {
+					"coding": [{
+						"system": "http://infoworld.ro/nxt/sid/Confidentiality",
+						"code": "N"
+					}],
+					"text": "Normal"
+				}
+			}, {
+				"url": "http://infoworld.ro/nxt/Profile/extensions#encounter-has-claim",
+				"valueBoolean": false
+			}],
+			"identifier": [{
+				"label": "InfoWorld",
+				"system": "http://infoworld.ro/nxt/counter/EncounterNo",
+				"value": "EncNo006693"
+			}],
+			"text": {
+				"div": "<div><p><b>Date</b>2016-05-18T09:47:36.682Z</p><p><b>Subject</b>EMILIAN SECOND ATM</p><p><b>Location</b><ul></ul></p><p><b>Care team</b><ul><li>MORGAN FREEMAN - attender</li></ul></p><p><b>Confidentiality</b>Normal</p><p><b>Complaint</b></p><p><b>Priority</b></p><p><b>Admission Diagnosis</b></p><p><b>Admit source</b></p><p><b>Discharge Disposition</b></p><p><b>Discharge Diagnosis</b></p><p><b>Additional Diagnosis</b></p></div>",
+				"status": "generated"
+			},
+			"id": "Encounter/ad955a7e-2ed1-4d72-bdaa-21650b08dbc3"
+		},
+		"search": {
+			"mode": "match"
+		}
+	}, {
+		"resource": {
+			"resourceType": "MedicationPrescription",
+			"identifier": [{
+				"label": "InfoWorld",
+				"system": "http://infoworld.ro/nxt/counter/MedicationOrder",
+				"value": "MEDORDER003632"
+			}],
+			"dateWritten": "2016-07-01T10:18:46.872Z",
+			"status": "active",
+			"patient": {
+				"reference": "Patient/4ff14490-2c5d-42d4-911b-a3f4a2c26ec1",
+				"display": "EMILIAN SECOND ATM"
+			},
+			"prescriber": {
+				"reference": "Practitioner/63dff52d-3ed5-4db8-bd0c-6c1e1b85d6fb",
+				"display": "MORGAN FREEMAN"
+			},
+			"encounter": {
+				"reference": "Encounter/ad955a7e-2ed1-4d72-bdaa-21650b08dbc3",
+				"display": "ambulatory encounter in CARDIOLOGY - ROOM 1"
+			},
+			"reasonResource": [{
+				"reference": "Condition/820e0d50-0585-4ab4-8b53-e229d876f453",
+				"display": "Abnormal vision as a late effect of cerebrovascular disease"
+			}],
+			"medication": {
+				"reference": "Medication/274752",
+				"display": "warfarin oral 1 mg tablet"
+			},
+			"dosageInstruction": [{
+				"timingSchedule": {
+					"event": [{
+						"start": "2016-07-01T00:00:00.031Z"
+					}],
+					"code": {
+						"coding": [{
+							"code": "QD",
+							"system": "http://hl7.org/fhir/timing-abbreviation",
+							"display": "Daily"
+						}]
+					},
+					"repeat": {
+						"frequency": 1,
+						"duration": 1,
+						"units": "d"
+					}
+				},
+				"asNeededBoolean": false,
+				"route": {
+					"coding": [{
+						"code": "24",
+						"system": "http://infoworld.ro/nxt/fdb_medication_route",
+						"display": "oral"
+					}],
+					"text": "oral"
+				},
+				"doseQuantity": {
+					"value": 1,
+					"units": "tablet",
+					"code": "tab"
+				}
+			}],
+			"dispense": {
+				"numberOfRepeatsAllowed": 0,
+				"quantity": {
+					"value": 30,
+					"units": "tablet",
+					"code": "tablet"
+				},
+				"expectedSupplyDuration": {
+					"value": 1,
+					"units": "days",
+					"system": "http://unitsofmeasure.org",
+					"code": "d"
+				},
+				"extension": [{
+					"url": "http://infoworld.ro/Profile/extensions#medicationPrescription-dispense-package",
+					"valueQuantity": {
+						"value": 1,
+						"units": "bottle (30 tablet)",
+						"code": "bottle (30 tablet)"
+					}
+				}]
+			},
+			"extension": [{
+				"url": "http://infoworld.ro/nxt/Profile/extensions#medicationSig",
+				"valueString": "Take 1 tablet by mouth daily for Abnormal vision as a late effect of cerebrovascular disease"
+			}, {
+				"url": "http://infoworld.ro/nxt/Profile/extensions#medicationPrescription-source",
+				"valueString": "order"
+			}, {
+				"url": "http://infoworld.ro/Profile/extensions#medicationPrescription-dispenseAsWritten",
+				"valueBoolean": false
+			}],
+			"text": {
+				"div": "<div><p><b>Date</b>07/01/2016</p><p><b>Patient</b>EMILIAN SECOND ATM</p><p><b>Prescriber</b>MORGAN FREEMAN</p><p><b>Encounter</b>ambulatory encounter in CARDIOLOGY - ROOM 1</p><p><b>Reason</b></p><p><b>Medication</b>warfarin oral 1 mg tablet</p><p><b>Identifier</b>MEDORDER003632</p><p><b>Dosage</b><table border=\"1\"><tr><td>Timing schedule</td><td>Route</td><td>Dose</td><td>As needed</td><td>Sig</td></tr><tr><td><p>Start: 07/01/2016</p><p>End: </p><p>1 time(s) every 1d </p></td><td>oral</td><td>1 tablet</td><td>false</td><td>Take 1 tablet by mouth daily for Abnormal vision as a late effect of cerebrovascular disease</td></tr></table></p><p><b>Quantity per refill</b>30 tablet</p><p><b>Number of refills</b>0</p><p><b>Validity period</b></p><p><b>Substitution type</b></p><p><b>Substitution reason</b></p></div>",
+				"status": "generated"
+			},
+			"dateEnded": "2016-07-02T10:18:46.872Z",
+			"id": "MedicationPrescription/d2a1568c-0f7b-4338-8a68-59c3eb61d4cd"
+		},
+		"search": {
+			"mode": "match"
+		}
+	}, {
+		"resource": {
+			"resourceType": "NewsFeedEntry",
+			"resource": {
+				"reference": "Encounter/ad955a7e-2ed1-4d72-bdaa-21650b08dbc3",
+				"display": "ambulatory encounter in ROOM 1"
+			},
+			"type": "encounter",
+			"action": "create",
+			"dateTime": "2016-05-18T09:47:25.046Z",
+			"encounter": {
+				"resource": {
+					"reference": "Encounter/ad955a7e-2ed1-4d72-bdaa-21650b08dbc3",
+					"display": "ambulatory encounter in ROOM 1"
+				},
+				"class": "ambulatory"
+			},
+			"subject": {
+				"reference": "Patient/4ff14490-2c5d-42d4-911b-a3f4a2c26ec1",
+				"display": "EMILIAN SECOND ATM"
+			},
+			"adt": {
+				"location": {
+					"reference": "Organization/e9ea5686-4c4b-4a74-af66-4cac7580de4a",
+					"display": "CARDIOLOGY"
+				},
+				"status": "in progress",
+				"attender": {
+					"reference": "Practitioner/63dff52d-3ed5-4db8-bd0c-6c1e1b85d6fb",
+					"display": "MORGAN FREEMAN"
+				}
+			},
+			"id": "NewsFeedEntry/0cff9fc1-7d45-4573-a4a0-6e46117a8cb8"
+		},
+		"search": {
+			"mode": "match"
+		}
+	}, {
+		"resource": {
+			"resourceType": "NewsFeedEntry",
+			"resource": {
+				"reference": "Order/0155ffa9-2942-4f91-9f06-eb68af8215a1",
+				"display": "medicationorder"
+			},
+			"type": "medicationorder",
+			"action": "sign",
+			"dateTime": "2016-07-01T10:18:46.883Z",
+			"encounter": {
+				"resource": {
+					"reference": "Encounter/ad955a7e-2ed1-4d72-bdaa-21650b08dbc3",
+					"display": "ambulatory encounter in CARDIOLOGY - ROOM 1"
+				},
+				"class": "ambulatory"
+			},
+			"subject": {
+				"reference": "Patient/4ff14490-2c5d-42d4-911b-a3f4a2c26ec1",
+				"display": "EMILIAN SECOND ATM"
+			},
+			"medicationorder": {
+				"detail": [{
+					"reference": "MedicationPrescription/d2a1568c-0f7b-4338-8a68-59c3eb61d4cd",
+					"display": "warfarin oral 1 mg tablet Daily"
+				}],
+				"status": "requested",
+				"type": "Prescription"
+			},
+			"id": "NewsFeedEntry/11fc3700-df5f-40d8-a810-ff1efd8a3025"
+		},
+		"search": {
+			"mode": "match"
+		}
+	}, {
+		"resource": {
+			"resourceType": "NewsFeedEntry",
+			"resource": {
+				"reference": "Observation/fa0dd107-11b4-46fd-907b-138fef16f147",
+				"display": "Vital signs, weight, height, head circumference, oximetry, BMI and BSA panel"
+			},
+			"type": "vitals",
+			"action": "create",
+			"dateTime": "2016-07-01T09:58:42.283Z",
+			"encounter": {
+				"resource": {
+					"reference": "Encounter/ad955a7e-2ed1-4d72-bdaa-21650b08dbc3",
+					"display": "ambulatory encounter in CARDIOLOGY - ROOM 1"
+				},
+				"class": "ambulatory"
+			},
+			"subject": {
+				"reference": "Patient/4ff14490-2c5d-42d4-911b-a3f4a2c26ec1",
+				"display": "EMILIAN SECOND ATM"
+			},
+			"vitals": [{
+				"name": {
+					"coding": [{
+						"code": "8302-2",
+						"system": "http://loinc.org",
+						"display": "Body height"
+					}],
+					"text": "Body height"
+				},
+				"valueQuantity": {
+					"value": 150,
+					"units": "cm",
+					"system": "http://unitsofmeasure.org",
+					"code": "cm"
+				},
+				"appliesPeriodStart": "2016-07-01T09:57:57.085Z"
+			}, {
+				"name": {
+					"coding": [{
+						"code": "3141-9",
+						"system": "http://loinc.org",
+						"display": "Weight Measured"
+					}],
+					"text": "Body weight"
+				},
+				"valueQuantity": {
+					"value": 85,
+					"units": "kg",
+					"system": "http://unitsofmeasure.org",
+					"code": "kg"
+				},
+				"appliesPeriodStart": "2016-07-01T09:57:57.085Z"
+			}, {
+				"name": {
+					"coding": [{
+						"code": "39156-5",
+						"system": "http://loinc.org",
+						"display": "Body mass index (BMI)"
+					}],
+					"text": "Body mass index"
+				},
+				"valueQuantity": {
+					"value": 37.78,
+					"units": "kg/m2",
+					"system": "http://unitsofmeasure.org",
+					"code": "kg/m2"
+				},
+				"referenceRange": [{
+					"low": {
+						"value": 18.5
+					},
+					"high": {
+						"value": 25
+					},
+					"age": {
+						"low": {
+							"value": 0,
+							"units": "year",
+							"system": "http://unitsofmeasure.org",
+							"code": "a"
+						},
+						"high": {
+							"value": 200,
+							"units": "year",
+							"system": "http://unitsofmeasure.org",
+							"code": "a"
+						}
+					}
+				}],
+				"interpretation": {
+					"coding": [{
+						"code": "H",
+						"system": "http://hl7.org/fhir/v3/ObservationInterpretation",
+						"display": "High"
+					}]
+				},
+				"appliesPeriodStart": "2016-07-01T09:57:57.085Z"
+			}, {
+				"name": {
+					"coding": [{
+						"code": "8310-5",
+						"system": "http://loinc.org",
+						"display": "Body temperature"
+					}],
+					"text": "Body temperature"
+				},
+				"valueQuantity": {
+					"value": 34,
+					"units": "°C",
+					"system": "http://unitsofmeasure.org",
+					"code": "Cel"
+				},
+				"appliesPeriodStart": "2016-07-01T09:57:57.085Z"
+			}, {
+				"name": {
+					"coding": [{
+						"code": "8480-6",
+						"system": "http://loinc.org",
+						"display": "Systolic blood pressure"
+					}],
+					"text": "Systolic blood pressure"
+				},
+				"valueQuantity": {
+					"value": 40,
+					"units": "mmHg",
+					"system": "http://unitsofmeasure.org",
+					"code": "mm[Hg]"
+				},
+				"referenceRange": [{
+					"low": {
+						"value": 110,
+						"units": "mmHg",
+						"system": "http://unitsofmeasure.org",
+						"code": "mm[Hg]"
+					},
+					"high": {
+						"value": 135,
+						"units": "mmHg",
+						"system": "http://unitsofmeasure.org",
+						"code": "mm[Hg]"
+					},
+					"age": {
+						"low": {
+							"value": 0,
+							"units": "year",
+							"system": "http://unitsofmeasure.org",
+							"code": "a"
+						},
+						"high": {
+							"value": 200,
+							"units": "year",
+							"system": "http://unitsofmeasure.org",
+							"code": "a"
+						}
+					}
+				}],
+				"interpretation": {
+					"coding": [{
+						"code": "L",
+						"system": "http://hl7.org/fhir/v3/ObservationInterpretation",
+						"display": "Low"
+					}]
+				},
+				"appliesPeriodStart": "2016-07-01T09:57:57.085Z"
+			}, {
+				"name": {
+					"coding": [{
+						"code": "8462-4",
+						"system": "http://loinc.org",
+						"display": "Diastolic blood pressure"
+					}],
+					"text": "Diastolic blood pressure"
+				},
+				"valueQuantity": {
+					"value": 50,
+					"units": "mmHg",
+					"system": "http://unitsofmeasure.org",
+					"code": "mm[Hg]"
+				},
+				"referenceRange": [{
+					"low": {
+						"value": 65,
+						"units": "mmHg",
+						"system": "http://unitsofmeasure.org",
+						"code": "mm[Hg]"
+					},
+					"high": {
+						"value": 85,
+						"units": "mmHg",
+						"system": "http://unitsofmeasure.org",
+						"code": "mm[Hg]"
+					},
+					"age": {
+						"low": {
+							"value": 0,
+							"units": "year",
+							"system": "http://unitsofmeasure.org",
+							"code": "a"
+						},
+						"high": {
+							"value": 200,
+							"units": "year",
+							"system": "http://unitsofmeasure.org",
+							"code": "a"
+						}
+					}
+				}],
+				"interpretation": {
+					"coding": [{
+						"code": "L",
+						"system": "http://hl7.org/fhir/v3/ObservationInterpretation",
+						"display": "Low"
+					}]
+				},
+				"appliesPeriodStart": "2016-07-01T09:57:57.085Z"
+			}, {
+				"name": {
+					"coding": [{
+						"code": "9279-1",
+						"system": "http://loinc.org",
+						"display": "Respiratory rate"
+					}],
+					"text": "Respiratory rate"
+				},
+				"valueQuantity": {
+					"value": 40,
+					"units": "breaths/min",
+					"system": "http://unitsofmeasure.org",
+					"code": "breaths/min"
+				},
+				"referenceRange": [{
+					"low": {
+						"value": 12,
+						"units": "breaths/min",
+						"system": "http://unitsofmeasure.org",
+						"code": "breaths/min"
+					},
+					"high": {
+						"value": 20,
+						"units": "beats/min",
+						"system": "http://unitsofmeasure.org",
+						"code": "breaths/min"
+					},
+					"age": {
+						"low": {
+							"value": 6,
+							"units": "year",
+							"system": "http://unitsofmeasure.org",
+							"code": "a"
+						},
+						"high": {
+							"value": 200,
+							"units": "year",
+							"system": "http://unitsofmeasure.org",
+							"code": "a"
+						}
+					}
+				}],
+				"interpretation": {
+					"coding": [{
+						"code": "H",
+						"system": "http://hl7.org/fhir/v3/ObservationInterpretation",
+						"display": "High"
+					}]
+				},
+				"appliesPeriodStart": "2016-07-01T09:57:57.085Z"
+			}, {
+				"name": {
+					"coding": [{
+						"code": "8867-4",
+						"system": "http://loinc.org",
+						"display": "Heart rate"
+					}],
+					"text": "Pulse rate"
+				},
+				"valueQuantity": {
+					"value": 60,
+					"units": "beats/min",
+					"system": "http://unitsofmeasure.org",
+					"code": "{H.B.}/min"
+				},
+				"referenceRange": [{
+					"low": {
+						"value": 60,
+						"units": "beats/min",
+						"system": "http://unitsofmeasure.org",
+						"code": "{H.B.}/min"
+					},
+					"high": {
+						"value": 100,
+						"units": "beats/min",
+						"system": "http://unitsofmeasure.org",
+						"code": "{H.B.}/min"
+					},
+					"age": {
+						"low": {
+							"value": 10,
+							"units": "year",
+							"system": "http://unitsofmeasure.org",
+							"code": "a"
+						},
+						"high": {
+							"value": 200,
+							"units": "year",
+							"system": "http://unitsofmeasure.org",
+							"code": "a"
+						}
+					}
+				}],
+				"interpretation": {
+					"coding": [{
+						"code": "N",
+						"system": "http://hl7.org/fhir/v3/ObservationInterpretation",
+						"display": "Normal"
+					}]
+				},
+				"appliesPeriodStart": "2016-07-01T09:57:57.085Z"
+			}, {
+				"name": {
+					"coding": [{
+						"code": "59408-5",
+						"system": "http://loinc.org",
+						"display": "SaO2 % BldA PulseOx"
+					}],
+					"text": "SpO2"
+				},
+				"valueQuantity": {
+					"value": 10,
+					"units": "percent",
+					"system": "http://unitsofmeasure.org",
+					"code": "%"
+				},
+				"referenceRange": [{
+					"low": {
+						"value": 90,
+						"units": "percent",
+						"system": "http://unitsofmeasure.org",
+						"code": "%"
+					},
+					"high": {
+						"value": 100,
+						"units": "percent",
+						"system": "http://unitsofmeasure.org",
+						"code": "%"
+					},
+					"age": {
+						"low": {
+							"value": 0,
+							"units": "year",
+							"system": "http://unitsofmeasure.org",
+							"code": "a"
+						},
+						"high": {
+							"value": 200,
+							"units": "year",
+							"system": "http://unitsofmeasure.org",
+							"code": "a"
+						}
+					}
+				}],
+				"interpretation": {
+					"coding": [{
+						"code": "L",
+						"system": "http://hl7.org/fhir/v3/ObservationInterpretation",
+						"display": "Low"
+					}]
+				},
+				"appliesPeriodStart": "2016-07-01T09:57:57.085Z"
+			}],
+			"id": "NewsFeedEntry/c6495083-f122-418a-90b2-511914bdd3ff"
+		},
+		"search": {
+			"mode": "match"
+		}
+	}, {
+		"resource": {
+			"resourceType": "NewsFeedEntry",
+			"resource": {
+				"reference": "Order/84cd924c-e83b-474d-96c6-6f46206dc8d1",
+				"display": "orderprocedure"
+			},
+			"type": "orderprocedure",
+			"action": "sign",
+			"dateTime": "2016-07-01T10:19:10.635Z",
+			"encounter": {
+				"resource": {
+					"reference": "Encounter/ad955a7e-2ed1-4d72-bdaa-21650b08dbc3",
+					"display": "ambulatory encounter in CARDIOLOGY - ROOM 1"
+				},
+				"class": "ambulatory"
+			},
+			"subject": {
+				"reference": "Patient/4ff14490-2c5d-42d4-911b-a3f4a2c26ec1",
+				"display": "EMILIAN SECOND ATM"
+			},
+			"procedure": {
+				"detail": [{
+					"reference": "ProcedureRequest/b11e90c3-65eb-4614-8bda-f3ec4ce3652b",
+					"display": "Percutaneous transcatheter closure of congenital interatrial communication (ie, Fontan fenestration, atrial septal defect) with implant"
+				}],
+				"target": {
+					"reference": "Organization/e9ea5686-4c4b-4a74-af66-4cac7580de4a",
+					"display": "CARDIOLOGY"
+				},
+				"status": "requested",
+				"type": "Procedure"
+			},
+			"id": "NewsFeedEntry/f7f5718e-4166-4e7c-9adf-5b983eb713ac"
+		},
+		"search": {
+			"mode": "match"
+		}
+	}, {
+		"resource": {
+			"resourceType": "Observation",
+			"name": {
+				"coding": [{
+					"code": "3141-9",
+					"system": "http://loinc.org",
+					"display": "Weight Measured"
+				}],
+				"text": "Body weight"
+			},
+			"valueQuantity": {
+				"value": 85,
+				"units": "kg",
+				"system": "http://unitsofmeasure.org",
+				"code": "kg"
+			},
+			"appliesPeriod": {
+				"start": "2016-07-01T09:57:57.085Z"
+			},
+			"issued": "2016-07-01T09:57:57.085Z",
+			"status": "final",
+			"reliability": "ok",
+			"subject": {
+				"reference": "Patient/4ff14490-2c5d-42d4-911b-a3f4a2c26ec1",
+				"display": "EMILIAN SECOND ATM"
+			},
+			"performer": [{
+				"reference": "Practitioner/63dff52d-3ed5-4db8-bd0c-6c1e1b85d6fb",
+				"display": "MORGAN FREEMAN"
+			}],
+			"extension": [{
+				"url": "http://infoworld.ro/nxt/Profile/extensions#observation-result-type",
+				"valueCode": "primary"
+			}, {
+				"url": "http://infoworld.ro/nxt/Profile/extensions#observation-type",
+				"valueCoding": {
+					"code": "8716-3",
+					"display": "Vital signs",
+					"system": "http://loinc.org"
+				}
+			}, {
+				"url": "http://infoworld.ro/nxt/Profile/extensions#observation-encounter",
+				"valueResource": {
+					"reference": "Encounter/ad955a7e-2ed1-4d72-bdaa-21650b08dbc3",
+					"display": "ambulatory encounter in CARDIOLOGY - ROOM 1"
+				}
+			}],
+			"text": {
+				"div": "<div><p><b>Performer</b>MORGAN FREEMAN</p><p><b>Patient</b>EMILIAN SECOND ATM</p><p><b>Issued</b>2016-07-01T09:57:57.085Z</p><p><b>Observation type</b></p><p><b>Name</b>Weight Measured</p><p ><b>Value quantity</b>85 kg</p></div>",
+				"status": "generated"
+			},
+			"id": "Observation/061d0f6d-71f8-4d5b-92ea-bc3c47fc6af9"
+		},
+		"search": {
+			"mode": "match"
+		}
+	}, {
+		"resource": {
+			"resourceType": "Observation",
+			"name": {
+				"coding": [{
+					"code": "8302-2",
+					"system": "http://loinc.org",
+					"display": "Body height"
+				}],
+				"text": "Body height"
+			},
+			"valueQuantity": {
+				"value": 150,
+				"units": "cm",
+				"system": "http://unitsofmeasure.org",
+				"code": "cm"
+			},
+			"appliesPeriod": {
+				"start": "2016-07-01T09:57:57.085Z"
+			},
+			"issued": "2016-07-01T09:57:57.085Z",
+			"status": "final",
+			"reliability": "ok",
+			"subject": {
+				"reference": "Patient/4ff14490-2c5d-42d4-911b-a3f4a2c26ec1",
+				"display": "EMILIAN SECOND ATM"
+			},
+			"performer": [{
+				"reference": "Practitioner/63dff52d-3ed5-4db8-bd0c-6c1e1b85d6fb",
+				"display": "MORGAN FREEMAN"
+			}],
+			"extension": [{
+				"url": "http://infoworld.ro/nxt/Profile/extensions#observation-result-type",
+				"valueCode": "primary"
+			}, {
+				"url": "http://infoworld.ro/nxt/Profile/extensions#observation-type",
+				"valueCoding": {
+					"code": "8716-3",
+					"display": "Vital signs",
+					"system": "http://loinc.org"
+				}
+			}, {
+				"url": "http://infoworld.ro/nxt/Profile/extensions#observation-encounter",
+				"valueResource": {
+					"reference": "Encounter/ad955a7e-2ed1-4d72-bdaa-21650b08dbc3",
+					"display": "ambulatory encounter in CARDIOLOGY - ROOM 1"
+				}
+			}],
+			"text": {
+				"div": "<div><p><b>Performer</b>MORGAN FREEMAN</p><p><b>Patient</b>EMILIAN SECOND ATM</p><p><b>Issued</b>2016-07-01T09:57:57.085Z</p><p><b>Observation type</b></p><p><b>Name</b>Body height</p><p ><b>Value quantity</b>150 cm</p></div>",
+				"status": "generated"
+			},
+			"id": "Observation/0f010fa0-1c89-46e3-8905-95394988971c"
+		},
+		"search": {
+			"mode": "match"
+		}
+	}, {
+		"resource": {
+			"resourceType": "Observation",
+			"name": {
+				"coding": [{
+					"code": "59408-5",
+					"system": "http://loinc.org",
+					"display": "SaO2 % BldA PulseOx"
+				}],
+				"text": "SpO2"
+			},
+			"valueQuantity": {
+				"value": 10,
+				"units": "percent",
+				"system": "http://unitsofmeasure.org",
+				"code": "%"
+			},
+			"interpretation": {
+				"coding": [{
+					"code": "L",
+					"system": "http://hl7.org/fhir/v3/ObservationInterpretation",
+					"display": "Low"
+				}]
+			},
+			"appliesPeriod": {
+				"start": "2016-07-01T09:57:57.085Z"
+			},
+			"issued": "2016-07-01T09:57:57.085Z",
+			"status": "final",
+			"reliability": "ok",
+			"subject": {
+				"reference": "Patient/4ff14490-2c5d-42d4-911b-a3f4a2c26ec1",
+				"display": "EMILIAN SECOND ATM"
+			},
+			"performer": [{
+				"reference": "Practitioner/63dff52d-3ed5-4db8-bd0c-6c1e1b85d6fb",
+				"display": "MORGAN FREEMAN"
+			}],
+			"referenceRange": [{
+				"low": {
+					"value": 90,
+					"units": "percent",
+					"system": "http://unitsofmeasure.org",
+					"code": "%"
+				},
+				"high": {
+					"value": 100,
+					"units": "percent",
+					"system": "http://unitsofmeasure.org",
+					"code": "%"
+				},
+				"age": {
+					"low": {
+						"value": 0,
+						"units": "year",
+						"system": "http://unitsofmeasure.org",
+						"code": "a"
+					},
+					"high": {
+						"value": 200,
+						"units": "year",
+						"system": "http://unitsofmeasure.org",
+						"code": "a"
+					}
+				}
+			}],
+			"extension": [{
+				"url": "http://infoworld.ro/nxt/Profile/extensions#observation-result-type",
+				"valueCode": "primary"
+			}, {
+				"url": "http://infoworld.ro/nxt/Profile/extensions#observation-type",
+				"valueCoding": {
+					"code": "8716-3",
+					"display": "Vital signs",
+					"system": "http://loinc.org"
+				}
+			}, {
+				"url": "http://infoworld.ro/nxt/Profile/extensions#observation-encounter",
+				"valueResource": {
+					"reference": "Encounter/ad955a7e-2ed1-4d72-bdaa-21650b08dbc3",
+					"display": "ambulatory encounter in CARDIOLOGY - ROOM 1"
+				}
+			}],
+			"text": {
+				"div": "<div><p><b>Performer</b>MORGAN FREEMAN</p><p><b>Patient</b>EMILIAN SECOND ATM</p><p><b>Issued</b>2016-07-01T09:57:57.085Z</p><p><b>Observation type</b></p><p><b>Name</b>SaO2 % BldA PulseOx</p><p style=\"color:#E02D2D;\"><b>Value quantity</b>10 percent</p><p><b>Range</b>90 - 100 percent</p><p><b>Interpretation</b>Low</p></div>",
+				"status": "generated"
+			},
+			"id": "Observation/57aecba9-1d55-49bf-89d3-62bbb44e5c0d"
+		},
+		"search": {
+			"mode": "match"
+		}
+	}, {
+		"resource": {
+			"resourceType": "Observation",
+			"name": {
+				"coding": [{
+					"code": "8867-4",
+					"system": "http://loinc.org",
+					"display": "Heart rate"
+				}],
+				"text": "Pulse rate"
+			},
+			"valueQuantity": {
+				"value": 60,
+				"units": "beats/min",
+				"system": "http://unitsofmeasure.org",
+				"code": "{H.B.}/min"
+			},
+			"interpretation": {
+				"coding": [{
+					"code": "N",
+					"system": "http://hl7.org/fhir/v3/ObservationInterpretation",
+					"display": "Normal"
+				}]
+			},
+			"appliesPeriod": {
+				"start": "2016-07-01T09:57:57.085Z"
+			},
+			"issued": "2016-07-01T09:57:57.085Z",
+			"status": "final",
+			"reliability": "ok",
+			"subject": {
+				"reference": "Patient/4ff14490-2c5d-42d4-911b-a3f4a2c26ec1",
+				"display": "EMILIAN SECOND ATM"
+			},
+			"performer": [{
+				"reference": "Practitioner/63dff52d-3ed5-4db8-bd0c-6c1e1b85d6fb",
+				"display": "MORGAN FREEMAN"
+			}],
+			"referenceRange": [{
+				"low": {
+					"value": 60,
+					"units": "beats/min",
+					"system": "http://unitsofmeasure.org",
+					"code": "{H.B.}/min"
+				},
+				"high": {
+					"value": 100,
+					"units": "beats/min",
+					"system": "http://unitsofmeasure.org",
+					"code": "{H.B.}/min"
+				},
+				"age": {
+					"low": {
+						"value": 10,
+						"units": "year",
+						"system": "http://unitsofmeasure.org",
+						"code": "a"
+					},
+					"high": {
+						"value": 200,
+						"units": "year",
+						"system": "http://unitsofmeasure.org",
+						"code": "a"
+					}
+				}
+			}],
+			"extension": [{
+				"url": "http://infoworld.ro/nxt/Profile/extensions#observation-result-type",
+				"valueCode": "primary"
+			}, {
+				"url": "http://infoworld.ro/nxt/Profile/extensions#observation-type",
+				"valueCoding": {
+					"code": "8716-3",
+					"display": "Vital signs",
+					"system": "http://loinc.org"
+				}
+			}, {
+				"url": "http://infoworld.ro/nxt/Profile/extensions#observation-encounter",
+				"valueResource": {
+					"reference": "Encounter/ad955a7e-2ed1-4d72-bdaa-21650b08dbc3",
+					"display": "ambulatory encounter in CARDIOLOGY - ROOM 1"
+				}
+			}],
+			"text": {
+				"div": "<div><p><b>Performer</b>MORGAN FREEMAN</p><p><b>Patient</b>EMILIAN SECOND ATM</p><p><b>Issued</b>2016-07-01T09:57:57.085Z</p><p><b>Observation type</b></p><p><b>Name</b>Heart rate</p><p ><b>Value quantity</b>60 beats/min</p><p><b>Range</b>60 - 100 beats/min</p><p><b>Interpretation</b>Normal</p></div>",
+				"status": "generated"
+			},
+			"id": "Observation/71441e7b-4ae5-4f57-aa5a-34dc4370e5da"
+		},
+		"search": {
+			"mode": "match"
+		}
+	}, {
+		"resource": {
+			"resourceType": "Observation",
+			"name": {
+				"coding": [{
+					"code": "39156-5",
+					"system": "http://loinc.org",
+					"display": "Body mass index (BMI)"
+				}],
+				"text": "Body mass index"
+			},
+			"valueQuantity": {
+				"value": 37.78,
+				"units": "kg/m2",
+				"system": "http://unitsofmeasure.org",
+				"code": "kg/m2"
+			},
+			"interpretation": {
+				"coding": [{
+					"code": "H",
+					"system": "http://hl7.org/fhir/v3/ObservationInterpretation",
+					"display": "High"
+				}]
+			},
+			"appliesPeriod": {
+				"start": "2016-07-01T09:57:57.085Z"
+			},
+			"issued": "2016-07-01T09:57:57.085Z",
+			"status": "final",
+			"reliability": "ok",
+			"subject": {
+				"reference": "Patient/4ff14490-2c5d-42d4-911b-a3f4a2c26ec1",
+				"display": "EMILIAN SECOND ATM"
+			},
+			"performer": [{
+				"reference": "Practitioner/63dff52d-3ed5-4db8-bd0c-6c1e1b85d6fb",
+				"display": "MORGAN FREEMAN"
+			}],
+			"referenceRange": [{
+				"low": {
+					"value": 18.5
+				},
+				"high": {
+					"value": 25
+				},
+				"age": {
+					"low": {
+						"value": 0,
+						"units": "year",
+						"system": "http://unitsofmeasure.org",
+						"code": "a"
+					},
+					"high": {
+						"value": 200,
+						"units": "year",
+						"system": "http://unitsofmeasure.org",
+						"code": "a"
+					}
+				}
+			}],
+			"extension": [{
+				"url": "http://infoworld.ro/nxt/Profile/extensions#observation-result-type",
+				"valueCode": "primary"
+			}, {
+				"url": "http://infoworld.ro/nxt/Profile/extensions#observation-type",
+				"valueCoding": {
+					"code": "8716-3",
+					"display": "Vital signs",
+					"system": "http://loinc.org"
+				}
+			}, {
+				"url": "http://infoworld.ro/nxt/Profile/extensions#observation-encounter",
+				"valueResource": {
+					"reference": "Encounter/ad955a7e-2ed1-4d72-bdaa-21650b08dbc3",
+					"display": "ambulatory encounter in CARDIOLOGY - ROOM 1"
+				}
+			}],
+			"text": {
+				"div": "<div><p><b>Performer</b>MORGAN FREEMAN</p><p><b>Patient</b>EMILIAN SECOND ATM</p><p><b>Issued</b>2016-07-01T09:57:57.085Z</p><p><b>Observation type</b></p><p><b>Name</b>Body mass index (BMI)</p><p style=\"color:#E02D2D;\"><b>Value quantity</b>37.78 kg/m2</p><p><b>Range</b>18.5 - 25 </p><p><b>Interpretation</b>High</p></div>",
+				"status": "generated"
+			},
+			"id": "Observation/7b89f249-a83d-45ab-b597-138413feaf3b"
+		},
+		"search": {
+			"mode": "match"
+		}
+	}, {
+		"resource": {
+			"resourceType": "Observation",
+			"name": {
+				"coding": [{
+					"code": "8310-5",
+					"system": "http://loinc.org",
+					"display": "Body temperature"
+				}],
+				"text": "Body temperature"
+			},
+			"valueQuantity": {
+				"value": 34,
+				"units": "°C",
+				"system": "http://unitsofmeasure.org",
+				"code": "Cel"
+			},
+			"appliesPeriod": {
+				"start": "2016-07-01T09:57:57.085Z"
+			},
+			"issued": "2016-07-01T09:57:57.085Z",
+			"status": "final",
+			"reliability": "ok",
+			"subject": {
+				"reference": "Patient/4ff14490-2c5d-42d4-911b-a3f4a2c26ec1",
+				"display": "EMILIAN SECOND ATM"
+			},
+			"performer": [{
+				"reference": "Practitioner/63dff52d-3ed5-4db8-bd0c-6c1e1b85d6fb",
+				"display": "MORGAN FREEMAN"
+			}],
+			"extension": [{
+				"url": "http://infoworld.ro/nxt/Profile/extensions#observation-result-type",
+				"valueCode": "primary"
+			}, {
+				"url": "http://infoworld.ro/nxt/Profile/extensions#observation-type",
+				"valueCoding": {
+					"code": "8716-3",
+					"display": "Vital signs",
+					"system": "http://loinc.org"
+				}
+			}, {
+				"url": "http://infoworld.ro/nxt/Profile/extensions#observation-encounter",
+				"valueResource": {
+					"reference": "Encounter/ad955a7e-2ed1-4d72-bdaa-21650b08dbc3",
+					"display": "ambulatory encounter in CARDIOLOGY - ROOM 1"
+				}
+			}],
+			"text": {
+				"div": "<div><p><b>Performer</b>MORGAN FREEMAN</p><p><b>Patient</b>EMILIAN SECOND ATM</p><p><b>Issued</b>2016-07-01T09:57:57.085Z</p><p><b>Observation type</b></p><p><b>Name</b>Body temperature</p><p ><b>Value quantity</b>34 °C</p></div>",
+				"status": "generated"
+			},
+			"id": "Observation/85466d97-7a9d-48bb-8627-a1124bba695b"
+		},
+		"search": {
+			"mode": "match"
+		}
+	}, {
+		"resource": {
+			"resourceType": "Observation",
+			"name": {
+				"coding": [{
+					"code": "8462-4",
+					"system": "http://loinc.org",
+					"display": "Diastolic blood pressure"
+				}],
+				"text": "Diastolic blood pressure"
+			},
+			"valueQuantity": {
+				"value": 50,
+				"units": "mmHg",
+				"system": "http://unitsofmeasure.org",
+				"code": "mm[Hg]"
+			},
+			"interpretation": {
+				"coding": [{
+					"code": "L",
+					"system": "http://hl7.org/fhir/v3/ObservationInterpretation",
+					"display": "Low"
+				}]
+			},
+			"appliesPeriod": {
+				"start": "2016-07-01T09:57:57.085Z"
+			},
+			"issued": "2016-07-01T09:57:57.085Z",
+			"status": "final",
+			"reliability": "ok",
+			"subject": {
+				"reference": "Patient/4ff14490-2c5d-42d4-911b-a3f4a2c26ec1",
+				"display": "EMILIAN SECOND ATM"
+			},
+			"performer": [{
+				"reference": "Practitioner/63dff52d-3ed5-4db8-bd0c-6c1e1b85d6fb",
+				"display": "MORGAN FREEMAN"
+			}],
+			"referenceRange": [{
+				"low": {
+					"value": 65,
+					"units": "mmHg",
+					"system": "http://unitsofmeasure.org",
+					"code": "mm[Hg]"
+				},
+				"high": {
+					"value": 85,
+					"units": "mmHg",
+					"system": "http://unitsofmeasure.org",
+					"code": "mm[Hg]"
+				},
+				"age": {
+					"low": {
+						"value": 0,
+						"units": "year",
+						"system": "http://unitsofmeasure.org",
+						"code": "a"
+					},
+					"high": {
+						"value": 200,
+						"units": "year",
+						"system": "http://unitsofmeasure.org",
+						"code": "a"
+					}
+				}
+			}],
+			"extension": [{
+				"url": "http://infoworld.ro/nxt/Profile/extensions#observation-result-type",
+				"valueCode": "primary"
+			}, {
+				"url": "http://infoworld.ro/nxt/Profile/extensions#observation-type",
+				"valueCoding": {
+					"code": "8716-3",
+					"display": "Vital signs",
+					"system": "http://loinc.org"
+				}
+			}, {
+				"url": "http://infoworld.ro/nxt/Profile/extensions#observation-encounter",
+				"valueResource": {
+					"reference": "Encounter/ad955a7e-2ed1-4d72-bdaa-21650b08dbc3",
+					"display": "ambulatory encounter in CARDIOLOGY - ROOM 1"
+				}
+			}],
+			"text": {
+				"div": "<div><p><b>Performer</b>MORGAN FREEMAN</p><p><b>Patient</b>EMILIAN SECOND ATM</p><p><b>Issued</b>2016-07-01T09:57:57.085Z</p><p><b>Observation type</b></p><p><b>Name</b>Diastolic blood pressure</p><p style=\"color:#E02D2D;\"><b>Value quantity</b>50 mmHg</p><p><b>Range</b>65 - 85 mmHg</p><p><b>Interpretation</b>Low</p></div>",
+				"status": "generated"
+			},
+			"id": "Observation/f423de79-35ba-451e-b98c-bfe785e00dff"
+		},
+		"search": {
+			"mode": "match"
+		}
+	}, {
+		"resource": {
+			"resourceType": "Observation",
+			"name": {
+				"coding": [{
+					"code": "9279-1",
+					"system": "http://loinc.org",
+					"display": "Respiratory rate"
+				}],
+				"text": "Respiratory rate"
+			},
+			"valueQuantity": {
+				"value": 40,
+				"units": "breaths/min",
+				"system": "http://unitsofmeasure.org",
+				"code": "breaths/min"
+			},
+			"interpretation": {
+				"coding": [{
+					"code": "H",
+					"system": "http://hl7.org/fhir/v3/ObservationInterpretation",
+					"display": "High"
+				}]
+			},
+			"appliesPeriod": {
+				"start": "2016-07-01T09:57:57.085Z"
+			},
+			"issued": "2016-07-01T09:57:57.085Z",
+			"status": "final",
+			"reliability": "ok",
+			"subject": {
+				"reference": "Patient/4ff14490-2c5d-42d4-911b-a3f4a2c26ec1",
+				"display": "EMILIAN SECOND ATM"
+			},
+			"performer": [{
+				"reference": "Practitioner/63dff52d-3ed5-4db8-bd0c-6c1e1b85d6fb",
+				"display": "MORGAN FREEMAN"
+			}],
+			"referenceRange": [{
+				"low": {
+					"value": 12,
+					"units": "breaths/min",
+					"system": "http://unitsofmeasure.org",
+					"code": "breaths/min"
+				},
+				"high": {
+					"value": 20,
+					"units": "beats/min",
+					"system": "http://unitsofmeasure.org",
+					"code": "breaths/min"
+				},
+				"age": {
+					"low": {
+						"value": 6,
+						"units": "year",
+						"system": "http://unitsofmeasure.org",
+						"code": "a"
+					},
+					"high": {
+						"value": 200,
+						"units": "year",
+						"system": "http://unitsofmeasure.org",
+						"code": "a"
+					}
+				}
+			}],
+			"extension": [{
+				"url": "http://infoworld.ro/nxt/Profile/extensions#observation-result-type",
+				"valueCode": "primary"
+			}, {
+				"url": "http://infoworld.ro/nxt/Profile/extensions#observation-type",
+				"valueCoding": {
+					"code": "8716-3",
+					"display": "Vital signs",
+					"system": "http://loinc.org"
+				}
+			}, {
+				"url": "http://infoworld.ro/nxt/Profile/extensions#observation-encounter",
+				"valueResource": {
+					"reference": "Encounter/ad955a7e-2ed1-4d72-bdaa-21650b08dbc3",
+					"display": "ambulatory encounter in CARDIOLOGY - ROOM 1"
+				}
+			}],
+			"text": {
+				"div": "<div><p><b>Performer</b>MORGAN FREEMAN</p><p><b>Patient</b>EMILIAN SECOND ATM</p><p><b>Issued</b>2016-07-01T09:57:57.085Z</p><p><b>Observation type</b></p><p><b>Name</b>Respiratory rate</p><p style=\"color:#E02D2D;\"><b>Value quantity</b>40 breaths/min</p><p><b>Range</b>12 - 20 breaths/min</p><p><b>Interpretation</b>High</p></div>",
+				"status": "generated"
+			},
+			"id": "Observation/f9ff0cc9-6a3a-4aaf-9039-9d713845d064"
+		},
+		"search": {
+			"mode": "match"
+		}
+	}, {
+		"resource": {
+			"resourceType": "Observation",
+			"name": {
+				"coding": [{
+					"system": "http://loinc.org",
+					"code": "74728-7",
+					"display": "Vital signs, weight, height, head circumference, oximetry, BMI and BSA panel"
+				}]
+			},
+			"appliesPeriod": {
+				"start": "2016-07-01T09:57:57.085Z"
+			},
+			"issued": "2016-07-01T09:57:57.085Z",
+			"status": "final",
+			"reliability": "ok",
+			"subject": {
+				"reference": "Patient/4ff14490-2c5d-42d4-911b-a3f4a2c26ec1",
+				"display": "EMILIAN SECOND ATM"
+			},
+			"performer": [{
+				"reference": "Practitioner/63dff52d-3ed5-4db8-bd0c-6c1e1b85d6fb",
+				"display": "MORGAN FREEMAN"
+			}],
+			"extension": [{
+				"url": "http://infoworld.ro/nxt/Profile/extensions#observation-result-type",
+				"valueCode": "secondary"
+			}, {
+				"url": "http://infoworld.ro/nxt/Profile/extensions#observation-type",
+				"valueCoding": {
+					"code": "8716-3",
+					"display": "Vital signs",
+					"system": "http://loinc.org"
+				}
+			}, {
+				"url": "http://infoworld.ro/nxt/Profile/extensions#observation-encounter",
+				"valueResource": {
+					"reference": "Encounter/ad955a7e-2ed1-4d72-bdaa-21650b08dbc3",
+					"display": "ambulatory encounter in CARDIOLOGY - ROOM 1"
+				}
+			}],
+			"related": [{
+				"type": "has-component",
+				"target": {
+					"reference": "Observation/0f010fa0-1c89-46e3-8905-95394988971c"
+				}
+			}, {
+				"type": "has-component",
+				"target": {
+					"reference": "Observation/061d0f6d-71f8-4d5b-92ea-bc3c47fc6af9"
+				}
+			}, {
+				"type": "has-component",
+				"target": {
+					"reference": "Observation/7b89f249-a83d-45ab-b597-138413feaf3b"
+				}
+			}, {
+				"type": "has-component",
+				"target": {
+					"reference": "Observation/85466d97-7a9d-48bb-8627-a1124bba695b"
+				}
+			}, {
+				"type": "has-component",
+				"target": {
+					"reference": "Observation/fb36adaa-d55d-498d-bb0f-f524479ac8e5"
+				}
+			}, {
+				"type": "has-component",
+				"target": {
+					"reference": "Observation/f423de79-35ba-451e-b98c-bfe785e00dff"
+				}
+			}, {
+				"type": "has-component",
+				"target": {
+					"reference": "Observation/f9ff0cc9-6a3a-4aaf-9039-9d713845d064"
+				}
+			}, {
+				"type": "has-component",
+				"target": {
+					"reference": "Observation/71441e7b-4ae5-4f57-aa5a-34dc4370e5da"
+				}
+			}, {
+				"type": "has-component",
+				"target": {
+					"reference": "Observation/57aecba9-1d55-49bf-89d3-62bbb44e5c0d"
+				}
+			}],
+			"text": {
+				"div": "<div><p><b>Performer</b>MORGAN FREEMAN</p><p><b>Patient</b>EMILIAN SECOND ATM</p><p><b>Issued</b>2016-07-01T09:57:57.085Z</p><p><b>Observation type</b></p><p><b>Name</b>Vital signs, weight, height, head circumference, oximetry, BMI and BSA panel</p></div>",
+				"status": "generated"
+			},
+			"id": "Observation/fa0dd107-11b4-46fd-907b-138fef16f147"
+		},
+		"search": {
+			"mode": "match"
+		}
+	}, {
+		"resource": {
+			"resourceType": "Observation",
+			"name": {
+				"coding": [{
+					"code": "8480-6",
+					"system": "http://loinc.org",
+					"display": "Systolic blood pressure"
+				}],
+				"text": "Systolic blood pressure"
+			},
+			"valueQuantity": {
+				"value": 40,
+				"units": "mmHg",
+				"system": "http://unitsofmeasure.org",
+				"code": "mm[Hg]"
+			},
+			"interpretation": {
+				"coding": [{
+					"code": "L",
+					"system": "http://hl7.org/fhir/v3/ObservationInterpretation",
+					"display": "Low"
+				}]
+			},
+			"appliesPeriod": {
+				"start": "2016-07-01T09:57:57.085Z"
+			},
+			"issued": "2016-07-01T09:57:57.085Z",
+			"status": "final",
+			"reliability": "ok",
+			"subject": {
+				"reference": "Patient/4ff14490-2c5d-42d4-911b-a3f4a2c26ec1",
+				"display": "EMILIAN SECOND ATM"
+			},
+			"performer": [{
+				"reference": "Practitioner/63dff52d-3ed5-4db8-bd0c-6c1e1b85d6fb",
+				"display": "MORGAN FREEMAN"
+			}],
+			"referenceRange": [{
+				"low": {
+					"value": 110,
+					"units": "mmHg",
+					"system": "http://unitsofmeasure.org",
+					"code": "mm[Hg]"
+				},
+				"high": {
+					"value": 135,
+					"units": "mmHg",
+					"system": "http://unitsofmeasure.org",
+					"code": "mm[Hg]"
+				},
+				"age": {
+					"low": {
+						"value": 0,
+						"units": "year",
+						"system": "http://unitsofmeasure.org",
+						"code": "a"
+					},
+					"high": {
+						"value": 200,
+						"units": "year",
+						"system": "http://unitsofmeasure.org",
+						"code": "a"
+					}
+				}
+			}],
+			"extension": [{
+				"url": "http://infoworld.ro/nxt/Profile/extensions#observation-result-type",
+				"valueCode": "primary"
+			}, {
+				"url": "http://infoworld.ro/nxt/Profile/extensions#observation-type",
+				"valueCoding": {
+					"code": "8716-3",
+					"display": "Vital signs",
+					"system": "http://loinc.org"
+				}
+			}, {
+				"url": "http://infoworld.ro/nxt/Profile/extensions#observation-encounter",
+				"valueResource": {
+					"reference": "Encounter/ad955a7e-2ed1-4d72-bdaa-21650b08dbc3",
+					"display": "ambulatory encounter in CARDIOLOGY - ROOM 1"
+				}
+			}],
+			"text": {
+				"div": "<div><p><b>Performer</b>MORGAN FREEMAN</p><p><b>Patient</b>EMILIAN SECOND ATM</p><p><b>Issued</b>2016-07-01T09:57:57.085Z</p><p><b>Observation type</b></p><p><b>Name</b>Systolic blood pressure</p><p style=\"color:#E02D2D;\"><b>Value quantity</b>40 mmHg</p><p><b>Range</b>110 - 135 mmHg</p><p><b>Interpretation</b>Low</p></div>",
+				"status": "generated"
+			},
+			"id": "Observation/fb36adaa-d55d-498d-bb0f-f524479ac8e5"
+		},
+		"search": {
+			"mode": "match"
+		}
+	}, {
+		"resource": {
+			"resourceType": "Order",
+			"date": "2016-07-01T10:18:40.468Z",
+			"subject": {
+				"reference": "Patient/4ff14490-2c5d-42d4-911b-a3f4a2c26ec1",
+				"display": "EMILIAN SECOND ATM"
+			},
+			"source": {
+				"reference": "Practitioner/63dff52d-3ed5-4db8-bd0c-6c1e1b85d6fb",
+				"display": "MORGAN FREEMAN"
+			},
+			"reasonResource": [{
+				"reference": "Condition/820e0d50-0585-4ab4-8b53-e229d876f453",
+				"display": "Abnormal vision as a late effect of cerebrovascular disease"
+			}],
+			"detail": [{
+				"reference": "MedicationPrescription/d2a1568c-0f7b-4338-8a68-59c3eb61d4cd",
+				"display": "warfarin oral 1 mg tablet Daily"
+			}],
+			"extension": [{
+				"url": "http://infoworld.ro/Profile/Order#Status",
+				"valueCode": "requested"
+			}, {
+				"url": "http://infoworld.ro/Profile/Order#Type",
+				"valueCode": "Prescription"
+			}, {
+				"url": "http://infoworld.ro/Profile/Order#Encounter",
+				"valueResource": {
+					"reference": "Encounter/ad955a7e-2ed1-4d72-bdaa-21650b08dbc3",
+					"display": "ambulatory encounter in CARDIOLOGY - ROOM 1"
+				}
+			}],
+			"text": {
+				"div": "<div><p><b>Subject</b>EMILIAN SECOND ATM</p><p><b>Source</b>MORGAN FREEMAN</p><p><b>Target</b></p><p><b>Reason</b></p><p><b>Detail</b>warfarin oral 1 mg tablet Daily</p><p><b>Start</b></p><p><b>Status</b>requested</p><p><b>Type</b>Prescription</p><p><b>Encounter</b>Encounter/ad955a7e-2ed1-4d72-bdaa-21650b08dbc3</p><p><b>Frequency</b></p><p><b>Count</b></p></div>",
+				"status": "generated"
+			},
+			"id": "Order/0155ffa9-2942-4f91-9f06-eb68af8215a1"
+		},
+		"search": {
+			"mode": "match"
+		}
+	}, {
+		"resource": {
+			"resourceType": "Order",
+			"date": "2016-07-01T10:19:10.603Z",
+			"subject": {
+				"reference": "Patient/4ff14490-2c5d-42d4-911b-a3f4a2c26ec1",
+				"display": "EMILIAN SECOND ATM"
+			},
+			"source": {
+				"reference": "Practitioner/63dff52d-3ed5-4db8-bd0c-6c1e1b85d6fb",
+				"display": "MORGAN FREEMAN"
+			},
+			"target": {
+				"reference": "Organization/e9ea5686-4c4b-4a74-af66-4cac7580de4a",
+				"display": "CARDIOLOGY"
+			},
+			"detail": [{
+				"reference": "ProcedureRequest/b11e90c3-65eb-4614-8bda-f3ec4ce3652b",
+				"display": "Percutaneous transcatheter closure of congenital interatrial communication (ie, Fontan fenestration, atrial septal defect) with implant"
+			}],
+			"when": {
+				"schedule": {
+					"event": [{
+						"start": "2016-07-01T10:19:00.562Z"
+					}]
+				}
+			},
+			"extension": [{
+				"url": "http://infoworld.ro/Profile/Order#Status",
+				"valueCode": "requested"
+			}, {
+				"url": "http://infoworld.ro/Profile/Order#Type",
+				"valueCode": "Procedure"
+			}, {
+				"url": "http://infoworld.ro/Profile/Order#Encounter",
+				"valueResource": {
+					"reference": "Encounter/ad955a7e-2ed1-4d72-bdaa-21650b08dbc3",
+					"display": "ambulatory encounter in CARDIOLOGY - ROOM 1"
+				}
+			}],
+			"text": {
+				"div": "<div><p><b>Subject</b>EMILIAN SECOND ATM</p><p><b>Source</b>MORGAN FREEMAN</p><p><b>Target</b>CARDIOLOGY</p><p><b>Reason</b></p><p><b>Detail</b>Percutaneous transcatheter closure of congenital interatrial communication (ie, Fontan fenestration, atrial septal defect) with implant</p><p><b>Start</b>2016-07-01T10:19:00.562Z</p><p><b>Status</b>requested</p><p><b>Type</b>Procedure</p><p><b>Encounter</b>Encounter/ad955a7e-2ed1-4d72-bdaa-21650b08dbc3</p><p><b>Frequency</b></p><p><b>Count</b></p></div>",
+				"status": "generated"
+			},
+			"id": "Order/84cd924c-e83b-474d-96c6-6f46206dc8d1"
+		},
+		"search": {
+			"mode": "match"
+		}
+	}, {
+		"resource": {
+			"resourceType": "ProcedureRequest",
+			"identifier": [{
+				"label": "InfoWorld",
+				"system": "http://infoworld.ro/nxt/counter/ProcedureOrder",
+				"value": "PROCORDER000184"
+			}],
+			"subject": {
+				"reference": "Patient/4ff14490-2c5d-42d4-911b-a3f4a2c26ec1",
+				"display": "EMILIAN SECOND ATM"
+			},
+			"type": {
+				"coding": [{
+					"code": "93580",
+					"system": "urn:oid:2.16.840.1.113883.6.12",
+					"display": "Percutaneous transcatheter closure of congenital interatrial communication (ie, Fontan fenestration, atrial septal defect) with implant"
+				}],
+				"text": "Percutaneous transcatheter closure of congenital interatrial communication (ie, Fontan fenestration, atrial septal defect) with implant"
+			},
+			"timingPeriod": {
+				"start": "2016-07-01T10:19:00.562Z"
+			},
+			"encounter": {
+				"reference": "Encounter/ad955a7e-2ed1-4d72-bdaa-21650b08dbc3",
+				"display": "ambulatory encounter in CARDIOLOGY - ROOM 1"
+			},
+			"performer": {
+				"reference": "Organization/e9ea5686-4c4b-4a74-af66-4cac7580de4a",
+				"display": "CARDIOLOGY"
+			},
+			"status": "requested",
+			"orderedOn": "2016-07-01T10:19:06.661Z",
+			"orderer": {
+				"reference": "Practitioner/63dff52d-3ed5-4db8-bd0c-6c1e1b85d6fb",
+				"display": "MORGAN FREEMAN"
+			},
+			"priority": "routine",
+			"text": {
+				"div": "<div><p><b>Subject</b>EMILIAN SECOND ATM</p><p><b>Type</b>Percutaneous transcatheter closure of congenital interatrial communication (ie, Fontan fenestration, atrial septal defect) with implant</p><p><b>Body Site</b></p><p><b>Indication</b></p><p><b>Timing</b><p>Start: 07/01/2016</p><p>End: </p></p><p><b>Encounter</b>ambulatory encounter in CARDIOLOGY - ROOM 1</p><p><b>Performer</b>CARDIOLOGY</p><p><b>Status</b>requested</p><p><b>Notes</b></p><p><b>As Needed</b></p><p><b>Ordered On</b>07/01/2016</p><p><b>Orderer</b>MORGAN FREEMAN</p><p><b>Priority</b>routine</p></div>",
+				"status": "generated"
+			},
+			"id": "ProcedureRequest/b11e90c3-65eb-4614-8bda-f3ec4ce3652b"
+		},
+		"search": {
+			"mode": "match"
+		}
+	}, {
+		"resource": {
+			"resourceType": "Role",
+			"rolename": "doctor",
+			"display": "Doctor",
+			"meta": {
+				"lastUpdated": "2016-02-12T10:55:30.298Z"
+			},
+			"id": "Role/doctor"
+		},
+		"search": {
+			"mode": "include"
+		}
+	}, {
+		"resource": {
+			"resourceType": "Role",
+			"rolename": "nurse",
+			"display": "Nurse",
+			"meta": {
+				"lastUpdated": "2015-05-11T16:29:41.753Z"
+			},
+			"id": "Role/nurse"
+		},
+		"search": {
+			"mode": "include"
+		}
+	}, {
+		"resource": {
+			"resourceType": "CDSRule",
+			"name": "OVERWEIGHT",
+			"status": "active",
+			"criteria": [{
+				"type": {
+					"coding": [{
+						"code": "vital-sign",
+						"display": "Vital sign"
+					}],
+					"text": "Vital sign"
+				},
+				"valueCodeableConcept": {
+					"coding": [{
+						"code": "39156-5",
+						"system": "http://loinc.org",
+						"display": "Body mass index (BMI)"
+					}],
+					"text": "Body mass index (BMI)"
+				},
+				"valueRange": {
+					"low": {
+						"value": 20
+					}
+				}
+			}],
+			"role": [{
+				"reference": "Role/doctor",
+				"display": "Doctor"
+			}, {
+				"reference": "Role/nurse",
+				"display": "Nurse"
+			}],
+			"referenceRole": [{
+				"reference": "Role/doctor",
+				"display": "Doctor"
+			}],
+			"informationLink": "dfsfs",
+			"bibliography": "Bibliografy test",
+			"text": {
+				"div": "<div><p><b>Name: </b>OVERWEIGHT</p> <p><b>Status: </b>active</p> <p><b>Roles: </b>Doctor Nurse </p> <p><b>Bibliography: </b>Bibliografy test</p> <p><b>Information link: </b>dfsfs</p> <p><b>Criteria Type: </b> Vital sign</p><p><b>Criteria Value: </b> Body mass index (BMI)</p><p><b>Criteria Range: </b> 20 ... </p></div>",
+				"status": "generated"
+			},
+			"meta": {
+				"lastUpdated": "2016-02-19T08:37:30.002Z"
+			},
+			"id": "CDSRule/1825ef1d-4d1a-4731-909a-446c753a2b7a"
+		},
+		"search": {
+			"mode": "include"
+		}
+	}, {
+		"resource": {
+			"resourceType": "Practitioner",
+			"identifier": [{
+				"system": "http://us.gov/NPI",
+				"value": "1871598417"
+			}, {
+				"system": "http://us.gov/DEA",
+				"value": "MF1513543"
+			}],
+			"name": {
+				"family": ["MORGAN"],
+				"given": ["FREEMAN", "C"],
+				"prefix": ["DR."],
+				"text": "MORGAN FREEMAN,C"
+			},
+			"telecom": [{
+				"system": "email",
+				"value": "morgan@freeman.net",
+				"use": "work"
+			}, {
+				"system": "fax",
+				"value": "(345)679-8016",
+				"use": "work"
+			}, {
+				"system": "phone",
+				"value": "(355)567-8901",
+				"use": "work"
+			}],
+			"address": [{
+				"use": "work",
+				"city": "New Jersey",
+				"state": "NJ",
+				"country": "United States",
+				"zip": "77777",
+				"line": ["working streeeet 123"],
+				"extension": [{
+					"url": "http://hl7.org/fhir/ExtensionDefinition/us-core-county",
+					"valueCodeableConcept": {
+						"coding": [{
+							"code": "36001",
+							"system": "urn:std:fips:6-4",
+							"display": "Albany, NY"
+						}],
+						"text": "Albany, NY"
+					}
+				}]
+			}],
+			"gender": {
+				"coding": [{
+					"code": "M"
+				}]
+			},
+			"birthDate": "1937-06-01",
+			"organization": {
+				"reference": "Organization/ba60cd9b-0259-4953-bd3c-920b602d01ec",
+				"display": "EMILIAN ORGANIZATION"
+			},
+			"role": [{
+				"text": "Doctor",
+				"coding": [{
+					"code": "doctor",
+					"system": "http://hl7.org/fhir/practitioner-role",
+					"display": "Doctor"
+				}]
+			}],
+			"specialty": [{
+				"text": "Cardiology",
+				"coding": [{
+					"code": "394579002",
+					"system": "http://snomed.info/sct",
+					"display": "Cardiology"
+				}]
+			}],
+			"location": [{
+				"reference": "Organization/e9ea5686-4c4b-4a74-af66-4cac7580de4a",
+				"display": "CARDIOLOGY"
+			}],
+			"communication": [{
+				"coding": [{
+					"code": "eng",
+					"system": "urn:std:iso:639-2",
+					"display": "English"
+				}],
+				"text": "English"
+			}],
+			"extension": [{
+				"url": "http://infoworld.ro/nxt/Profile/extensions#practitioner-isExternal",
+				"valueBoolean": false
+			}, {
+				"url": "http://infoworld.ro/nxt/Profile/extensions#practitioner-spi",
+				"valueString": "5922970721001"
+			}, {
+				"url": "http://infoworld.ro/nxt/Practitioner/extensions#practitioner-service-level",
+				"valueCode": "New"
+			}, {
+				"url": "http://infoworld.ro/nxt/Practitioner/extensions#practitioner-service-level",
+				"valueCode": "Refill"
+			}, {
+				"url": "http://infoworld.ro/nxt/Practitioner/extensions#practitioner-activity-end-date",
+				"valueDate": "2099-12-31"
+			}],
+			"text": {
+				"div": "<div><p><b>Name:</b>MORGAN FREEMAN,C</p><p><b>Date of birth:</b>1937-06-01</p><p><b>Gender:</b>M</p><p><b>Language:</b>English</p><p><b>NPI:</b>1871598417</p><p><b>Organization:</b>EMILIAN ORGANIZATION</p><p><b>Role:</b>Doctor</p><p><b>Specialty:</b><ul><li>Cardiology</li></ul></p><p><b>Business Mailing Address:</b><ul></ul></p><p><b>Business Practice Location Address:</b><ul><li><b>Address:</b>working streeeet 123 , New Jersey, NJ 77777</li><li><b>Email:</b>morgan@freeman.net</li><li><b>Fax:</b>(345)679-8016</li><li><b>Phone:</b>(355)567-8901</li></ul></p><p><b>City:</b>New Jersey</p><p><b>State:</b>NJ</p><p><b>Zip:</b>77777</p><p><b>Country:</b>United States</p><p><b>Identifier:</b>1871598417</p></div>",
+				"status": "generated"
+			},
+			"meta": {
+				"lastUpdated": "2016-05-18T09:36:06.488Z"
+			},
+			"id": "Practitioner/63dff52d-3ed5-4db8-bd0c-6c1e1b85d6fb"
+		},
+		"search": {
+			"mode": "include"
+		}
+	}, {
+		"resource": {
+			"resourceType": "Location",
+			"name": "ROOM 1",
+			"physicalType": {
+				"text": "Room",
+				"coding": [{
+					"code": "ro",
+					"system": "http://hl7.org/fhir/location-physical-type",
+					"display": "Room"
+				}]
+			},
+			"status": "active",
+			"text": {
+				"div": "<div><p><b>Name:</b>ROOM 1</p><p><b>Identifier:</b></p><p><b>Description:</b></p><p><b>Managing Organization:</b></p><p><b>Type:</b></p><p><b>Physical type:</b>Room</p><p><b>Part of:</b></p><p><b>Status:</b>active</p><p><b>Phone:</b></p><p><b>Fax:</b></p><p><b>E-mail:</b></p><p><b>Work address:</b></p><p><b>GPS Longitude:</b></p><p><b>GPS Latitude:</b></p></div>",
+				"status": "generated"
+			},
+			"meta": {
+				"lastUpdated": "2016-05-18T09:34:42.967Z"
+			},
+			"id": "Location/145e9f96-7977-4753-8da9-3003601427d8"
+		},
+		"search": {
+			"mode": "include"
+		}
+	}, {
+		"resource": {
+			"resourceType": "Organization",
+			"name": "CARDIOLOGY",
+			"type": {
+				"text": "Clinic",
+				"coding": [{
+					"code": "clin",
+					"system": "http://hl7.org/fhir/organization-type",
+					"display": "Clinic"
+				}]
+			},
+			"partOf": {
+				"reference": "Organization/ba60cd9b-0259-4953-bd3c-920b602d01ec",
+				"display": "EMILIAN ORGANIZATION"
+			},
+			"location": [{
+				"reference": "Location/145e9f96-7977-4753-8da9-3003601427d8",
+				"display": "ROOM 1"
+			}, {
+				"reference": "Location/64aeda89-3c48-4536-bbc2-10bce719e264",
+				"display": "ROOM 2"
+			}],
+			"extension": [{
+				"url": "http://infoworld.ro/nxt/Organization/extensions#organization-category",
+				"valueCode": "Department"
+			}],
+			"text": {
+				"div": "<div><p><b>Name:</b>CARDIOLOGY</p><p><b>Identifier:</b><p><b>Category:</b>Department</p><p><b>Type:</b>Clinic</p><p><b>Part of:</b></p><p><b>Phone:</b></p><p><b>Fax:</b></p><p><b>E-mail:</b></p><p><b>Work address:</b></p><p><b>City:</b></p><p><b>State:</b></p><p><b>Zip:</b></p><p><b>Country:</b></p><p><b>Location Name:</b>ROOM 1<p><b>Location Name:</b>ROOM 2</div>",
+				"status": "generated"
+			},
+			"meta": {
+				"lastUpdated": "2016-05-18T09:34:47.927Z"
+			},
+			"id": "Organization/e9ea5686-4c4b-4a74-af66-4cac7580de4a"
+		},
+		"search": {
+			"mode": "include"
+		}
+	}, {
+		"resource": {
+			"resourceType": "Condition",
+			"subject": {
+				"reference": "Patient/a5dc1d84-5b50-4b26-b07d-49819e5eb825",
+				"display": "EMILIAN FIRST ATM"
+			},
+			"encounter": {
+				"reference": "Encounter/112d7e13-de79-44cc-eade-7f48d58e5b53",
+				"display": "ambulatory encounter in CARDIOLOGY - ROOM 1"
+			},
+			"asserter": {
+				"reference": "Practitioner/63dff52d-3ed5-4db8-bd0c-6c1e1b85d6fb",
+				"display": "MORGAN FREEMAN"
+			},
+			"dateAsserted": "2016-05-20",
+			"code": {
+				"coding": [{
+					"code": "441759008",
+					"system": "http://snomed.info/sct",
+					"display": "Abnormal vision as a late effect of cerebrovascular disease"
+				}],
+				"text": "Abnormal vision as a late effect of cerebrovascular disease"
+			},
+			"category": {
+				"coding": [{
+					"code": "diagnosis",
+					"system": "http://hl7.org/fhir/condition-category",
+					"display": "Diagnosis"
+				}],
+				"text": "Diagnosis"
+			},
+			"status": "working",
+			"text": {
+				"div": "<div><p><b>Subject</b>EMILIAN FIRST ATM</p><p><b>Encounter</b>Encounter/112d7e13-de79-44cc-eade-7f48d58e5b53</p><p><b>Asserter</b>MORGAN FREEMAN</p><p><b>Date resolved</b></p><p><b>Date asserted</b>05/20/2016</p><p><b>Code</b>Abnormal vision as a late effect of cerebrovascular disease</p><p><b>Severity</b></p><p><b>Certainty</b></p><p><b>Status</b>working</p></div>",
+				"status": "generated"
+			},
+			"meta": {
+				"lastUpdated": "2016-05-20T10:35:49.501Z"
+			},
+			"id": "Condition/820e0d50-0585-4ab4-8b53-e229d876f453"
+		},
+		"search": {
+			"mode": "include"
+		}
+	}, {
+		"resource": {
+			"resourceType": "Medication",
+			"name": "warfarin",
+			"code": {
+				"coding": [{
+					"system": "urn:oid:2.16.840.1.113883.3.567.12.1",
+					"code": "274752",
+					"display": "warfarin"
+				}, {
+					"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+					"code": "855288",
+					"display": "Warfarin Sodium 1 MG Oral Tablet"
+				}],
+				"text": "warfarin"
+			},
+			"isBrand": false,
+			"kind": "product",
+			"product": {
+				"form": {
+					"coding": [{
+						"system": "http://infoworld.ro/nxt/fdb_medication_forms",
+						"code": "81",
+						"display": "tab"
+					}],
+					"text": "tablet"
+				},
+				"ingredient": [{
+					"itemCodeableConcept": {
+						"coding": [{
+							"system": "urn:oid:2.16.840.1.113883.4.65",
+							"code": "2085",
+							"display": "warfarin sodium"
+						}],
+						"text": "warfarin sodium"
+					},
+					"amount": {
+						"numerator": {
+							"value": 1,
+							"units": "mg"
+						}
+					}
+				}],
+				"extension": [{
+					"url": "http://infoworld.ro/nxt/Profile/extensions#medication-product-strength-display",
+					"valueString": "1 mg"
+				}, {
+					"url": "http://infoworld.ro/nxt/Profile/extensions#medication-product-strength",
+					"valueString": "1"
+				}, {
+					"url": "http://infoworld.ro/nxt/Profile/extensions#medication-product-strength-unit",
+					"valueString": "mg"
+				}]
+			},
+			"clinicalQuantity": [{
+				"subunitQuantity": {
+					"units": "tablet",
+					"code": "tab"
+				},
+				"description": "tablet",
+				"potencyUnit": "C48542"
+			}, {
+				"subunitQuantity": {
+					"value": 100,
+					"units": "tablet",
+					"code": "tab"
+				},
+				"type": "bottle",
+				"description": "bottle (100 tablet)",
+				"potencyUnit": "C48477",
+				"ndc": "00093171201"
+			}, {
+				"subunitQuantity": {
+					"value": 1000,
+					"units": "tablet",
+					"code": "tab"
+				},
+				"type": "bottle",
+				"description": "bottle (1000 tablet)",
+				"potencyUnit": "C48477",
+				"ndc": "00093171210"
+			}, {
+				"subunitQuantity": {
+					"value": 30,
+					"units": "tablet",
+					"code": "tab"
+				},
+				"type": "bottle",
+				"description": "bottle (30 tablet)",
+				"potencyUnit": "C48477",
+				"ndc": "35356058230"
+			}, {
+				"subunitQuantity": {
+					"value": 60,
+					"units": "tablet",
+					"code": "tab"
+				},
+				"type": "bottle",
+				"description": "bottle (60 tablet)",
+				"potencyUnit": "C48477",
+				"ndc": "35356058260"
+			}, {
+				"subunitQuantity": {
+					"value": 90,
+					"units": "tablet",
+					"code": "tab"
+				},
+				"type": "bottle",
+				"description": "bottle (90 tablet)",
+				"potencyUnit": "C48477",
+				"ndc": "35356058290"
+			}, {
+				"subunitQuantity": {
+					"value": 5000,
+					"units": "tablet",
+					"code": "tab"
+				},
+				"type": "bottle",
+				"description": "bottle (5000 tablet)",
+				"potencyUnit": "C48477",
+				"ndc": "51672402707"
+			}, {
+				"subunitQuantity": {
+					"value": 45,
+					"units": "tablet",
+					"code": "tab"
+				},
+				"type": "bottle",
+				"description": "bottle (45 tablet)",
+				"potencyUnit": "C48477",
+				"ndc": "60429078445"
+			}],
+			"extension": [{
+				"url": "http://infoworld.ro/nxt/Profile/extensions#medication-medicationGroup",
+				"valueCodeableConcept": {
+					"coding": [{
+						"system": "http://infoworld.ro/nxt/fdb_medication_group",
+						"code": "3949",
+						"display": "warfarin oral"
+					}],
+					"text": "warfarin oral"
+				}
+			}, {
+				"url": "http://infoworld.ro/nxt/Profile/extensions#medication-isPrescribable",
+				"valueBoolean": true
+			}, {
+				"url": "http://infoworld.ro/nxt/Profile/extensions#medication-ingredientListId",
+				"valueCode": "2812"
+			}, {
+				"url": "http://infoworld.ro/nxt/Profile/extensions#medication-clinicalFormulationId",
+				"valueCode": "14198"
+			}, {
+				"url": "http://infoworld.ro/nxt/Profile/extensions#medication-medicationOTC",
+				"valueCode": "1"
+			}, {
+				"url": "http://infoworld.ro/nxt/Profile/extensions#medication-deaClass",
+				"valueInteger": 0
+			}, {
+				"url": "http://infoworld.ro/nxt/Profile/extensions#medication-supply",
+				"valueBoolean": false
+			}, {
+				"url": "http://hl7.org/fhir/StructureDefinition/medication-usualRoute",
+				"valueCodeableConcept": {
+					"coding": [{
+						"system": "http://infoworld.ro/nxt/fdb_medication_route",
+						"code": "24",
+						"display": "oral"
+					}],
+					"text": "oral"
+				}
+			}, {
+				"url": "http://infoworld.ro/nxt/Profile/extensions#medication-routeCodeableConcept",
+				"valueCodeableConcept": {
+					"coding": [{
+						"system": "http://infoworld.ro/nxt/fdb_medication_route",
+						"code": "168",
+						"display": "ftub"
+					}],
+					"text": "feeding tube"
+				}
+			}, {
+				"url": "http://infoworld.ro/nxt/Profile/extensions#medication-routeCodeableConcept",
+				"valueCodeableConcept": {
+					"coding": [{
+						"system": "http://infoworld.ro/nxt/fdb_medication_route",
+						"code": "24",
+						"display": "oral"
+					}],
+					"text": "oral"
+				}
+			}],
+			"meta": {
+				"lastUpdated": "2016-06-27T13:53:35.310Z"
+			},
+			"id": "Medication/274752"
+		},
+		"search": {
+			"mode": "include"
+		}
+	}, {
+		"resource": {
+			"resourceType": "Patient",
+			"active": true,
+			"identifier": [{
+				"system": "http://hl7.org/fhir/sid/us-ssn",
+				"value": "874616846"
+			}, {
+				"label": "InfoWorld",
+				"system": "http://infoworld.ro/nxt/counter/MedicalRecordNo",
+				"value": "MRN002385"
+			}],
+			"name": [{
+				"use": "official",
+				"family": ["EMILIANS"],
+				"given": ["FIRST"]
+			}],
+			"birthDate": "1990-01-01",
+			"gender": {
+				"coding": [{
+					"code": "M",
+					"system": "http://hl7.org/fhir/v3/AdministrativeGender",
+					"display": "Male"
+				}],
+				"text": "Male"
+			},
+			"communication": [{
+				"coding": [{
+					"code": "eng",
+					"system": "urn:std:iso:639-2",
+					"display": "English"
+				}]
+			}],
+			"link": [{
+				"other": {
+					"reference": "Patient/4ff14490-2c5d-42d4-911b-a3f4a2c26ec1",
+					"display": "SECOND ATM EMILIAN"
+				},
+				"type": "seealso"
+			}],
+			"text": {
+				"div": "<div><p><b>Name</b>EMILIAN FIRST ATM</p><p><b>Birth Date</b>1990-01-01</p><p><b>Gender</b>Male</p><p><b>Language</b>English</p><p><b>Phone</b></p><p><b>E-mail</b></p><p><b>Secure E-mail</b></p></div>",
+				"status": "generated"
+			},
+			"meta": {
+				"lastUpdated": "2016-05-18T10:23:39.159Z"
+			},
+			"id": "Patient/a5dc1d84-5b50-4b26-b07d-49819e5eb825"
+		},
+		"search": {
+			"mode": "include"
+		}
+	}, {
+		"resource": {
+			"resourceType": "Organization",
+			"identifier": [{
+				"system": "http://us.gov/NPI",
+				"value": "6798316488"
+			}, {
+				"system": "http://infoworld.ro/nxt/sid/TIN-EIN",
+				"value": "132132132"
+			}],
+			"name": "EMILIAN ORGANIZATION",
+			"type": {
+				"text": "Healthcare Provider",
+				"coding": [{
+					"code": "prov",
+					"system": "http://hl7.org/fhir/organization-type",
+					"display": "Healthcare Provider"
+				}]
+			},
+			"address": [{
+				"city": "warter 1",
+				"state": "NY",
+				"country": "United States",
+				"zip": "48643",
+				"line": ["medieval street"],
+				"extension": [{
+					"url": "http://hl7.org/fhir/ExtensionDefinition/us-core-county",
+					"valueCodeableConcept": {
+						"coding": [{
+							"code": "36061",
+							"system": "urn:std:fips:6-4",
+							"display": "New York, NY"
+						}],
+						"text": "New York, NY"
+					}
+				}]
+			}],
+			"telecom": [{
+				"system": "email",
+				"value": "work@emilianorg.com",
+				"use": "work"
+			}, {
+				"system": "fax",
+				"value": "(651)686-1365",
+				"use": "work"
+			}, {
+				"system": "phone",
+				"value": "(789)484-6546",
+				"use": "work"
+			}],
+			"extension": [{
+				"url": "http://infoworld.ro/nxt/Organization/extensions#organization-category",
+				"valueCode": "Root"
+			}, {
+				"url": "http://infoworld.ro/nxt/Profile/extensions#organization-practitioner",
+				"valueResource": {
+					"reference": "Practitioner/e0a35191-8511-49c3-be1b-9e7944ed8be3",
+					"display": "EMILIAN DRAGAN"
+				}
+			}],
+			"text": {
+				"div": "<div><p><b>Name:</b>EMILIAN ORGANIZATION</p><p><b>Identifier:</b>6798316488<p><b>Category:</b>Root</p><p><b>Type:</b>Healthcare Provider</p><p><b>Part of:</b></p><p><b>Phone:</b>(789)484-6546</p><p><b>Fax:</b>(651)686-1365</p><p><b>E-mail:</b>work@emilianorg.com</p><p><b>Work address:</b>medieval street </p><p><b>City:</b>warter 1</p><p><b>State:</b>NY</p><p><b>Zip:</b>48643</p><p><b>Country:</b>United States</p></div>",
+				"status": "generated"
+			},
+			"meta": {
+				"lastUpdated": "2016-05-18T09:32:09.938Z"
+			},
+			"id": "Organization/ba60cd9b-0259-4953-bd3c-920b602d01ec"
+		},
+		"search": {
+			"mode": "include"
+		}
+	}, {
+		"resource": {
+			"resourceType": "Location",
+			"name": "ROOM 2",
+			"physicalType": {
+				"text": "Room",
+				"coding": [{
+					"code": "ro",
+					"system": "http://hl7.org/fhir/location-physical-type",
+					"display": "Room"
+				}]
+			},
+			"status": "active",
+			"text": {
+				"div": "<div><p><b>Name:</b>ROOM 2</p><p><b>Identifier:</b></p><p><b>Description:</b></p><p><b>Managing Organization:</b></p><p><b>Type:</b></p><p><b>Physical type:</b>Room</p><p><b>Part of:</b></p><p><b>Status:</b>active</p><p><b>Phone:</b></p><p><b>Fax:</b></p><p><b>E-mail:</b></p><p><b>Work address:</b></p><p><b>GPS Longitude:</b></p><p><b>GPS Latitude:</b></p></div>",
+				"status": "generated"
+			},
+			"meta": {
+				"lastUpdated": "2016-05-18T09:34:47.903Z"
+			},
+			"id": "Location/64aeda89-3c48-4536-bbc2-10bce719e264"
+		},
+		"search": {
+			"mode": "include"
+		}
+	}, {
+		"resource": {
+			"resourceType": "Encounter",
+			"class": "ambulatory",
+			"status": "in progress",
+			"period": {
+				"start": "2016-05-18T10:04:24.794Z"
+			},
+			"subject": {
+				"reference": "Patient/a5dc1d84-5b50-4b26-b07d-49819e5eb825",
+				"display": "EMILIAN FIRST ATM"
+			},
+			"location": [{
+				"location": {
+					"reference": "Location/145e9f96-7977-4753-8da9-3003601427d8",
+					"display": "ROOM 1"
+				},
+				"period": {
+					"start": "2016-05-18T10:04:37.264Z"
+				},
+				"extension": [{
+					"url": "http://infoworld.ro/nxt/Profile/extensions#encounter-location-type",
+					"valueCode": "ro"
+				}]
+			}],
+			"serviceProvider": {
+				"reference": "Organization/e9ea5686-4c4b-4a74-af66-4cac7580de4a",
+				"display": "CARDIOLOGY"
+			},
+			"participant": [{
+				"individual": {
+					"reference": "Practitioner/63dff52d-3ed5-4db8-bd0c-6c1e1b85d6fb",
+					"display": "MORGAN FREEMAN"
+				},
+				"type": [{
+					"coding": [{
+						"code": "ATND",
+						"system": "http://hl7.org/fhir/v3/ParticipationType",
+						"display": "attender"
+					}],
+					"text": "Attender"
+				}]
+			}],
+			"extension": [{
+				"url": "http://infoworld.ro/nxt/Profile/extensions#encounter-confidentiality",
+				"valueCodeableConcept": {
+					"coding": [{
+						"system": "http://infoworld.ro/nxt/sid/Confidentiality",
+						"code": "N"
+					}],
+					"text": "Normal"
+				}
+			}, {
+				"url": "http://infoworld.ro/nxt/Profile/extensions#encounter-has-claim",
+				"valueBoolean": false
+			}, {
+				"url": "http://infoworld.ro/nxt/Profile/extensions#medications-reconciled",
+				"valueBoolean": true
+			}],
+			"identifier": [{
+				"label": "InfoWorld",
+				"system": "http://infoworld.ro/nxt/counter/EncounterNo",
+				"value": "EncNo006696"
+			}],
+			"text": {
+				"div": "<div><p><b>Date</b>2016-05-18T10:04:24.794Z</p><p><b>Subject</b>EMILIAN FIRST ATM</p><p><b>Location</b><ul></ul></p><p><b>Care team</b><ul><li>MORGAN FREEMAN - attender</li></ul></p><p><b>Confidentiality</b>Normal</p><p><b>Complaint</b></p><p><b>Priority</b></p><p><b>Admission Diagnosis</b></p><p><b>Admit source</b></p><p><b>Discharge Disposition</b></p><p><b>Discharge Diagnosis</b></p><p><b>Additional Diagnosis</b></p></div>",
+				"status": "generated"
+			},
+			"meta": {
+				"lastUpdated": "2016-07-01T09:40:10.324Z"
+			},
+			"id": "Encounter/112d7e13-de79-44cc-eade-7f48d58e5b53"
+		},
+		"search": {
+			"mode": "include"
+		}
+	}, {
+		"resource": {
+			"resourceType": "Practitioner",
+			"identifier": [{
+				"system": "http://us.gov/NPI",
+				"value": "1905524850"
+			}, {
+				"system": "http://us.gov/DEA",
+				"value": "AE1321561"
+			}],
+			"name": {
+				"family": ["EMILIAN"],
+				"given": ["DRAGAN"],
+				"text": "EMILIAN DRAGAN"
+			},
+			"telecom": [{
+				"system": "email",
+				"value": "emilian.dragan@infoworld.ro",
+				"use": "work"
+			}, {
+				"system": "fax",
+				"value": "(321)686-3186",
+				"use": "work"
+			}, {
+				"system": "phone",
+				"value": "(231)354-6321/12",
+				"use": "work"
+			}],
+			"address": [{
+				"use": "work",
+				"city": "new york",
+				"state": "AS",
+				"country": "United States",
+				"zip": "36513-1231",
+				"line": ["str 1 dec"],
+				"extension": [{
+					"url": "http://hl7.org/fhir/ExtensionDefinition/us-core-county",
+					"valueCodeableConcept": {
+						"coding": [{
+							"code": "10003",
+							"system": "urn:std:fips:6-4",
+							"display": "New Castle, DE"
+						}],
+						"text": "New Castle, DE"
+					}
+				}]
+			}, {
+				"use": "work",
+				"city": "new york",
+				"state": "AS",
+				"country": "United States",
+				"zip": "36513-1231",
+				"line": ["str 1 dec"],
+				"extension": [{
+					"url": "http://hl7.org/fhir/ExtensionDefinition/us-core-county",
+					"valueCodeableConcept": {
+						"coding": [{
+							"code": "10003",
+							"system": "urn:std:fips:6-4",
+							"display": "New Castle, DE"
+						}],
+						"text": "New Castle, DE"
+					}
+				}]
+			}],
+			"gender": {
+				"coding": [{
+					"code": "M"
+				}]
+			},
+			"birthDate": "1987-09-22",
+			"organization": {
+				"reference": "Organization/3f6e7ceb-19b1-4b91-8945-8378caa5ab0d",
+				"display": "NXT ORGANIZATION"
+			},
+			"role": [{
+				"text": "Doctor",
+				"coding": [{
+					"code": "doctor",
+					"system": "http://hl7.org/fhir/practitioner-role",
+					"display": "Doctor"
+				}]
+			}],
+			"specialty": [{
+				"text": "Internal medicine",
+				"coding": [{
+					"code": "419192003",
+					"system": "http://snomed.info/sct",
+					"display": "Internal medicine"
+				}]
+			}],
+			"communication": [{
+				"coding": [{
+					"code": "eng",
+					"system": "urn:std:iso:639-2",
+					"display": "English"
+				}],
+				"text": "English"
+			}],
+			"extension": [{
+				"url": "http://infoworld.ro/nxt/Profile/extensions#practitioner-isExternal",
+				"valueBoolean": false
+			}, {
+				"url": "http://infoworld.ro/nxt/Profile/extensions#practitioner-spi",
+				"valueString": "6840812625002"
+			}, {
+				"url": "http://infoworld.ro/nxt/Practitioner/extensions#practitioner-activity-end-date",
+				"valueDate": "2016-02-14"
+			}],
+			"text": {
+				"div": "<div><p><b>Name: </b>EMILIAN DRAGAN</p><p><b>BirthDate: </b>1987-09-22</p><p><b>Gender: </b>M</p><p><b>Language: </b>English</p><p><b>NPI: </b>1905524850</p><p><b>Organization: </b>NXT ORGANIZATION</p><p><b>Role: </b>Doctor</p><p><b>Specialty: </b><ul><li>Internal medicine</li></ul></p><p><b>Business Mailing Address: </b><ul></ul></p><p><b>Business Practice Location Address: </b><ul><li><b>Address: </b> str 1 dec , new york, AS 36513-1231 </li><li><b>Email: </b> emilian.dragan@infoworld.ro </li><li><b>Fax: </b> (321)686-3186 </li><li><b>Phone: </b> (231)354-6321/12 </li><li><b>Address: </b> str 1 dec , new york, AS 36513-1231 </li><li><b>Email: </b> emilian.dragan@infoworld.ro </li><li><b>Fax: </b> (321)686-3186 </li><li><b>Phone: </b> (231)354-6321/12 </li></ul></p><p><b>City: </b>new york</p><p><b>State: </b>AS</p><p><b>Zip: </b>36513-1231</p><p><b>Country: </b>United States</p><p><b>Identifier: </b>1905524850</p></div>",
+				"status": "generated"
+			},
+			"meta": {
+				"lastUpdated": "2016-05-04T13:52:10.066Z"
+			},
+			"id": "Practitioner/e0a35191-8511-49c3-be1b-9e7944ed8be3"
+		},
+		"search": {
+			"mode": "include"
+		}
+	}, {
+		"resource": {
+			"resourceType": "Organization",
+			"identifier": [{
+				"system": "http://us.gov/NPI",
+				"value": "3232432432"
+			}, {
+				"system": "http://us.gov/NCPDP",
+				"value": "6858494456001"
+			}, {
+				"system": "http://us.gov/SPI",
+				"value": "4234234324"
+			}],
+			"name": "NXT ORGANIZATION",
+			"type": {
+				"text": "Healthcare Provider",
+				"coding": [{
+					"code": "prov",
+					"system": "http://hl7.org/fhir/organization-type",
+					"display": "Healthcare Provider"
+				}]
+			},
+			"address": [{
+				"city": "New York",
+				"state": "PA",
+				"country": "United States",
+				"zip": "17043",
+				"line": ["street name 123"]
+			}],
+			"telecom": [{
+				"system": "email",
+				"value": "test@local.net",
+				"use": "work"
+			}, {
+				"system": "fax",
+				"value": "(613)165-1331",
+				"use": "work"
+			}, {
+				"system": "phone",
+				"value": "(461)364-6521",
+				"use": "work"
+			}],
+			"extension": [{
+				"url": "http://infoworld.ro/nxt/Organization/extensions#organization-category",
+				"valueCode": "Root"
+			}],
+			"text": {
+				"div": "<div> <p><b>Name: </b>NXT ORGANIZATION</p><p><b>Identifier: </b> 3232432432<p><b>Category: </b>Root</p><p><b>Type: </b>Healthcare Provider</p><p><b>Part of: </b></p><p><b>Phone: </b>(461)364-6521</p><p><b>Fax: </b>(613)165-1331</p><p><b>E-mail: </b>test@local.net</p><p><b>Work address: </b>street name 123 </p><p><b>City: </b>New York</p><p><b>State: </b>PA</p><p><b>Zip: </b>17043</p><p><b>Country: </b>United States</p> </div>",
+				"status": "generated"
+			},
+			"meta": {
+				"lastUpdated": "2016-04-06T12:57:08.999Z"
+			},
+			"id": "Organization/3f6e7ceb-19b1-4b91-8945-8378caa5ab0d"
+		},
+		"search": {
+			"mode": "include"
+		}
+	}],
+	"total": 40
+}

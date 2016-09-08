@@ -1,0 +1,17 @@
+{
+    "primary": [{
+        "path": "medication",
+        "type": "resourceReference",
+        "percent": 40
+    }],
+    "secondary": [{
+        "path": "dateWritten",
+        "type": "dateTime",
+        "percent": 55
+    }, {
+        "path": "status",
+        "type": "string",
+        "percent": 5
+    }],
+    "subArrays": []
+}

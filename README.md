@@ -1,245 +1,146 @@
-blue-button-match
-=================
 
-Automatic matching of Blue Button JSON data (detection of new, duplicate and partial match entries)
-
-[![NPM](https://nodei.co/npm/blue-button-match.png)](https://nodei.co/npm/blue-button-match/)
-
-[![Build Status](https://travis-ci.org/amida-tech/blue-button-match.svg)](https://travis-ci.org/amida-tech/blue-button-match)
-[![Coverage Status](https://coveralls.io/repos/amida-tech/blue-button-match/badge.png)](https://coveralls.io/r/amida-tech/blue-button-match)
-[![Dependency Status](https://david-dm.org/amida-tech/blue-button-match.svg)](https://david-dm.org/amida-tech/blue-button-match)
+Automatic compare of fhir JSON data (detection of new, duplicate and partial match entries)
 
 ## Library interfaces/APIs
 
-This library exposes methods for matching entire health records as well as lower level methods for matching sections of health records.
+This library exposes methods for comparing entire health records as well as lower level methods for compareing sections of health records.
 
 This library provides the following functionality
 
-- Match two health records in blue-button JSON format
+- Match two health records in JSON format
 - Match individual sections of above
 
 ### Usage example
 
-Require blue-button-match module
-
 ```
-var match = require("./index.js") 
-var bb = require("blue-button");
+var match = require("./index.js");
 
-var recordA = bb.parseString("record A");
-var recordB = bb.parseString("record B");
+var newResources = require("./newResources.json"); // new documents
+var oldResources = require("./oldResources.json"); // to compare with
 
-var result = match.match(recordA.data, recordB.data);
+var result = match.match(newResources, oldResources);
 
-console.log(result);
+console.log(JSON.stringify(result, null, 4));
 
 ````
 
-This will produce a match object looking like this:
+This will produce a match object looking like this: (or see compare-result.json for full example)
 
 ```
 {
-    "match":
-    {
-        "allergies" : [
-          {
-                    "match": "new",
-                    "percent": 0,
-                    "src_id": "0",
-                    "dest_id": "0",
-                    "dest": "dest"
-          },
-          {
-                    "match": "new",
-                    "percent": 0,
-                    "src_id": "1",
-                    "dest_id": "0",
-                    "dest": "dest"
-          },
-          {
-                    "match": "new",
-                    "percent": 0,
-                    "src_id": "2",
-                    "dest_id": "0",
-                    "dest": "dest"
-          },
-          {
-                    "match": "new",
-                    "percent": 0,
-                    "src_id": "0",
-                    "dest_id": "1",
-                    "dest": "src"
-          },
-            ...
-          }
-        ],
-        "medications" : [...],
-        "demographics" : [...]
-        ...
-    },
-    "meta":
-    {
-    	"version" : "0.0.1"
-	},
-	"errors": []
+	"errors" : [],
+	"match" : {
+		"documentreference" : [{
+				"match" : "partial",
+				"percent" : 90,
+				"subject_id" : "DocumentReference/bf040600-40ef-4a39-a075-4ae17fb2e15f",
+				"master_id" : "DocumentReference/5d93f304-6554-4867-b81c-b5b0e69acdef",
+				"diff" : {
+					"resourceType" : "duplicate",
+					"masterIdentifier" : "new",
+					"subject" : "duplicate",
+					"type" : "duplicate",
+					"author" : "duplicate",
+					"custodian" : "duplicate",
+					"authenticator" : "duplicate",
+					"created" : "partial",
+					"indexed" : "new",
+					"status" : "duplicate",
+					"docStatus" : "duplicate",
+					"description" : "duplicate",
+					"mimeType" : "duplicate",
+					"location" : "new",
+					"id" : "new"
+				},
+				"src_id" : "0",
+				"dest_id" : "0"
+			}, {
+				"match" : "partial",
+				"percent" : 70,
+				"subject_id" : "DocumentReference/bf040600-40ef-4a39-a075-4ae17fb2e15f",
+				"master_id" : "DocumentReference/d0cca24e-7226-4566-a588-2872660d1a44",
+				"diff" : {
+					"resourceType" : "duplicate",
+					"masterIdentifier" : "new",
+					"subject" : "duplicate",
+					"type" : "duplicate",
+					"author" : "duplicate",
+					"custodian" : "new",
+					"authenticator" : "duplicate",
+					"created" : "new",
+					"indexed" : "new",
+					"status" : "duplicate",
+					"docStatus" : "duplicate",
+					"description" : "new",
+					"mimeType" : "duplicate",
+					"location" : "new",
+					"id" : "new"
+				},
+				"src_id" : "0",
+				"dest_id" : "1"
+			},...
+		]
+	}
 }
 ```
 
 #### Matching record explanation
 
-Match element can be `{"match" : "duplicate", "percent": 100}`, `{"match" : "new", "percent: 0"}` or `{"match" : "partial", "percent": 50}`.
+Match element can be `{"match" : "duplicate", "percent": 100}`, `{"match" : "new", "percent: 0"}` or `{"match" : "partial", "percent": 75}`.
 
 Partial match is expressed in percent and can range from `1` to `99`.  Percent is included in the duplicate and new objects as well for range based calculations, but will always equal `100` or `0` respectively.
 
-
-Element attribute `dest_id` refers to the element position (index) in the related section's array of the Master Health Record. Element attribute `src_id` refers to the element position (index) in the related array of the new document being merged (new record).  This is modulated by the 'dest' field. When `{dest:'dest'}` is present the `dest_id` references the index of the record matched against a new entry.  When `{dest: 'src'}` is present, the `dest_id` references the index of the record contained within the same record as the `src_id`.
+Element attribute `src_id` refers to the element position (index) in the related array of the new document being merged (new record). Element attribute `dest_id` refers to the element position (index) in the related section's array of the Master Health Record.
 
 ```
 {
-    "match":
-    {
-        "allergies" : [
-            { "match" : "duplicate", "src_id" : 0, "dest_id": 2 },
-            { "match" : "new", "src_id" :1 },
-            { "match" : "partial", "percent" : 50, "src_id" : 2, "dest_id" : 5},
-            ...
+    "match": {
+        "allergyintolerance": [
+            {
+                "match": "new",
+                "percent": 0,
+                "src_id": "0",
+                "dest_id": "0"
+            },
+            {
+                "match": "partial",
+                "percent": 65,
+                "diff": {
+                    "resourceType": "duplicate",
+                    "type": "duplicate",
+                    "recordedDate": "partial",
+                    "status": "new",
+                    "patient": "duplicate",
+                    "substance": "duplicate",
+                    "reaction": "new"
+                },
+                "src_id": "1",
+                "dest_id": "0"
             }
-        ],
-        "medications" : [...],
-        "demographics" : [...]
-        ...
+        ]
     }
 }
-```
-
-### Matching results JSON structures (by record type)
-
-
-
-#### Multiple facts
-
-_Applied to: All sections excluding Demographics_
-
-
-New match entry (dest):
-
-```
-{
-   "match": "new",
-   "percent": 0,
-   "src_id": "1",
-   "dest_id": "2",
-   "dest": "dest"
-}
-
-
-````
-Duplicate match entry (dest):
-
-```
- {
-     "match": "duplicate",
-     "percent": "100",
-     "src_id": "1",
-     "dest_id": "1",
-     "dest": "dest"
- }
-````
-
-Partial match entry (dest):
-
-```
-{
-    "match": "partial",
-    "percent": 50,
-    "subelements": {
-        "reaction": [{
-            "match": "new",
-            "percent": 0,
-            "src_id": "0",
-            "dest_id": "0",
-            "dest": "dest"
-        }]
-    },
-    "diff": {
-        "date_time": "duplicate",
-        "identifiers": "duplicate",
-        "allergen": "duplicate",
-        "severity": "duplicate",
-        "status": "duplicate",
-        "reaction": "new"
-    },
-    "src_id": "2",
-    "dest_id": "2",
-    "dest": "dest"
-}
-````
-
-
-#### Single facts
-
-_Applied to: Demographics_
-
-
-Record is a duplicate:
-
-```
-[ { match: 'duplicate', src_id: 0, dest_id: 0 } ]
-````
-
-Record is a partial match:
-
-```
-[ { match: 'diff',
-    diff: 
-     { name: 'duplicate',
-       dob: 'new',
-       gender: 'duplicate',
-       identifiers: 'duplicate',
-       marital_status: 'duplicate',
-       addresses: 'new',
-       phone: 'duplicate',
-       race_ethnicity: 'duplicate',
-       languages: 'duplicate',
-       religion: 'duplicate',
-       birthplace: 'duplicate',
-       guardians: 'new' },
-    src_id: 0,
-    dest_id: 0 } ]
-````
-
-Edge cases for single facts:
-
-Both objects are empty e.g. comparePartial({}, {})
-
-```
-[ { match: 'duplicate' } ]
-```
-
-Comparing empty object e.g. {} with non-empty (master record)
-
-```
-[ { match: 'diff', diff: {} } ]
-```
-
-Comparing non empty object with empty master record {}
-```
-[ { match: 'new' } ]
 ```
 
 ## Matching Rules
 
 #### Common matching rules
 
-_Date/time match_ - Hard match on dates, After initial date mismatch, fuzzy date match performed.  Will check for overlap of dates if they don't hard match.
+_dateTime match_ - Hard match on dates, After initial date mismatch, fuzzy date match performed.  Will check for overlap of dates if they don't hard match and will result half the percentage.
 
-_Code match (Code System match)_ - Either names must match, or code/code system must match.  Translations are supported:  Translated objects may be matched against an object and follow the same rules.
+_codeEntry match (Code System match)_ - Either code and system must match or names.
 
-_String match_ - Case insensitive/trimmed match of string values.
+_string match_ - Case insensitive/trimmed match of string values.
 
-_String array match_ - Case insensitive/trimmed match of arrays for equality.
+_stringArray match_ - Case insensitive/trimmed match of arrays for equality.
 
-_Boolean match_ - Simple true/false equality comparison.
+_boolean match_ - Simple true/false equality comparison.
+
+_object match_ - Deep equal match of objects performed.
+
+_objectArray match_ - Deep equal match of objects performed in arrays.
+
+_resourceReference match_ - Case insensitive/trimmed match of reference and display values.
 
 Each sections logic is contained in a .json file corresponding to the section name.  It is divided into primary and secondary logic.  Secondary logic only executes only if primary logic resulted in a successful match, and can bolster match percentages.   Each section contains an array of match data.
 
@@ -249,88 +150,45 @@ Additionally, elements may have 'subarrays', which is used to populate sub-array
 
 Note:  Currently, the logic is designed so a match over 50% is considered actionable.
 
-###Allergies
+###AllergyIntolerance
 
-Primary:  Allergen Coded Match.
+Primary: Substance - codedEntry match.
 
-Secondary:  Date/time.
+Secondary: RecordedDate - dateTime match.
 
-###Claims
+###Condition
 
-Primary:  Payer String Match, Number String Match, and type String Array match.
+Primary: Code - codedEntry match.
 
-###Demographics
+Secondary: DateAsserted - dateTime match.
 
-All subelements are compared.
+###Medication
 
-###Encounters
+Primary: Code - codedEntry match and Name - string match.
 
-Primary:  Encounter Coded Match, Date/time.
+SubArrays: ClinicalQuantity.subunitQuantity - object match.
 
-###Immunizations
+###MedicationAdministration
 
-Primary:  Product Coded Match, Date/time.
+Primary: Medication - resourceReference match.
 
-###Insurance
+Secondary: WhenGiven - object match.
 
-Primary:  Plan Identifier String Match, Policy Number String Match, and Payer Name String match.
+SubArrays: Dosage.quantity - onject match.
 
-Note:  Any combination of two matches will be over 50%.
+###MedicationPrescription
 
-###Medications
+Primary: Medication - resourceReference match.
 
-Primary:  Product Coded Entry.
+Secondary: DateWritten - dateTime match and Status - string match.
 
-Secondary:  Date/time.
+###Observation
 
-###Payers
+Primary: Name - codedEntry match.
 
-Primary:  Policy Insurance Object.
+Secondary: Issued - dateTime match and valueQuantity - object match.
 
-###Plan of Care
-
-Primary:  Plan Coded Entry, Date/time.
-
-###Problems
-
-Primary:  Problem Coded Entry.
-
-Secondary:  Date/time, Status string match, Negation Indicator boolean match.
-
-###Procedures
-
-Primary:  Procedure Coded Entry Match.
-
-Secondary:  Date/time.
-
-###Providers
-
-Primary:  Provider Type String Match.
-
-Secondary:  Person Object, and Name String.
-
-###Results
-
-Primary:  Result set Coded Entry, and Result set Date/time.
-
-Note:  Date/time calculated as most recent value from results array.
-
-###Social History
-
-Primary:  Value String entry.
-
-Secondary:  Date/time.
-
-###Vitals model
-
-Primary:  Vital Coded entry.
-
-Secondary:  Date/time.
-
-
-## Contributing
-
-Contributors are welcome. See issues https://github.com/amida-tech/blue-button-match/issues
+SubArrays: Extension.valueCoding - codedEntry match.
 
 ## Release Notes
 

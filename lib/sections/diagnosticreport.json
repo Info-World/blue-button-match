@@ -1,0 +1,17 @@
+{
+    "primary": [{
+        "path": "name",
+        "type": "codedEntry",
+        "percent": 40
+    }],
+    "secondary": [{
+        "path": "result",
+        "type": "objectArray",
+        "percent": 30
+    }, {
+        "path": "issued",
+        "type": "dateTime",
+        "percent": 30
+    }],
+    "subArrays": []
+}

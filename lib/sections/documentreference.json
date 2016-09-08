@@ -1,0 +1,47 @@
+{
+    "primary": [
+        {
+            "path": "type",
+            "type": "codedEntry",
+            "percent": 30
+        }
+    ],
+    "secondary": [
+        {
+            "path": "created",
+            "type": "dateTime",
+            "percent": 20
+        },
+        {
+            "path": "mimeType",
+            "type": "string",
+            "percent": 10
+        },
+        {
+            "path": "custodian",
+            "type": "object",
+            "percent": 10
+        },
+        {
+            "path": "authenticator",
+            "type": "object",
+            "percent": 10
+        },
+        {
+            "path": "docStatus",
+            "type": "codedEntry",
+            "percent": 10
+        }
+    ],
+    "subArrays": [
+        {
+            "author": {
+                "primary": {
+                    "path": "reference",
+                    "type": "resourceReference",
+                    "percent": 10
+                }
+            }
+        }
+    ]
+}
