@@ -6,7 +6,7 @@
 	"totalResults": 10,
 	"entry": [{
 		"id": "http://devs:20480/fhir/AllergyIntolerance/6008daff-5a75-4d1d-a3c6-d1a3280f8b7f",
-		"content": {
+		"resource": {
 			"resourceType": "AllergyIntolerance",
 			"recordedDate": "2016-05-19",
 			"recorder": {
@@ -41,7 +41,7 @@
 		}
 	}, {
 		"id": "http://devs:20480/fhir/AllergyIntolerance/298c9752-053d-4015-a9dd-c822175b8c52",
-		"content": {
+		"resource": {
 			"resourceType": "AllergyIntolerance",
 			"type": "allergy",
 			"recordedDate": "2016-09-20",
@@ -71,7 +71,7 @@
 		}
 	}, {
 		"id": "http://devs:20480/fhir/MedicationPrescription/cbe36cf0-e487-4f27-a958-3ef6399484ca",
-		"content": {
+		"resource": {
 			"resourceType": "MedicationPrescription",
 			"identifier": [{
 				"label": "InfoWorld",
@@ -117,7 +117,7 @@
 		}
 	}, {
 		"id": "http://devs:20480/fhir/Observation/186f34d0-0901-4852-9cfb-749e6b7d18e5",
-		"content": {
+		"resource": {
 			"resourceType": "Observation",
 			"extension": [{
 				"url": "http://infoworld.ro/nxt/Profile/extensions#observation-type",
@@ -147,7 +147,7 @@
 		}
 	}, {
 		"id": "http://devs:20480/fhir/Observation/3dc40467-3840-4632-b6fd-1b2fba9de199",
-		"content": {
+		"resource": {
 			"resourceType": "Observation",
 			"name": {
 				"coding": [{
@@ -184,7 +184,7 @@
 		}
 	}, {
 		"id": "http://devs:20480/fhir/Condition/29bbc0c1-53ee-4464-9f19-5bf659ccfd50",
-		"content": {
+		"resource": {
 			"resourceType": "Condition",
 			"subject": {
 				"reference": "Patient/f06ff7c7-f3d7-4ac0-9041-2cbad28b3c8c",
@@ -215,7 +215,7 @@
 		}
 	}, {
 		"id": "http://devs:20480/fhir/Condition/0ef644a6-484e-4a03-86ba-ed3e84b4d716",
-		"content": {
+		"resource": {
 			"resourceType": "Condition",
 			"subject": {
 				"reference": "Patient/f06ff7c7-f3d7-4ac0-9041-2cbad28b3c8c",
@@ -246,7 +246,7 @@
 		}
 	}, {
 		"id": "http://devs:20480/fhir/MedicationAdministration/5ea90015-c574-443d-bdf0-263dc9f686d8",
-		"content": {
+		"resource": {
 			"resourceType": "MedicationAdministration",
 			"status": "completed",
 			"patient": {
@@ -288,7 +288,7 @@
 		}
 	}, {
 		"id": "http://devs:20480/fhir/MedicationAdministration/ba5bb705-db6e-45b0-915b-8b06015d9bf1",
-		"content": {
+		"resource": {
 			"resourceType": "MedicationAdministration",
 			"status": "completed",
 			"patient": {
@@ -330,7 +330,7 @@
 		}
 	}, {
 		"id": "http://devs:20480/fhir/Medication/ba5bb705-db6e-45b0-915b-8b06015d9bf1",
-		"content": {
+		"resource": {
 			"resourceType": "Medication",
 			"name": "Nite-Time",
 			"code": {

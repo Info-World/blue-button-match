@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Test tool",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceRoot}/example/compare.js",
+            "stopOnEntry": false,
+            "args": [],
+            "cwd": "${workspaceRoot}/example",
+            "preLaunchTask": null,
+            "runtimeExecutable": null,
+            "runtimeArgs": [],
+            "env": {},
+            "console": "internalConsole",
+            "sourceMaps": false,
+            "outDir": null
+        }
+    ]
+}

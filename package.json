@@ -31,13 +31,14 @@
     "node": ">= 0.10.0"
   },
   "dependencies": {
-    "libxmljs": "0.14.x",
+    "blue-button-meta": "~1.5.0",
+    "bunyan": "^1.8.1",
     "deep-equal": "1.0.x",
-    "underscore": "1.8.x",
-    "node-uuid": "1.4.x",
-    "winston": "1.0.x",
+    "libxmljs": "0.14.x",
     "moment": "2.10.x",
-    "blue-button-meta": "~1.5.0"
+    "node-uuid": "1.4.x",
+    "underscore": "1.8.x",
+    "winston": "1.0.x"
   },
   "devDependencies": {
     "blue-button": "~1.5.0",
