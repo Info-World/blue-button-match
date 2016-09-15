@@ -2,16 +2,20 @@
     "primary": [{
         "path": "name",
         "type": "codedEntry",
-        "percent": 30
+        "percent": 40
     }],
     "secondary": [{
         "path": "issued",
         "type": "dateTime",
-        "percent": 40
+        "percent": 30
     }, {
         "path": "valueQuantity",
         "type": "object",
-        "percent": 10
+        "percent": 20
+    }, {
+        "path": "valueString",
+        "type": "string",
+        "percent": 20
     }],
     "subArrays": [{
         "extension": {

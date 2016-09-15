@@ -2,12 +2,24 @@
     "primary": [{
         "path": "substance",
         "type": "codedEntry",
-        "percent": 50
+        "percent": 40
     }],
     "secondary": [{
+        "path": "criticality",
+        "type": "string",
+        "percent": 10
+    }, {
         "path": "recordedDate",
         "type": "dateTime",
-        "percent": 50
+        "percent": 20
+    }, {
+        "path": "status",
+        "type": "string",
+        "percent": 10
+    }, {
+        "path": "reaction",
+        "type": "object",
+        "percent": 20
     }],
     "subArrays": []
 }

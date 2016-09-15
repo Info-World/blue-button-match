@@ -7,11 +7,19 @@
     "secondary": [{
         "path": "dateWritten",
         "type": "dateTime",
-        "percent": 55
+        "percent": 20
     }, {
-        "path": "status",
-        "type": "string",
-        "percent": 5
+        "path": "dispense",
+        "type": "object",
+        "percent": 20
     }],
-    "subArrays": []
+    "subArrays": [{
+        "dosageInstruction": {
+            "primary": [{
+                "path": "doseQuantity",
+                "type": "object",
+                "percent": 20
+            }]
+        }
+    }]
 }

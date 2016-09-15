@@ -2,11 +2,11 @@
     "primary": [{
         "path": "vital",
         "type": "codedEntry",
-        "percent": 25
+        "percent": 50
     }, {
         "path": "date_time",
         "type": "dateTime",
-        "percent": 25
+        "percent": 50
     }],
     "secondary": []
 }
