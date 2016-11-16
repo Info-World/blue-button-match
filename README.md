@@ -18,7 +18,7 @@ var match = require("./index.js");
 var newResources = require("./newResources.json"); // new documents
 var oldResources = require("./oldResources.json"); // to compare with
 
-var result = match.match(newResources, oldResources);
+var result = match.match(newResources, oldResources, log);
 
 console.log(JSON.stringify(result, null, 4));
 
