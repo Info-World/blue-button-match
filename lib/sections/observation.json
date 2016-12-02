@@ -2,7 +2,7 @@
     "primary": [{
         "path": "name",
         "type": "codedEntry",
-        "percent": 40
+        "percent": 10
     }],
     "secondary": [{
         "path": "issued",
@@ -11,19 +11,10 @@
     }, {
         "path": "valueQuantity",
         "type": "object",
-        "percent": 20
+        "percent": 60
     }, {
         "path": "valueString",
         "type": "string",
-        "percent": 20
-    }],
-    "subArrays": [{
-        "extension": {
-            "primary": [{
-                "path": "valueCoding",
-                "type": "codedEntry",
-                "percent": 10
-            }]
-        }
+        "percent": 60
     }]
 }
