@@ -4,385 +4,599 @@
 	"updated": "2016-07-01T09:54:03.174Z",
 	"id": "urn:uuid:6d0f7fb0-5857-4fc8-8b1b-d284bc8f0697",
 	"totalResults": 10,
-	"entry": [{
-		"id": "http://devs:20480/fhir/AllergyIntolerance/6008daff-5a75-4d1d-a3c6-d1a3280f8b7f",
-		"resource": {
-			"resourceType": "AllergyIntolerance",
-			"recordedDate": "2016-05-19",
-			"recorder": {
-				"reference": "Practitioner/63dff52d-3ed5-4db8-bd0c-6c1e1b85d6fb",
-				"display": "MORGAN FREEMAN"
-			},
-			"patient": {
-				"reference": "Patient/49859a98-1495-4352-89cc-577c23926374",
-				"display": "EMILIAN TEST SECOND PATIENT"
-			},
-			"substance": {
-				"coding": [{
-					"code": "658",
-					"system": "urn:oid:2.16.840.1.113883.4.65",
-					"display": "lisinopril"
-				}],
-				"text": "lisinopril"
-			},
-			"status": "confirmed",
-			"criticality": "moderate",
-			"type": "allergy",
-			"reaction": [{
-				"manifestation": [{
-					"coding": [{
-						"code": "232234000",
-						"system": "http://snomed.info/sct",
-						"display": "Acute allergic otitis externa"
-					}],
-					"text": "Acute allergic otitis externa"
-				}]
-			}]
-		}
-	}, {
-		"id": "http://devs:20480/fhir/AllergyIntolerance/298c9752-053d-4015-a9dd-c822175b8c52",
-		"resource": {
-			"resourceType": "AllergyIntolerance",
-			"type": "allergy",
-			"recordedDate": "2016-09-20",
-			"status": "pending",
-			"patient": {
-				"reference": "Patient/49859a98-1495-4352-89cc-577c23926374",
-				"display": "EMILIAN TEST SECOND PATIENT"
-			},
-			"substance": {
-				"coding": [{
-					"code": "2084",
-					"system": "urn:oid:2.16.840.1.113883.4.65",
-					"display": "warfarin"
-				}],
-				"text": "warfarin"
-			},
-			"reaction": [{
-				"manifestation": [{
-					"coding": [{
-						"system": "http://snomed.info/sct",
-						"code": "247472004",
-						"display": "Nausea"
-					}],
-					"text": "Nausea"
-				}]
-			}]
-		}
-	}, {
-		"id": "http://devs:20480/fhir/MedicationPrescription/cbe36cf0-e487-4f27-a958-3ef6399484ca",
-		"resource": {
-			"resourceType": "MedicationPrescription",
-			"identifier": [{
-				"label": "InfoWorld",
-				"system": "http://infoworld.ro/nxt/counter/MedicationOrder",
-				"value": "MEDORDER001106"
-			}],
-			"dateWritten": "2016-01-19T07:17:38.502Z",
-			"status": "active",
-			"patient": {
-				"reference": "Patient/f06ff7c7-f3d7-4ac0-9041-2cbad28b3c8c",
-				"display": "EMILIAN PACIENT DRAGAN"
-			},
-			"prescriber": {
-				"reference": "Practitioner/e0a35191-8511-49c3-be1b-9e7944ed8be3",
-				"display": "EMILIAN DRAGAN"
-			},
-			"medication": {
-				"reference": "Medication/178751",
-				"display": "warfarin (Oral) 10 mg tablet"
-			},
-			"dosageInstruction": [{
-				"timingSchedule": {
-					"event": [{
-						"start": "2016-01-19T07:17:38.502Z"
-					}]
+	"entry": [
+		{
+			"id": "http://devs:20480/fhir/AllergyIntolerance/6008daff-5a75-4d1d-a3c6-d1a3280f8b7f",
+			"resource": {
+				"resourceType": "AllergyIntolerance",
+				"recordedDate": "2016-05-19",
+				"recorder": {
+					"reference": "Practitioner/63dff52d-3ed5-4db8-bd0c-6c1e1b85d6fb",
+					"display": "MORGAN FREEMAN"
 				},
-				"asNeededBoolean": false,
-				"route": {
-					"coding": [{
-						"code": "212",
-						"system": "http://infoworld.ro/nxt/fdb_medication_route",
-						"display": "Oral"
-					}]
-				}
-			}],
-			"extension": [{
-				"url": "http://infoworld.ro/nxt/Profile/extensions#medicationSig",
-				"valueString": "Take oral once"
-			}, {
-				"url": "http://infoworld.ro/nxt/Profile/extensions#medicationPrescription-source",
-				"valueString": "order"
-			}]
-		}
-	}, {
-		"id": "http://devs:20480/fhir/Observation/186f34d0-0901-4852-9cfb-749e6b7d18e5",
-		"resource": {
-			"resourceType": "Observation",
-			"extension": [{
-				"url": "http://infoworld.ro/nxt/Profile/extensions#observation-type",
-				"valueCoding": {
-					"system": "http://loinc.org",
-					"code": "11502-2",
-					"display": "Laboratory results"
-				}
-			}, {
-				"url": "http://infoworld.ro/nxt/Profile/extensions#observation-result-type",
-				"valueCode": "primary"
-			}],
-			"name": {
-				"coding": [{
-					"system": "http://loinc.org",
-					"code": "33720-4",
-					"display": "Blood bank consult"
-				}],
-				"text": "Blood bank consult"
-			},
-			"issued": "2015-08-17T06:47:45.503Z",
-			"status": "registered",
-			"subject": {
-				"reference": "Patient/f06ff7c7-f3d7-4ac0-9041-2cbad28b3c8c",
-				"display": "EMILIAN PACIENT DRAGAN"
-			}
-		}
-	}, {
-		"id": "http://devs:20480/fhir/Observation/3dc40467-3840-4632-b6fd-1b2fba9de199",
-		"resource": {
-			"resourceType": "Observation",
-			"name": {
-				"coding": [{
-					"code": "3141-9",
-					"system": "http://loinc.org",
-					"display": "Weight"
-				}],
-				"text": "Weight"
-			},
-			"valueQuantity": {
-				"value": 86,
-				"units": "kg",
-				"system": "http://unitsofmeasure.org",
-				"code": "kg"
-			},
-			"issued": "2016-01-13",
-			"status": "final",
-			"subject": {
-				"reference": "Patient/f06ff7c7-f3d7-4ac0-9041-2cbad28b3c8c",
-				"display": "EMILIAN PACIENT DRAGAN"
-			},
-			"performer": [{
-				"reference": "Practitioner/5cb4e189-3058-4542-93ad-7c40e45c664c",
-				"display": "EMERGENCY DOCTOR"
-			}],
-			"extension": [{
-				"url": "http://infoworld.ro/nxt/Profile/extensions#observation-type",
-				"valueCoding": {
-					"code": "8716-3",
-					"display": "Vital signs",
-					"system": "http://loinc.org"
-				}
-			}]
-		}
-	}, {
-		"id": "http://devs:20480/fhir/Condition/29bbc0c1-53ee-4464-9f19-5bf659ccfd50",
-		"resource": {
-			"resourceType": "Condition",
-			"subject": {
-				"reference": "Patient/f06ff7c7-f3d7-4ac0-9041-2cbad28b3c8c",
-				"display": "EMILIAN PACIENT DRAGAN"
-			},
-			"asserter": {
-				"reference": "Practitioner/984faq89-3058-4542-93ad-7c40e45c664c",
-				"display": "EMERGENCY DOCTOR ERM"
-			},
-			"dateAsserted": "2016-01-26",
-			"code": {
-				"coding": [{
-					"code": "7329003",
-					"system": "http://snomed.info/sct",
-					"display": "Abscess of head, except face (disorder)"
-				}],
-				"text": "Abscess of head, except face (disorder)"
-			},
-			"category": {
-				"coding": [{
-					"code": "diagnosis",
-					"system": "http://hl7.org/fhir/condition-category",
-					"display": "Diagnosis"
-				}],
-				"text": "Diagnosis"
-			},
-			"status": "working"
-		}
-	}, {
-		"id": "http://devs:20480/fhir/Condition/0ef644a6-484e-4a03-86ba-ed3e84b4d716",
-		"resource": {
-			"resourceType": "Condition",
-			"subject": {
-				"reference": "Patient/f06ff7c7-f3d7-4ac0-9041-2cbad28b3c8c",
-				"display": "EMILIAN PACIENT DRAGAN"
-			},
-			"asserter": {
-				"reference": "Practitioner/5cb4e189-3058-4542-93ad-7c40e45c664c",
-				"display": "EMERGENCY DOCTOR"
-			},
-			"dateAsserted": "2016-01-24",
-			"code": {
-				"coding": [{
-					"code": "7329003",
-					"system": "http://snomed.info/sct",
-					"display": "Abscess of head, except face (disorder)"
-				}],
-				"text": "Abscess of head, except face (disorder)"
-			},
-			"category": {
-				"coding": [{
-					"code": "diagnosis",
-					"system": "http://hl7.org/fhir/condition-category",
-					"display": "Diagnosis"
-				}],
-				"text": "Diagnosis"
-			},
-			"status": "pending"
-		}
-	}, {
-		"id": "http://devs:20480/fhir/MedicationAdministration/5ea90015-c574-443d-bdf0-263dc9f686d8",
-		"resource": {
-			"resourceType": "MedicationAdministration",
-			"status": "completed",
-			"patient": {
-				"reference": "Patient/f06ff7c7-f3d7-4ac0-9041-2cbad28b3c8c",
-				"display": "EMILIAN PACIENT DRAGAN"
-			},
-			"practitioner": {
-				"reference": "Practitioner/00265750-774a-44a6-80e8-dec9bb70892a",
-				"display": "FERCHE OANA"
-			},
-			"prescription": {
-				"reference": "MedicationPrescription/b9a7890e-f0bd-4eeb-8848-5bb84ada2340",
-				"display": "Prescription for LUPESCU MAGDA (2016-01-27T15:19:26.784Z)"
-			},
-			"wasNotGiven": false,
-			"whenGiven": {
-				"start": "2016-01-27T15:20:19.164Z",
-				"end": "2016-01-27T15:30:19.207Z"
-			},
-			"medication": {
-				"reference": "Medication/216092",
-				"display": "aspirin (Oral) 500 mg tablet"
-			},
-			"dosage": [{
-				"route": {
-					"coding": [{
-						"code": "212",
-						"system": "http://infoworld.ro/nxt/fdb_medication_route",
-						"display": "Oral"
-					}]
+				"patient": {
+					"reference": "Patient/49859a98-1495-4352-89cc-577c23926374",
+					"display": "EMILIAN TEST SECOND PATIENT"
 				},
-				"quantity": {
-					"value": 2,
-					"units": "cap",
-					"system": "http://infoworld.ro/nxt/fdb_medication_dose_units",
-					"code": "132"
-				}
-			}]
-		}
-	}, {
-		"id": "http://devs:20480/fhir/MedicationAdministration/ba5bb705-db6e-45b0-915b-8b06015d9bf1",
-		"resource": {
-			"resourceType": "MedicationAdministration",
-			"status": "completed",
-			"patient": {
-				"reference": "Patient/f06ff7c7-f3d7-4ac0-9041-2cbad28b3c8c",
-				"display": "EMILIAN PACIENT DRAGAN"
-			},
-			"practitioner": {
-				"reference": "Practitioner/0113ab41-ad06-4216-bd72-21fcfdc32b57",
-				"display": "SILVIA PLETEA"
-			},
-			"prescription": {
-				"reference": "MedicationPrescription/beb5f08f-e448-4d71-bc46-c2fbb8f0e4cd",
-				"display": "Prescription for CPOE PATIENT 2 (2015-08-05T13:51:56.249Z)"
-			},
-			"wasNotGiven": false,
-			"whenGiven": {
-				"start": "2015-09-30T10:59:10.947Z",
-				"end": "2015-09-30T10:59:10.947Z"
-			},
-			"medication": {
-				"reference": "Medication/445973",
-				"display": "escitalopram (Oral) 20 mg tablet"
-			},
-			"dosage": [{
-				"route": {
-					"coding": [{
-						"code": "212",
-						"system": "http://infoworld.ro/nxt/fdb_medication_route",
-						"display": "Oral"
-					}]
-				},
-				"quantity": {
-					"value": 10,
-					"units": "mg",
-					"system": "http://infoworld.ro/nxt/fdb_medication_dose_units",
-					"code": "367"
-				}
-			}]
-		}
-	}, {
-		"id": "http://devs:20480/fhir/Medication/ba5bb705-db6e-45b0-915b-8b06015d9bf1",
-		"resource": {
-			"resourceType": "Medication",
-			"name": "Nite-Time",
-			"code": {
-				"coding": [{
-					"system": "urn:oid:2.16.840.1.113883.3.567.12.1",
-					"code": "548158",
-					"display": "Nite-Time"
-				}],
-				"text": "Nite-Time"
-			},
-			"isBrand": true,
-			"kind": "product",
-			"product": {
-				"form": {
-					"coding": [{
-						"system": "http://infoworld.ro/nxt/fdb_medication_forms",
-						"code": "45",
-						"display": "liqd"
-					}],
-					"text": "liquid"
-				},
-				"ingredient": [{
-					"itemCodeableConcept": {
-						"coding": [{
+				"substance": {
+					"coding": [
+						{
+							"code": "658",
 							"system": "urn:oid:2.16.840.1.113883.4.65",
-							"code": "1653",
-							"display": "dextromethorphan HBr"
-						}],
-						"text": "dextromethorphan HBr"
-					},
-					"amount": {
-						"numerator": {
-							"value": 1,
-							"units": "mg"
+							"display": "lisinopril"
+						}
+					],
+					"text": "lisinopril"
+				},
+				"status": "confirmed",
+				"criticality": "moderate",
+				"type": "allergy",
+				"reaction": [
+					{
+						"manifestation": [
+							{
+								"coding": [
+									{
+										"code": "232234000",
+										"system": "http://snomed.info/sct",
+										"display": "Acute allergic otitis externa"
+									}
+								],
+								"text": "Acute allergic otitis externa"
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"id": "http://devs:20480/fhir/AllergyIntolerance/298c9752-053d-4015-a9dd-c822175b8c52",
+			"resource": {
+				"resourceType": "AllergyIntolerance",
+				"type": "allergy",
+				"recordedDate": "2016-09-20",
+				"status": "pending",
+				"patient": {
+					"reference": "Patient/49859a98-1495-4352-89cc-577c23926374",
+					"display": "EMILIAN TEST SECOND PATIENT"
+				},
+				"substance": {
+					"coding": [
+						{
+							"code": "2084",
+							"system": "urn:oid:2.16.840.1.113883.4.65",
+							"display": "warfarin"
+						}
+					],
+					"text": "warfarin"
+				},
+				"reaction": [
+					{
+						"manifestation": [
+							{
+								"coding": [
+									{
+										"system": "http://snomed.info/sct",
+										"code": "247472004",
+										"display": "Nausea"
+									}
+								],
+								"text": "Nausea"
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"id": "http://devs:20480/fhir/MedicationPrescription/cbe36cf0-e487-4f27-a958-3ef6399484ca",
+			"resource": {
+				"resourceType": "MedicationPrescription",
+				"identifier": [
+					{
+						"label": "InfoWorld",
+						"system": "http://infoworld.ro/nxt/counter/MedicationOrder",
+						"value": "MEDORDER001106"
+					}
+				],
+				"dateWritten": "2016-01-19T07:17:38.502Z",
+				"status": "active",
+				"patient": {
+					"reference": "Patient/f06ff7c7-f3d7-4ac0-9041-2cbad28b3c8c",
+					"display": "EMILIAN PACIENT DRAGAN"
+				},
+				"prescriber": {
+					"reference": "Practitioner/e0a35191-8511-49c3-be1b-9e7944ed8be3",
+					"display": "EMILIAN DRAGAN"
+				},
+				"medication": {
+					"reference": "Medication/178751",
+					"display": "warfarin (Oral) 10 mg tablet"
+				},
+				"dosageInstruction": [
+					{
+						"timingSchedule": {
+							"event": [
+								{
+									"start": "2016-01-19T07:17:38.502Z"
+								}
+							]
 						},
-						"denominator": {
-							"value": 1,
-							"units": "mL"
+						"asNeededBoolean": false,
+						"route": {
+							"coding": [
+								{
+									"code": "212",
+									"system": "http://infoworld.ro/nxt/fdb_medication_route",
+									"display": "Oral"
+								}
+							]
 						}
 					}
-				}],
-				"extension": [{
-					"url": "http://infoworld.ro/nxt/Profile/extensions#medication-product-strength-display",
-					"valueString": "30 mg-1,000 mg-12.5 mg/30 mL"
-				}, {
-					"url": "http://infoworld.ro/nxt/Profile/extensions#medication-product-strength",
-					"valueString": "12.5-30-1,000"
-				}, {
-					"url": "http://infoworld.ro/nxt/Profile/extensions#medication-product-strength-unit",
-					"valueString": "mg/30 mL"
-				}]
+				],
+				"extension": [
+					{
+						"url": "http://infoworld.ro/nxt/Profile/extensions#medicationSig",
+						"valueString": "Take oral once"
+					},
+					{
+						"url": "http://infoworld.ro/nxt/Profile/extensions#medicationPrescription-source",
+						"valueString": "order"
+					}
+				]
+			}
+		},
+		{
+			"id": "http://devs:20480/fhir/Observation/186f34d0-0901-4852-9cfb-749e6b7d18e5",
+			"resource": {
+				"resourceType": "Observation",
+				"extension": [
+					{
+						"url": "http://infoworld.ro/nxt/Profile/extensions#observation-type",
+						"valueCoding": {
+							"system": "http://loinc.org",
+							"code": "11502-2",
+							"display": "Laboratory results"
+						}
+					},
+					{
+						"url": "http://infoworld.ro/nxt/Profile/extensions#observation-result-type",
+						"valueCode": "primary"
+					}
+				],
+				"name": {
+					"coding": [
+						{
+							"system": "http://loinc.org",
+							"code": "33720-4",
+							"display": "Blood bank consult"
+						}
+					],
+					"text": "Blood bank consult"
+				},
+				"issued": "2015-08-17T06:47:45.503Z",
+				"status": "registered",
+				"subject": {
+					"reference": "Patient/f06ff7c7-f3d7-4ac0-9041-2cbad28b3c8c",
+					"display": "EMILIAN PACIENT DRAGAN"
+				}
+			}
+		},
+		{
+			"id": "http://devs:20480/fhir/Observation/3dc40467-3840-4632-b6fd-1b2fba9de199",
+			"resource": {
+				"resourceType": "Observation",
+				"name": {
+					"coding": [
+						{
+							"code": "3141-9",
+							"system": "http://loinc.org",
+							"display": "Weight"
+						}
+					],
+					"text": "Weight"
+				},
+				"valueQuantity": {
+					"value": 86,
+					"units": "kg",
+					"system": "http://unitsofmeasure.org",
+					"code": "kg"
+				},
+				"issued": "2016-01-13",
+				"status": "final",
+				"subject": {
+					"reference": "Patient/f06ff7c7-f3d7-4ac0-9041-2cbad28b3c8c",
+					"display": "EMILIAN PACIENT DRAGAN"
+				},
+				"performer": [
+					{
+						"reference": "Practitioner/5cb4e189-3058-4542-93ad-7c40e45c664c",
+						"display": "EMERGENCY DOCTOR"
+					}
+				],
+				"extension": [
+					{
+						"url": "http://infoworld.ro/nxt/Profile/extensions#observation-type",
+						"valueCoding": {
+							"code": "8716-3",
+							"display": "Vital signs",
+							"system": "http://loinc.org"
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "http://devs:20480/fhir/Condition/29bbc0c1-53ee-4464-9f19-5bf659ccfd50",
+			"resource": {
+				"resourceType": "Condition",
+				"subject": {
+					"reference": "Patient/f06ff7c7-f3d7-4ac0-9041-2cbad28b3c8c",
+					"display": "EMILIAN PACIENT DRAGAN"
+				},
+				"asserter": {
+					"reference": "Practitioner/984faq89-3058-4542-93ad-7c40e45c664c",
+					"display": "EMERGENCY DOCTOR ERM"
+				},
+				"dateAsserted": "2016-01-26",
+				"code": {
+					"coding": [
+						{
+							"code": "7329003",
+							"system": "http://snomed.info/sct",
+							"display": "Abscess of head, except face (disorder)"
+						}
+					],
+					"text": "Abscess of head, except face (disorder)"
+				},
+				"category": {
+					"coding": [
+						{
+							"code": "diagnosis",
+							"system": "http://hl7.org/fhir/condition-category",
+							"display": "Diagnosis"
+						}
+					],
+					"text": "Diagnosis"
+				},
+				"status": "working"
+			}
+		},
+		{
+			"id": "http://devs:20480/fhir/Condition/0ef644a6-484e-4a03-86ba-ed3e84b4d716",
+			"resource": {
+				"resourceType": "Condition",
+				"subject": {
+					"reference": "Patient/f06ff7c7-f3d7-4ac0-9041-2cbad28b3c8c",
+					"display": "EMILIAN PACIENT DRAGAN"
+				},
+				"asserter": {
+					"reference": "Practitioner/5cb4e189-3058-4542-93ad-7c40e45c664c",
+					"display": "EMERGENCY DOCTOR"
+				},
+				"dateAsserted": "2016-01-24",
+				"code": {
+					"coding": [
+						{
+							"code": "7329003",
+							"system": "http://snomed.info/sct",
+							"display": "Abscess of head, except face (disorder)"
+						}
+					],
+					"text": "Abscess of head, except face (disorder)"
+				},
+				"category": {
+					"coding": [
+						{
+							"code": "diagnosis",
+							"system": "http://hl7.org/fhir/condition-category",
+							"display": "Diagnosis"
+						}
+					],
+					"text": "Diagnosis"
+				},
+				"status": "pending"
+			}
+		},
+		{
+			"id": "http://devs:20480/fhir/MedicationAdministration/5ea90015-c574-443d-bdf0-263dc9f686d8",
+			"resource": {
+				"resourceType": "MedicationAdministration",
+				"status": "completed",
+				"patient": {
+					"reference": "Patient/f06ff7c7-f3d7-4ac0-9041-2cbad28b3c8c",
+					"display": "EMILIAN PACIENT DRAGAN"
+				},
+				"practitioner": {
+					"reference": "Practitioner/00265750-774a-44a6-80e8-dec9bb70892a",
+					"display": "FERCHE OANA"
+				},
+				"prescription": {
+					"reference": "MedicationPrescription/b9a7890e-f0bd-4eeb-8848-5bb84ada2340",
+					"display": "Prescription for LUPESCU MAGDA (2016-01-27T15:19:26.784Z)"
+				},
+				"wasNotGiven": false,
+				"whenGiven": {
+					"start": "2016-01-27T15:20:19.164Z",
+					"end": "2016-01-27T15:30:19.207Z"
+				},
+				"medication": {
+					"reference": "Medication/216092",
+					"display": "aspirin (Oral) 500 mg tablet"
+				},
+				"dosage": [
+					{
+						"route": {
+							"coding": [
+								{
+									"code": "212",
+									"system": "http://infoworld.ro/nxt/fdb_medication_route",
+									"display": "Oral"
+								}
+							]
+						},
+						"quantity": {
+							"value": 2,
+							"units": "cap",
+							"system": "http://infoworld.ro/nxt/fdb_medication_dose_units",
+							"code": "132"
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "http://devs:20480/fhir/MedicationAdministration/ba5bb705-db6e-45b0-915b-8b06015d9bf1",
+			"resource": {
+				"resourceType": "MedicationAdministration",
+				"status": "completed",
+				"patient": {
+					"reference": "Patient/f06ff7c7-f3d7-4ac0-9041-2cbad28b3c8c",
+					"display": "EMILIAN PACIENT DRAGAN"
+				},
+				"practitioner": {
+					"reference": "Practitioner/0113ab41-ad06-4216-bd72-21fcfdc32b57",
+					"display": "SILVIA PLETEA"
+				},
+				"prescription": {
+					"reference": "MedicationPrescription/beb5f08f-e448-4d71-bc46-c2fbb8f0e4cd",
+					"display": "Prescription for CPOE PATIENT 2 (2015-08-05T13:51:56.249Z)"
+				},
+				"wasNotGiven": false,
+				"whenGiven": {
+					"start": "2015-09-30T10:59:10.947Z",
+					"end": "2015-09-30T10:59:10.947Z"
+				},
+				"medication": {
+					"reference": "Medication/445973",
+					"display": "escitalopram (Oral) 20 mg tablet"
+				},
+				"dosage": [
+					{
+						"route": {
+							"coding": [
+								{
+									"code": "212",
+									"system": "http://infoworld.ro/nxt/fdb_medication_route",
+									"display": "Oral"
+								}
+							]
+						},
+						"quantity": {
+							"value": 10,
+							"units": "mg",
+							"system": "http://infoworld.ro/nxt/fdb_medication_dose_units",
+							"code": "367"
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "http://devs:20480/fhir/Medication/ba5bb705-db6e-45b0-915b-8b06015d9bf1",
+			"resource": {
+				"resourceType": "Medication",
+				"name": "Nite-Time",
+				"code": {
+					"coding": [
+						{
+							"system": "urn:oid:2.16.840.1.113883.3.567.12.1",
+							"code": "548158",
+							"display": "Nite-Time"
+						}
+					],
+					"text": "Nite-Time"
+				},
+				"isBrand": true,
+				"kind": "product",
+				"product": {
+					"form": {
+						"coding": [
+							{
+								"system": "http://infoworld.ro/nxt/fdb_medication_forms",
+								"code": "45",
+								"display": "liqd"
+							}
+						],
+						"text": "liquid"
+					},
+					"ingredient": [
+						{
+							"itemCodeableConcept": {
+								"coding": [
+									{
+										"system": "urn:oid:2.16.840.1.113883.4.65",
+										"code": "1653",
+										"display": "dextromethorphan HBr"
+									}
+								],
+								"text": "dextromethorphan HBr"
+							},
+							"amount": {
+								"numerator": {
+									"value": 1,
+									"units": "mg"
+								},
+								"denominator": {
+									"value": 1,
+									"units": "mL"
+								}
+							}
+						}
+					],
+					"extension": [
+						{
+							"url": "http://infoworld.ro/nxt/Profile/extensions#medication-product-strength-display",
+							"valueString": "30 mg-1,000 mg-12.5 mg/30 mL"
+						},
+						{
+							"url": "http://infoworld.ro/nxt/Profile/extensions#medication-product-strength",
+							"valueString": "12.5-30-1,000"
+						},
+						{
+							"url": "http://infoworld.ro/nxt/Profile/extensions#medication-product-strength-unit",
+							"valueString": "mg/30 mL"
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "Immunization/13d59042-b86b-4808-a560-9c956c0f3b14",
+			"resource": {
+				"resourceType": "Immunization",
+				"contained": [
+					{
+						"resourceType": "Practitioner",
+						"id": "actorPerson0",
+						"name": {
+							"family": [
+								"Nurse"
+							],
+							"given": [
+								"Nancy"
+							]
+						},
+						"telecom": [
+							{
+								"system": "phone",
+								"value": "+1-(555)555-4220"
+							}
+						],
+						"extension": [
+							{
+								"url": "http://infoworld.ro/nxt/Profile/extensions#practitioner-isExternal",
+								"valueBoolean": true
+							}
+						]
+					}
+				],
+				"subject": {
+					"reference": "Patient/7a0eea37-44b4-44b4-b30b-151ace0fe66e",
+					"display": "EMILIAN DRAGAN"
+				},
+				"reported": false,
+				"performer": {
+					"reference": "#actorPerson0"
+				},
+				"date": "2011-03-12T00:00:00.000Z",
+				"vaccineType": {
+					"coding": [
+						{
+							"system": "http://hl7.org/fhir/sid/cvx ",
+							"code": "03",
+							"display": "MMR"
+						}
+					],
+					"text": "Measles, Mumps and Rubella virus vaccine"
+				},
+				"route": {
+					"coding": [
+						{
+							"system": "http://ncit.nci.nih.gov/",
+							"code": "C28161",
+							"display": "INTRAMUSCULAR"
+						}
+					],
+					"text": "INTRAMUSCULAR"
+				},
+				"site": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "368208006",
+							"display": "Left Arm"
+						}
+					],
+					"text": "Left Arm"
+				},
+				"refusedIndicator": false,
+				"identifier": [
+					{
+						"system": "urn:ietf:rfc:3986",
+						"value": "1.3.6.1.4.1.22812.3.99930.3.4.4"
+					},
+					{
+						"system": "urn:ietf:rfc:3986",
+						"value": "1.3.6.1.4.1.22812.3.99930.3.4.4"
+					}
+				],
+				"id": "Immunization/13d59042-b86b-4808-a560-9c956c0f3b14"
+			}
+		},
+		{
+			"id": "Procedure/13d59042-b86b-4808-a560-9c956c0f3b14",
+			"resource": {
+				"resourceType": "Procedure",
+				"subject": {
+					"reference": "Patient/baf7e2b7-753c-4b2f-87df-af737900df9c",
+					"display": "PACIENT DOI"
+				},
+				"type": {
+					"coding": [
+						{
+							"code": "86658",
+							"system": "urn:oid:2.16.840.1.113883.6.12",
+							"display": "Antibody; enterovirus (eg, coxsackie, echo, polio)"
+						}
+					],
+					"text": "Antibody; enterovirus (eg, coxsackie, echo, polio)"
+				},
+				"bodySite": [
+					{
+						"coding": [
+							{
+								"code": "416949008",
+								"system": "http://snomed.info/sct",
+								"display": "Abdomen and pelvis"
+							}
+						],
+						"text": "Abdomen and pelvis"
+					}
+				],
+				"indication": [
+					{
+						"text": "various reasons"
+					}
+				],
+				"performer": [
+					{
+						"person": {
+							"reference": "Practitioner/1013944115",
+							"display": "WARDWELL AMANDA"
+						}
+					}
+				],
+				"date": {
+					"start": "2016-11-23T14:04:02.670Z"
+				},
+				"followUp": "follow up",
+				"notes": "comments",
+				"text": {
+					"div": "<div><p><b>Subject:</b>PACIENT DOI</p><p><b>Performer:</b>WARDWELL AMANDA</p><p><b>Encounter:</b></p><p><b>Type:</b>Antibody; enterovirus (eg, coxsackie, echo, polio)</p><p><b>Body Site:</b>Abdomen and pelvis</p><p><b>Indication:</b>various reasons</p><p><b>Date:</b>2016-11-23T14:04:02.670Z - </p><p><b>Follow up:</b>follow up</p><p><b>Notes:</b>comments</p></div>",
+					"status": "generated"
+				}
 			}
 		}
-	}]
+	]
 }

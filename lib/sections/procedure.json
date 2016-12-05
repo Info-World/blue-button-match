@@ -1,0 +1,12 @@
+{
+    "primary": [{
+        "path": "type",
+        "type": "codedEntry",
+        "percent": 40
+    }],
+    "secondary": [{
+        "path": "issued",
+        "type": "object",
+        "percent": 60
+    }]
+}

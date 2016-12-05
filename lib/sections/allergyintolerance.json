@@ -2,7 +2,11 @@
     "primary": [{
         "path": "substance",
         "type": "codedEntry",
-        "percent": 40
+        "percent": 20
+    }, {
+        "path": "category",
+        "type": "string",
+        "percent": 20
     }],
     "secondary": [{
         "path": "criticality",
@@ -21,5 +25,13 @@
         "type": "object",
         "percent": 20
     }],
-    "subArrays": []
+    "subArrays": [{
+        "extension": {
+            "primary": [{
+                "path": "valueCodeableConcept",
+                "type": "codedEntry",
+                "percent": 10
+            }]
+        }
+    }]
 }

@@ -2,12 +2,24 @@
     "primary": [{
         "path": "code",
         "type": "codedEntry",
-        "percent": 50
+        "percent": 30
     }],
     "secondary": [{
+         "path": "status",
+        "type": "string",
+        "percent": 10
+    }, {
         "path": "dateAsserted",
         "type": "dateTime",
-        "percent": 50
+        "percent": 40
     }],
-    "subArrays": []
+    "subArrays": [{
+        "extension": {
+            "primary": [{
+                "path": "valueCodeableConcept",
+                "type": "codedEntry",
+                "percent": 20
+            }]
+        }
+    }]
 }

@@ -5,540 +5,768 @@
 	},
 	"type": "searchset",
 	"base": "http://devs:20480/fhir/",
-	"entry": [{
-		"resource": {
-			"resourceType": "AllergyIntolerance",
-			"recordedDate": "2016-09-20T12:08:53.248Z",
-			"recorder": {
-				"reference": "Practitioner/63dff52d-3ed5-4db8-bd0c-6c1e1b85d6fb",
-				"display": "MORGAN FREEMAN"
-			},
-			"patient": {
-				"reference": "Patient/49859a98-1495-4352-89cc-577c23926374",
-				"display": "EMILIAN TEST SECOND PATIENT"
-			},
-			"substance": {
-				"coding": [{
-					"code": "2084",
-					"system": "urn:oid:2.16.840.1.113883.4.65",
-					"display": "warfarin"
-				}],
-				"text": "warfarin"
-			},
-			"status": "confirmed",
-			"criticality": "moderate",
-			"type": "allergy",
-			"reaction": [{
-				"manifestation": [{
-					"coding": [{
-						"code": "111275004",
-						"system": "http://snomed.info/sct",
-						"display": "Abscess of nasal septum"
-					}],
-					"text": "Abscess of nasal septum"
-				}]
-			}],
-			"text": {
-				"div": "<div><p><b>Subject</b></p><p><b>Recorder</b>MORGAN FREEMAN</p><p><b>Recorded date</b>05/19/2016</p><p><b>Criticality</b>moderate</p><p><b>Sensitivity type</b>allergy</p><p><b>Status</b>confirmed</p></div>",
-				"status": "generated"
-			}
-		}
-	}, {
-		"resource": {
-			"resourceType": "MedicationPrescription",
-			"identifier": [{
-				"label": "InfoWorld",
-				"system": "http://infoworld.ro/nxt/counter/MedicationOrder",
-				"value": "MEDORDER003632"
-			}],
-			"dateWritten": "2016-07-01T10:18:46.872Z",
-			"status": "active",
-			"patient": {
-				"reference": "Patient/f06ff7c7-f3d7-4ac0-9041-2cbad28b3c8c",
-				"display": "EMILIAN PACIENT DRAGAN"
-			},
-			"prescriber": {
-				"reference": "Practitioner/63dff52d-3ed5-4db8-bd0c-6c1e1b85d6fb",
-				"display": "MORGAN FREEMAN"
-			},
-			"encounter": {
-				"reference": "Encounter/ad955a7e-2ed1-4d72-bdaa-21650b08dbc3",
-				"display": "ambulatory encounter in CARDIOLOGY - ROOM 1"
-			},
-			"reasonResource": [{
-				"reference": "Condition/820e0d50-0585-4ab4-8b53-e229d876f453",
-				"display": "Abnormal vision as a late effect of cerebrovascular disease"
-			}],
-			"medication": {
-				"reference": "Medication/237854",
-				"display": "Cephalexin 500 MG Oral Capsule, [RxNorm: 309114]"
-			},
-			"dosageInstruction": [{
-				"timingSchedule": {
-					"event": [{
-						"start": "2016-07-01T00:00:00.031Z"
-					}],
-					"code": {
-						"coding": [{
-							"code": "QD",
-							"system": "http://hl7.org/fhir/timing-abbreviation",
-							"display": "Daily"
-						}]
-					},
-					"repeat": {
-						"frequency": 1,
-						"duration": 1,
-						"units": "d"
+	"entry": [
+		{
+			"resource": {
+				"resourceType": "AllergyIntolerance",
+				"recordedDate": "2016-09-20T12:08:53.248Z",
+				"recorder": {
+					"reference": "Practitioner/63dff52d-3ed5-4db8-bd0c-6c1e1b85d6fb",
+					"display": "MORGAN FREEMAN"
+				},
+				"patient": {
+					"reference": "Patient/49859a98-1495-4352-89cc-577c23926374",
+					"display": "EMILIAN TEST SECOND PATIENT"
+				},
+				"substance": {
+					"coding": [
+						{
+							"code": "2084",
+							"system": "urn:oid:2.16.840.1.113883.4.65",
+							"display": "warfarin"
+						}
+					],
+					"text": "warfarin"
+				},
+				"status": "confirmed",
+				"criticality": "moderate",
+				"type": "allergy",
+				"reaction": [
+					{
+						"manifestation": [
+							{
+								"coding": [
+									{
+										"code": "111275004",
+										"system": "http://snomed.info/sct",
+										"display": "Abscess of nasal septum"
+									}
+								],
+								"text": "Abscess of nasal septum"
+							}
+						]
 					}
-				},
-				"asNeededBoolean": false,
-				"route": {
-					"coding": [{
-						"code": "24",
-						"system": "http://infoworld.ro/nxt/fdb_medication_route",
-						"display": "oral"
-					}],
-					"text": "oral"
-				},
-				"doseQuantity": {
-					"value": 1,
-					"units": "tablet",
-					"code": "tab"
+				],
+				"text": {
+					"div": "<div><p><b>Subject</b></p><p><b>Recorder</b>MORGAN FREEMAN</p><p><b>Recorded date</b>05/19/2016</p><p><b>Criticality</b>moderate</p><p><b>Sensitivity type</b>allergy</p><p><b>Status</b>confirmed</p></div>",
+					"status": "generated"
 				}
-			}],
-			"dispense": {
-				"numberOfRepeatsAllowed": 0,
-				"quantity": {
-					"value": 30,
-					"units": "tablet",
-					"code": "tablet"
-				},
-				"expectedSupplyDuration": {
-					"value": 1,
-					"units": "days",
-					"system": "http://unitsofmeasure.org",
-					"code": "d"
-				},
-				"extension": [{
-					"url": "http://infoworld.ro/Profile/extensions#medicationPrescription-dispense-package",
-					"valueQuantity": {
-						"value": 1,
-						"units": "bottle (30 tablet)",
-						"code": "bottle (30 tablet)"
-					}
-				}]
-			},
-			"extension": [{
-				"url": "http://infoworld.ro/nxt/Profile/extensions#medicationSig",
-				"valueString": "Take 1 tablet by mouth daily for Abnormal vision as a late effect of cerebrovascular disease"
-			}, {
-				"url": "http://infoworld.ro/nxt/Profile/extensions#medicationPrescription-source",
-				"valueString": "order"
-			}, {
-				"url": "http://infoworld.ro/Profile/extensions#medicationPrescription-dispenseAsWritten",
-				"valueBoolean": false
-			}],
-			"text": {
-				"div": "<div><p><b>Date</b>07/01/2016</p><p><b>Patient</b>EMILIAN SECOND ATM</p><p><b>Prescriber</b>MORGAN FREEMAN</p><p><b>Encounter</b>ambulatory encounter in CARDIOLOGY - ROOM 1</p><p><b>Reason</b></p><p><b>Medication</b>warfarin oral 1 mg tablet</p><p><b>Identifier</b>MEDORDER003632</p><p><b>Dosage</b><table border=\"1\"><tr><td>Timing schedule</td><td>Route</td><td>Dose</td><td>As needed</td><td>Sig</td></tr><tr><td><p>Start: 07/01/2016</p><p>End: </p><p>1 time(s) every 1d </p></td><td>oral</td><td>1 tablet</td><td>false</td><td>Take 1 tablet by mouth daily for Abnormal vision as a late effect of cerebrovascular disease</td></tr></table></p><p><b>Quantity per refill</b>30 tablet</p><p><b>Number of refills</b>0</p><p><b>Validity period</b></p><p><b>Substitution type</b></p><p><b>Substitution reason</b></p></div>",
-				"status": "generated"
-			},
-			"dateEnded": "2016-07-02T10:18:46.872Z",
-			"id": "MedicationPrescription/d2a1568c-0f7b-4338-8a68-59c3eb61d4cd"
+			}
 		},
-		"search": {
-			"mode": "match"
-		}
-	}, {
-		"resource": {
-			"resourceType": "MedicationPrescription",
-			"identifier": [{
-				"label": "InfoWorld",
-				"system": "http://infoworld.ro/nxt/counter/MedicationOrder",
-				"value": "MEDORDER001106"
-			}],
-			"dateWritten": "2016-01-19T07:17:38.502Z",
-			"status": "active",
-			"patient": {
-				"reference": "Patient/f06ff7c7-f3d7-4ac0-9041-2cbad28b3c8c",
-				"display": "EMILIAN PACIENT DRAGAN"
-			},
-			"prescriber": {
-				"reference": "Practitioner/e0a35191-8511-49c3-be1b-9e7944ed8be3",
-				"display": "EMILIAN DRAGAN"
-			},
-			"encounter": {
-				"reference": "Encounter/b5c51f45-0751-4343-f626-7b31282e52bd",
-				"display": "emergency encounter in EMERGENCY ONE"
-			},
-			"medication": {
-				"reference": "Medication/178751",
-				"display": "warfarin (Oral) 10 mg tablet"
-			},
-			"dosageInstruction": [{
-				"timingSchedule": {
-					"event": [{
-						"start": "2016-01-19T07:17:38.502Z"
-					}]
+		{
+			"resource": {
+				"resourceType": "MedicationPrescription",
+				"identifier": [
+					{
+						"label": "InfoWorld",
+						"system": "http://infoworld.ro/nxt/counter/MedicationOrder",
+						"value": "MEDORDER003632"
+					}
+				],
+				"dateWritten": "2016-07-01T10:18:46.872Z",
+				"status": "active",
+				"patient": {
+					"reference": "Patient/f06ff7c7-f3d7-4ac0-9041-2cbad28b3c8c",
+					"display": "EMILIAN PACIENT DRAGAN"
 				},
-				"asNeededBoolean": false,
-				"route": {
-					"coding": [{
-						"code": "212",
-						"system": "http://infoworld.ro/nxt/fdb_medication_route",
-						"display": "Oral"
-					}]
-				}
-			}],
-			"extension": [{
-				"url": "http://infoworld.ro/nxt/Profile/extensions#medicationSig",
-				"valueString": "Take oral once"
-			}, {
-				"url": "http://infoworld.ro/nxt/Profile/extensions#medicationPrescription-source",
-				"valueString": "order"
-			}],
-			"text": {
-				"div": "<div><p><b>Date</b>01/19/2016</p><p><b>Patient</b>EMILIAN PACIENT DRAGAN</p><p><b>Prescriber</b>EMILIAN DRAGAN</p><p><b>Encounter</b>emergency encounter in EMERGENCY ONE</p><p><b>Reason</b></p><p><b>Medication</b>warfarin (Oral) 10 mg tablet</p><p><b>Identifier</b>MEDORDER001106</p><p><b>Dosage</b><table border=\"1\"><tr><td>Timing schedule</td><td>Route</td><td>Dose</td><td>As needed</td><td>Sig</td></tr><tr><td><p>Start: 01/19/2016</p><p>End: </p></td><td>Oral</td><td> </td><td>false</td><td>Take oral once</td></tr></table></p><p><b>Quantity per refill</b> </p><p><b>Number of refills</b></p><p><b>Validity period</b> </p><p><b>Substitution type</b></p><p><b>Substitution reason</b></p></div>",
-				"status": "generated"
-			}
-		}
-	}, {
-		"resource": {
-			"resourceType": "Condition",
-			"subject": {
-				"reference": "Patient/f06ff7c7-f3d7-4ac0-9041-2cbad28b3c8c",
-				"display": "EMILIAN PACIENT DRAGAN"
-			},
-			"encounter": {
-				"reference": "Encounter/f0535e06-06ce-4460-f00c-ceb61bee50a4",
-				"display": "ambulatory encounter in "
-			},
-			"asserter": {
-				"reference": "Practitioner/e0a35191-8511-49c3-be1b-9e7944ed8be3",
-				"display": "EMILIAN DRAGAN"
-			},
-			"dateAsserted": "2016-01-26T07:17:38.502Z",
-			"code": {
-				"coding": [{
-					"code": "7329003",
-					"system": "http://snomed.info/sct",
-					"display": "Abscess of head, except face (disorder)"
-				}],
-				"text": "Abscess of head, except face (disorder)"
-			},
-			"category": {
-				"coding": [{
-					"code": "diagnosis",
-					"system": "http://hl7.org/fhir/condition-category",
-					"display": "Diagnosis"
-				}],
-				"text": "Diagnosis"
-			},
-			"status": "working",
-			"severity": {
-				"coding": [{
-					"code": "255604002",
-					"system": "http://snomed.info/sct",
-					"display": "Mild"
-				}],
-				"text": "Mild"
-			},
-			"text": {
-				"div": "<div><p><b>Subject</b>EMILIAN PACIENT DRAGAN</p><p><b>Encounter</b>Encounter/f0535e06-06ce-4460-f00c-ceb61bee50a4</p><p><b>Asserter</b>EMILIAN DRAGAN</p><p><b>Date resolved</b></p><p><b>Date asserted</b>07/20/2015</p><p><b>Code</b>Abrasion of dorsum of foot</p><p><b>Severity</b>Mild</p><p><b>Certainty</b></p><p><b>Status</b>working</p></div>",
-				"status": "generated"
-			}
-		}
-	}, {
-		"resource": {
-			"resourceType": "Condition",
-			"subject": {
-				"reference": "Patient/f06ff7c7-f3d7-4ac0-9041-2cbad28b3c8c",
-				"display": "EMILIAN PACIENT DRAGAN"
-			},
-			"encounter": {
-				"reference": "Encounter/b5c51f45-0751-4343-f626-7b31282e52bd",
-				"display": "emergency encounter in EMERGENCY ONE"
-			},
-			"asserter": {
-				"reference": "Practitioner/5cb4e189-3058-4542-93ad-7c40e45c664c",
-				"display": "EMERGENCY DOCTOR"
-			},
-			"dateAsserted": "2016-01-26",
-			"code": {
-				"coding": [{
-					"code": "460436001",
-					"system": "http://snomed.info/sct",
-					"display": "22q11 microdeletion with complete DiGeorge sequence (disorder)"
-				}],
-				"text": "22q11 microdeletion with complete DiGeorge sequence (disorder)"
-			},
-			"category": {
-				"coding": [{
-					"code": "diagnosis",
-					"system": "http://hl7.org/fhir/condition-category",
-					"display": "Diagnosis"
-				}],
-				"text": "Diagnosis"
-			},
-			"status": "working",
-			"text": {
-				"div": "<div><p><b>Subject</b>EMILIAN PACIENT DRAGAN</p><p><b>Encounter</b>Encounter/b5c51f45-0751-4343-f626-7b31282e52bd</p><p><b>Asserter</b>EMERGENCY DOCTOR</p><p><b>Date resolved</b></p><p><b>Date asserted</b>01/26/2016</p><p><b>Code</b>22q11 microdeletion with complete DiGeorge sequence (disorder)</p><p><b>Severity</b></p><p><b>Certainty</b></p><p><b>Status</b>working</p></div>",
-				"status": "generated"
-			}
-		}
-	}, {
-		"resource": {
-			"resourceType": "Condition",
-			"subject": {
-				"reference": "Patient/f06ff7c7-f3d7-4ac0-9041-2cbad28b3c8c",
-				"display": "EMILIAN PACIENT DRAGAN"
-			},
-			"encounter": {
-				"reference": "Encounter/b5c51f45-0751-4343-f626-7b31282e52bd",
-				"display": "emergency encounter in EMERGENCY ONE"
-			},
-			"asserter": {
-				"reference": "Practitioner/5cb4e189-3058-4542-93ad-7c40e45c664c",
-				"display": "EMERGENCY DOCTOR"
-			},
-			"dateAsserted": "2016-01-27",
-			"code": {
-				"coding": [{
-					"code": "249799005",
-					"system": "http://snomed.info/sct",
-					"display": "Angulation of bone in foot (disorder)"
-				}],
-				"text": "Angulation of bone in foot (disorder)"
-			},
-			"category": {
-				"coding": [{
-					"code": "diagnosis",
-					"system": "http://hl7.org/fhir/condition-category",
-					"display": "Diagnosis"
-				}],
-				"text": "Diagnosis"
-			},
-			"status": "working",
-			"onsetDate": "2016-01-25",
-			"text": {
-				"div": "<div><p><b>Subject</b>EMILIAN PACIENT DRAGAN</p><p><b>Encounter</b>Encounter/b5c51f45-0751-4343-f626-7b31282e52bd</p><p><b>Asserter</b>EMERGENCY DOCTOR</p><p><b>Onset Date</b>01/25/2016</p><p><b>Date resolved</b></p><p><b>Date asserted</b>01/27/2016</p><p><b>Code</b>Angulation of bone in foot (disorder)</p><p><b>Severity</b></p><p><b>Certainty</b></p><p><b>Status</b>working</p></div>",
-				"status": "generated"
-			}
-		}
-	}, {
-		"resource": {
-			"resourceType": "Observation",
-			"name": {
-				"coding": [{
-					"code": "3141-9",
-					"system": "http://loinc.org",
-					"display": "Weight Measured"
-				}],
-				"text": "Body weight"
-			},
-			"valueQuantity": {
-				"value": 85,
-				"units": "kg",
-				"system": "http://unitsofmeasure.org",
-				"code": "kg"
-			},
-			"appliesPeriod": {
-				"start": "2016-07-01T09:57:57.085Z"
-			},
-			"issued": "2016-07-01T09:57:57.085Z",
-			"status": "final",
-			"reliability": "ok",
-			"subject": {
-				"reference": "Patient/4ff14490-2c5d-42d4-911b-a3f4a2c26ec1",
-				"display": "EMILIAN SECOND ATM"
-			},
-			"performer": [{
-				"reference": "Practitioner/63dff52d-3ed5-4db8-bd0c-6c1e1b85d6fb",
-				"display": "MORGAN FREEMAN"
-			}],
-			"extension": [{
-				"url": "http://infoworld.ro/nxt/Profile/extensions#observation-result-type",
-				"valueCode": "primary"
-			}, {
-				"url": "http://infoworld.ro/nxt/Profile/extensions#observation-type",
-				"valueCoding": {
-					"code": "8716-3",
-					"display": "Vital signs",
-					"system": "http://loinc.org"
-				}
-			}, {
-				"url": "http://infoworld.ro/nxt/Profile/extensions#observation-encounter",
-				"valueResource": {
+				"prescriber": {
+					"reference": "Practitioner/63dff52d-3ed5-4db8-bd0c-6c1e1b85d6fb",
+					"display": "MORGAN FREEMAN"
+				},
+				"encounter": {
 					"reference": "Encounter/ad955a7e-2ed1-4d72-bdaa-21650b08dbc3",
 					"display": "ambulatory encounter in CARDIOLOGY - ROOM 1"
-				}
-			}],
-			"text": {
-				"div": "<div><p><b>Performer</b>MORGAN FREEMAN</p><p><b>Patient</b>EMILIAN SECOND ATM</p><p><b>Issued</b>2016-07-01T09:57:57.085Z</p><p><b>Observation type</b></p><p><b>Name</b>Weight Measured</p><p ><b>Value quantity</b>85 kg</p></div>",
-				"status": "generated"
+				},
+				"reasonResource": [
+					{
+						"reference": "Condition/820e0d50-0585-4ab4-8b53-e229d876f453",
+						"display": "Abnormal vision as a late effect of cerebrovascular disease"
+					}
+				],
+				"medication": {
+					"reference": "Medication/237854",
+					"display": "Cephalexin 500 MG Oral Capsule, [RxNorm: 309114]"
+				},
+				"dosageInstruction": [
+					{
+						"timingSchedule": {
+							"event": [
+								{
+									"start": "2016-07-01T00:00:00.031Z"
+								}
+							],
+							"code": {
+								"coding": [
+									{
+										"code": "QD",
+										"system": "http://hl7.org/fhir/timing-abbreviation",
+										"display": "Daily"
+									}
+								]
+							},
+							"repeat": {
+								"frequency": 1,
+								"duration": 1,
+								"units": "d"
+							}
+						},
+						"asNeededBoolean": false,
+						"route": {
+							"coding": [
+								{
+									"code": "24",
+									"system": "http://infoworld.ro/nxt/fdb_medication_route",
+									"display": "oral"
+								}
+							],
+							"text": "oral"
+						},
+						"doseQuantity": {
+							"value": 1,
+							"units": "tablet",
+							"code": "tab"
+						}
+					}
+				],
+				"dispense": {
+					"numberOfRepeatsAllowed": 0,
+					"quantity": {
+						"value": 30,
+						"units": "tablet",
+						"code": "tablet"
+					},
+					"expectedSupplyDuration": {
+						"value": 1,
+						"units": "days",
+						"system": "http://unitsofmeasure.org",
+						"code": "d"
+					},
+					"extension": [
+						{
+							"url": "http://infoworld.ro/Profile/extensions#medicationPrescription-dispense-package",
+							"valueQuantity": {
+								"value": 1,
+								"units": "bottle (30 tablet)",
+								"code": "bottle (30 tablet)"
+							}
+						}
+					]
+				},
+				"extension": [
+					{
+						"url": "http://infoworld.ro/nxt/Profile/extensions#medicationSig",
+						"valueString": "Take 1 tablet by mouth daily for Abnormal vision as a late effect of cerebrovascular disease"
+					},
+					{
+						"url": "http://infoworld.ro/nxt/Profile/extensions#medicationPrescription-source",
+						"valueString": "order"
+					},
+					{
+						"url": "http://infoworld.ro/Profile/extensions#medicationPrescription-dispenseAsWritten",
+						"valueBoolean": false
+					}
+				],
+				"text": {
+					"div": "<div><p><b>Date</b>07/01/2016</p><p><b>Patient</b>EMILIAN SECOND ATM</p><p><b>Prescriber</b>MORGAN FREEMAN</p><p><b>Encounter</b>ambulatory encounter in CARDIOLOGY - ROOM 1</p><p><b>Reason</b></p><p><b>Medication</b>warfarin oral 1 mg tablet</p><p><b>Identifier</b>MEDORDER003632</p><p><b>Dosage</b><table border=\"1\"><tr><td>Timing schedule</td><td>Route</td><td>Dose</td><td>As needed</td><td>Sig</td></tr><tr><td><p>Start: 07/01/2016</p><p>End: </p><p>1 time(s) every 1d </p></td><td>oral</td><td>1 tablet</td><td>false</td><td>Take 1 tablet by mouth daily for Abnormal vision as a late effect of cerebrovascular disease</td></tr></table></p><p><b>Quantity per refill</b>30 tablet</p><p><b>Number of refills</b>0</p><p><b>Validity period</b></p><p><b>Substitution type</b></p><p><b>Substitution reason</b></p></div>",
+					"status": "generated"
+				},
+				"dateEnded": "2016-07-02T10:18:46.872Z",
+				"id": "MedicationPrescription/d2a1568c-0f7b-4338-8a68-59c3eb61d4cd"
 			},
-			"id": "Observation/061d0f6d-71f8-4d5b-92ea-bc3c47fc6af9"
+			"search": {
+				"mode": "match"
+			}
 		},
-		"search": {
-			"mode": "match"
-		}
-	}, {
-		"resource": {
-			"resourceType": "Observation",
-			"name": {
-				"coding": [{
-					"code": "3141-9",
-					"system": "http://loinc.org",
-					"display": "Weight Measured"
-				}],
-				"text": "Body weight"
-			},
-			"valueQuantity": {
-				"value": 56,
-				"units": "kg",
-				"system": "http://unitsofmeasure.org",
-				"code": "kg"
-			},
-			"appliesPeriod": {
-				"start": "2016-01-13T08:06:21.051Z"
-			},
-			"issued": "2016-01-13T08:06:21.056Z",
-			"status": "final",
-			"reliability": "ok",
-			"subject": {
-				"reference": "Patient/f06ff7c7-f3d7-4ac0-9041-2cbad28b3c8c",
-				"display": "EMILIAN PACIENT DRAGAN"
-			},
-			"performer": [{
-				"reference": "Practitioner/5cb4e189-3058-4542-93ad-7c40e45c664c",
-				"display": "EMERGENCY DOCTOR"
-			}],
-			"extension": [{
-				"url": "http://infoworld.ro/nxt/Profile/extensions#observation-result-type",
-				"valueCode": "primary"
-			}, {
-				"url": "http://infoworld.ro/nxt/Profile/extensions#observation-type",
-				"valueCoding": {
-					"code": "8716-3",
-					"display": "Vital signs",
-					"system": "http://loinc.org"
-				}
-			}, {
-				"url": "http://infoworld.ro/nxt/Profile/extensions#observation-encounter",
-				"valueResource": {
+		{
+			"resource": {
+				"resourceType": "MedicationPrescription",
+				"identifier": [
+					{
+						"label": "InfoWorld",
+						"system": "http://infoworld.ro/nxt/counter/MedicationOrder",
+						"value": "MEDORDER001106"
+					}
+				],
+				"dateWritten": "2016-01-19T07:17:38.502Z",
+				"status": "active",
+				"patient": {
+					"reference": "Patient/f06ff7c7-f3d7-4ac0-9041-2cbad28b3c8c",
+					"display": "EMILIAN PACIENT DRAGAN"
+				},
+				"prescriber": {
+					"reference": "Practitioner/e0a35191-8511-49c3-be1b-9e7944ed8be3",
+					"display": "EMILIAN DRAGAN"
+				},
+				"encounter": {
 					"reference": "Encounter/b5c51f45-0751-4343-f626-7b31282e52bd",
 					"display": "emergency encounter in EMERGENCY ONE"
-				}
-			}],
-			"text": {
-				"div": "<div><p><b>Performer</b> EMERGENCY DOCTOR</p><p><b>Patient</b> EMILIAN PACIENT DRAGAN</p><p><b>Issued</b> 2016-01-13T08:06:21.056Z</p><p><b>Observation type</b> </p><p><b>Name</b> Weight Measured</p><p ><b>Value quantity</b> 56 kg</p></div>",
-				"status": "generated"
-			}
-		}
-	}, {
-		"resource": {
-			"resourceType": "MedicationAdministration",
-			"status": "completed",
-			"patient": {
-				"reference": "Patient/f06ff7c7-f3d7-4ac0-9041-2cbad28b3c8c",
-				"display": "EMILIAN PACIENT DRAGAN"			},
-			"practitioner": {
-				"reference": "Practitioner/00265750-774a-44a6-80e8-dec9bb70892a",
-				"display": "FERCHE OANA"
-			},
-			"encounter": {
-				"reference": "Encounter/4f10b54e-fc72-4697-9f1e-c416abc71fd8",
-				"display": "inpatient encounter in OANA WARD"
-			},
-			"prescription": {
-				"reference": "MedicationPrescription/b9a7890e-f0bd-4eeb-8848-5bb84ada2340",
-				"display": "Prescription for LUPESCU MAGDA (2016-01-27T15:19:26.784Z)"
-			},
-			"wasNotGiven": false,
-			"whenGiven": {
-				"start": "2016-01-27T15:38:21.294Z",
-				"end": "2016-01-27T15:38:21.294Z"
-			},
-			"medication": {
-				"reference": "Medication/216092",
-				"display": "aspirin (Oral) 500 mg tablet"
-			},
-			"dosage": [{
-				"route": {
-					"coding": [{
-						"code": "212",
-						"system": "http://infoworld.ro/nxt/fdb_medication_route",
-						"display": "Oral"
-					}]
 				},
-				"quantity": {
-					"value": 2,
-					"units": "cap",
-					"system": "http://infoworld.ro/nxt/fdb_medication_dose_units",
-					"code": "132"
-				}
-			}],
-			"extension": [{
-				"url": "http://infoworld.ro/nxt/Profile/extensions#medicationSig",
-				"valueString": "Take 2 cap oral every 8 hours"
-			}],
-			"text": {
-				"div": "<div><p><b>Status: </b> completed</p> <p><b>Patient: </b> LUPESCU MAGDA</p> <p><b>Administered by: </b> FERCHE OANA</p><p><b>Encounter: </b> inpatient encounter in OANA WARD</p><p><b>Prescription: </b> Prescription for LUPESCU MAGDA (2016-01-27T15:19:26.784Z)</p><p><b>Was Not Given: </b> false</p><p><b>Reason Not Given: </b><ul></ul></p><p><b>When given: </b> 2016-01-27T15:38:21.294Z - 2016-01-27T15:38:21.294Z</p><p><b>Medication: </b> aspirin (Oral) 500 mg tablet</p><p><b>Dosage: </b><table border=\"1\"> <tr><td>Site</td><td>Route</td><td>Dose</td></tr><tr><td></td><td>Oral</td><td>2 cap</td></tr></table></p></div>",
-				"status": "generated"
-			}
-		}
-	}, {
-		"resource": {
-			"resourceType": "MedicationAdministration",
-			"status": "completed",
-			"patient": {
-				"reference": "Patient/f06ff7c7-f3d7-4ac0-9041-2cbad28b3c8c",
-				"display": "EMILIAN PACIENT DRAGAN"
-			},
-			"practitioner": {
-				"reference": "Practitioner/0113ab41-ad06-4216-bd72-21fcfdc32b57",
-				"display": "SILVIA PLETEA"
-			},
-			"encounter": {
-				"reference": "Encounter/30f22612-50d7-479b-ba10-e6a00bf96201",
-				"display": "inpatient encounter in WARD1 - ROOM 101"
-			},
-			"prescription": {
-				"reference": "MedicationPrescription/beb5f08f-e448-4d71-bc46-c2fbb8f0e4cd",
-				"display": "Prescription for CPOE PATIENT 2 (2015-08-05T13:51:56.249Z)"
-			},
-			"wasNotGiven": false,
-			"whenGiven": {
-				"start": "2015-09-30T10:59:10.947Z",
-				"end": "2015-09-30T10:59:10.947Z"
-			},
-			"medication": {
-				"reference": "Medication/445972",
-				"display": "escitalopram (Oral) 10 mg tablet"
-			},
-			"dosage": [{
-				"route": {
-					"coding": [{
-						"code": "212",
-						"system": "http://infoworld.ro/nxt/fdb_medication_route",
-						"display": "Oral"
-					}]
+				"medication": {
+					"reference": "Medication/178751",
+					"display": "warfarin (Oral) 10 mg tablet"
 				},
-				"quantity": {
-					"value": 10,
-					"units": "mg",
-					"system": "http://infoworld.ro/nxt/fdb_medication_dose_units",
-					"code": "367"
+				"dosageInstruction": [
+					{
+						"timingSchedule": {
+							"event": [
+								{
+									"start": "2016-01-19T07:17:38.502Z"
+								}
+							]
+						},
+						"asNeededBoolean": false,
+						"route": {
+							"coding": [
+								{
+									"code": "212",
+									"system": "http://infoworld.ro/nxt/fdb_medication_route",
+									"display": "Oral"
+								}
+							]
+						}
+					}
+				],
+				"extension": [
+					{
+						"url": "http://infoworld.ro/nxt/Profile/extensions#medicationSig",
+						"valueString": "Take oral once"
+					},
+					{
+						"url": "http://infoworld.ro/nxt/Profile/extensions#medicationPrescription-source",
+						"valueString": "order"
+					}
+				],
+				"text": {
+					"div": "<div><p><b>Date</b>01/19/2016</p><p><b>Patient</b>EMILIAN PACIENT DRAGAN</p><p><b>Prescriber</b>EMILIAN DRAGAN</p><p><b>Encounter</b>emergency encounter in EMERGENCY ONE</p><p><b>Reason</b></p><p><b>Medication</b>warfarin (Oral) 10 mg tablet</p><p><b>Identifier</b>MEDORDER001106</p><p><b>Dosage</b><table border=\"1\"><tr><td>Timing schedule</td><td>Route</td><td>Dose</td><td>As needed</td><td>Sig</td></tr><tr><td><p>Start: 01/19/2016</p><p>End: </p></td><td>Oral</td><td> </td><td>false</td><td>Take oral once</td></tr></table></p><p><b>Quantity per refill</b> </p><p><b>Number of refills</b></p><p><b>Validity period</b> </p><p><b>Substitution type</b></p><p><b>Substitution reason</b></p></div>",
+					"status": "generated"
 				}
-			}],
-			"extension": [{
-				"url": "http://infoworld.ro/nxt/Profile/extensions#medicationSig",
-				"valueString": "Take 10 mg oral twice a day"
-			}],
-			"text": {
-				"div": "<div><p><b>Status: </b> completed</p> <p><b>Patient: </b> CPOE PATIENT 2</p> <p><b>Administered by: </b> SILVIA PLETEA</p><p><b>Encounter: </b> inpatient encounter in WARD1 - ROOM 101</p><p><b>Prescription: </b> Prescription for CPOE PATIENT 2 (2015-08-05T13:51:56.249Z)</p><p><b>Was Not Given: </b> false</p><p><b>Reason Not Given: </b><ul></ul></p><p><b>When given: </b> 2015-09-30T10:59:10.947Z - 2015-09-30T10:59:10.947Z</p><p><b>Medication: </b> escitalopram (Oral) 10 mg tablet</p><p><b>Dosage: </b><table border=\"1\"> <tr><td>Site</td><td>Route</td><td>Dose</td></tr><tr><td></td><td>Oral</td><td>10 mg</td></tr></table></p></div>",
-				"status": "generated"
+			}
+		},
+		{
+			"resource": {
+				"resourceType": "Condition",
+				"subject": {
+					"reference": "Patient/f06ff7c7-f3d7-4ac0-9041-2cbad28b3c8c",
+					"display": "EMILIAN PACIENT DRAGAN"
+				},
+				"encounter": {
+					"reference": "Encounter/f0535e06-06ce-4460-f00c-ceb61bee50a4",
+					"display": "ambulatory encounter in "
+				},
+				"asserter": {
+					"reference": "Practitioner/e0a35191-8511-49c3-be1b-9e7944ed8be3",
+					"display": "EMILIAN DRAGAN"
+				},
+				"dateAsserted": "2016-01-26T07:17:38.502Z",
+				"code": {
+					"coding": [
+						{
+							"code": "7329003",
+							"system": "http://snomed.info/sct",
+							"display": "Abscess of head, except face (disorder)"
+						}
+					],
+					"text": "Abscess of head, except face (disorder)"
+				},
+				"category": {
+					"coding": [
+						{
+							"code": "diagnosis",
+							"system": "http://hl7.org/fhir/condition-category",
+							"display": "Diagnosis"
+						}
+					],
+					"text": "Diagnosis"
+				},
+				"status": "working",
+				"severity": {
+					"coding": [
+						{
+							"code": "255604002",
+							"system": "http://snomed.info/sct",
+							"display": "Mild"
+						}
+					],
+					"text": "Mild"
+				},
+				"text": {
+					"div": "<div><p><b>Subject</b>EMILIAN PACIENT DRAGAN</p><p><b>Encounter</b>Encounter/f0535e06-06ce-4460-f00c-ceb61bee50a4</p><p><b>Asserter</b>EMILIAN DRAGAN</p><p><b>Date resolved</b></p><p><b>Date asserted</b>07/20/2015</p><p><b>Code</b>Abrasion of dorsum of foot</p><p><b>Severity</b>Mild</p><p><b>Certainty</b></p><p><b>Status</b>working</p></div>",
+					"status": "generated"
+				}
+			}
+		},
+		{
+			"resource": {
+				"resourceType": "Condition",
+				"subject": {
+					"reference": "Patient/f06ff7c7-f3d7-4ac0-9041-2cbad28b3c8c",
+					"display": "EMILIAN PACIENT DRAGAN"
+				},
+				"encounter": {
+					"reference": "Encounter/b5c51f45-0751-4343-f626-7b31282e52bd",
+					"display": "emergency encounter in EMERGENCY ONE"
+				},
+				"asserter": {
+					"reference": "Practitioner/5cb4e189-3058-4542-93ad-7c40e45c664c",
+					"display": "EMERGENCY DOCTOR"
+				},
+				"dateAsserted": "2016-01-26",
+				"code": {
+					"coding": [
+						{
+							"code": "460436001",
+							"system": "http://snomed.info/sct",
+							"display": "22q11 microdeletion with complete DiGeorge sequence (disorder)"
+						}
+					],
+					"text": "22q11 microdeletion with complete DiGeorge sequence (disorder)"
+				},
+				"category": {
+					"coding": [
+						{
+							"code": "diagnosis",
+							"system": "http://hl7.org/fhir/condition-category",
+							"display": "Diagnosis"
+						}
+					],
+					"text": "Diagnosis"
+				},
+				"status": "working",
+				"text": {
+					"div": "<div><p><b>Subject</b>EMILIAN PACIENT DRAGAN</p><p><b>Encounter</b>Encounter/b5c51f45-0751-4343-f626-7b31282e52bd</p><p><b>Asserter</b>EMERGENCY DOCTOR</p><p><b>Date resolved</b></p><p><b>Date asserted</b>01/26/2016</p><p><b>Code</b>22q11 microdeletion with complete DiGeorge sequence (disorder)</p><p><b>Severity</b></p><p><b>Certainty</b></p><p><b>Status</b>working</p></div>",
+					"status": "generated"
+				}
+			}
+		},
+		{
+			"resource": {
+				"resourceType": "Condition",
+				"subject": {
+					"reference": "Patient/f06ff7c7-f3d7-4ac0-9041-2cbad28b3c8c",
+					"display": "EMILIAN PACIENT DRAGAN"
+				},
+				"encounter": {
+					"reference": "Encounter/b5c51f45-0751-4343-f626-7b31282e52bd",
+					"display": "emergency encounter in EMERGENCY ONE"
+				},
+				"asserter": {
+					"reference": "Practitioner/5cb4e189-3058-4542-93ad-7c40e45c664c",
+					"display": "EMERGENCY DOCTOR"
+				},
+				"dateAsserted": "2016-01-27",
+				"code": {
+					"coding": [
+						{
+							"code": "249799005",
+							"system": "http://snomed.info/sct",
+							"display": "Angulation of bone in foot (disorder)"
+						}
+					],
+					"text": "Angulation of bone in foot (disorder)"
+				},
+				"category": {
+					"coding": [
+						{
+							"code": "diagnosis",
+							"system": "http://hl7.org/fhir/condition-category",
+							"display": "Diagnosis"
+						}
+					],
+					"text": "Diagnosis"
+				},
+				"status": "working",
+				"onsetDate": "2016-01-25",
+				"text": {
+					"div": "<div><p><b>Subject</b>EMILIAN PACIENT DRAGAN</p><p><b>Encounter</b>Encounter/b5c51f45-0751-4343-f626-7b31282e52bd</p><p><b>Asserter</b>EMERGENCY DOCTOR</p><p><b>Onset Date</b>01/25/2016</p><p><b>Date resolved</b></p><p><b>Date asserted</b>01/27/2016</p><p><b>Code</b>Angulation of bone in foot (disorder)</p><p><b>Severity</b></p><p><b>Certainty</b></p><p><b>Status</b>working</p></div>",
+					"status": "generated"
+				}
+			}
+		},
+		{
+			"resource": {
+				"resourceType": "Observation",
+				"name": {
+					"coding": [
+						{
+							"code": "3141-9",
+							"system": "http://loinc.org",
+							"display": "Weight Measured"
+						}
+					],
+					"text": "Body weight"
+				},
+				"valueQuantity": {
+					"value": 85,
+					"units": "kg",
+					"system": "http://unitsofmeasure.org",
+					"code": "kg"
+				},
+				"appliesPeriod": {
+					"start": "2016-07-01T09:57:57.085Z"
+				},
+				"issued": "2016-07-01T09:57:57.085Z",
+				"status": "final",
+				"reliability": "ok",
+				"subject": {
+					"reference": "Patient/4ff14490-2c5d-42d4-911b-a3f4a2c26ec1",
+					"display": "EMILIAN SECOND ATM"
+				},
+				"performer": [
+					{
+						"reference": "Practitioner/63dff52d-3ed5-4db8-bd0c-6c1e1b85d6fb",
+						"display": "MORGAN FREEMAN"
+					}
+				],
+				"extension": [
+					{
+						"url": "http://infoworld.ro/nxt/Profile/extensions#observation-result-type",
+						"valueCode": "primary"
+					},
+					{
+						"url": "http://infoworld.ro/nxt/Profile/extensions#observation-type",
+						"valueCoding": {
+							"code": "8716-3",
+							"display": "Vital signs",
+							"system": "http://loinc.org"
+						}
+					},
+					{
+						"url": "http://infoworld.ro/nxt/Profile/extensions#observation-encounter",
+						"valueResource": {
+							"reference": "Encounter/ad955a7e-2ed1-4d72-bdaa-21650b08dbc3",
+							"display": "ambulatory encounter in CARDIOLOGY - ROOM 1"
+						}
+					}
+				],
+				"text": {
+					"div": "<div><p><b>Performer</b>MORGAN FREEMAN</p><p><b>Patient</b>EMILIAN SECOND ATM</p><p><b>Issued</b>2016-07-01T09:57:57.085Z</p><p><b>Observation type</b></p><p><b>Name</b>Weight Measured</p><p ><b>Value quantity</b>85 kg</p></div>",
+					"status": "generated"
+				},
+				"id": "Observation/061d0f6d-71f8-4d5b-92ea-bc3c47fc6af9"
+			},
+			"search": {
+				"mode": "match"
+			}
+		},
+		{
+			"resource": {
+				"resourceType": "Observation",
+				"name": {
+					"coding": [
+						{
+							"code": "3141-9",
+							"system": "http://loinc.org",
+							"display": "Weight Measured"
+						}
+					],
+					"text": "Body weight"
+				},
+				"valueQuantity": {
+					"value": 56,
+					"units": "kg",
+					"system": "http://unitsofmeasure.org",
+					"code": "kg"
+				},
+				"appliesPeriod": {
+					"start": "2016-01-13T08:06:21.051Z"
+				},
+				"issued": "2016-01-13T08:06:21.056Z",
+				"status": "final",
+				"reliability": "ok",
+				"subject": {
+					"reference": "Patient/f06ff7c7-f3d7-4ac0-9041-2cbad28b3c8c",
+					"display": "EMILIAN PACIENT DRAGAN"
+				},
+				"performer": [
+					{
+						"reference": "Practitioner/5cb4e189-3058-4542-93ad-7c40e45c664c",
+						"display": "EMERGENCY DOCTOR"
+					}
+				],
+				"extension": [
+					{
+						"url": "http://infoworld.ro/nxt/Profile/extensions#observation-result-type",
+						"valueCode": "primary"
+					},
+					{
+						"url": "http://infoworld.ro/nxt/Profile/extensions#observation-type",
+						"valueCoding": {
+							"code": "8716-3",
+							"display": "Vital signs",
+							"system": "http://loinc.org"
+						}
+					},
+					{
+						"url": "http://infoworld.ro/nxt/Profile/extensions#observation-encounter",
+						"valueResource": {
+							"reference": "Encounter/b5c51f45-0751-4343-f626-7b31282e52bd",
+							"display": "emergency encounter in EMERGENCY ONE"
+						}
+					}
+				],
+				"text": {
+					"div": "<div><p><b>Performer</b> EMERGENCY DOCTOR</p><p><b>Patient</b> EMILIAN PACIENT DRAGAN</p><p><b>Issued</b> 2016-01-13T08:06:21.056Z</p><p><b>Observation type</b> </p><p><b>Name</b> Weight Measured</p><p ><b>Value quantity</b> 56 kg</p></div>",
+					"status": "generated"
+				}
+			}
+		},
+		{
+			"resource": {
+				"resourceType": "MedicationAdministration",
+				"status": "completed",
+				"patient": {
+					"reference": "Patient/f06ff7c7-f3d7-4ac0-9041-2cbad28b3c8c",
+					"display": "EMILIAN PACIENT DRAGAN"
+				},
+				"practitioner": {
+					"reference": "Practitioner/00265750-774a-44a6-80e8-dec9bb70892a",
+					"display": "FERCHE OANA"
+				},
+				"encounter": {
+					"reference": "Encounter/4f10b54e-fc72-4697-9f1e-c416abc71fd8",
+					"display": "inpatient encounter in OANA WARD"
+				},
+				"prescription": {
+					"reference": "MedicationPrescription/b9a7890e-f0bd-4eeb-8848-5bb84ada2340",
+					"display": "Prescription for LUPESCU MAGDA (2016-01-27T15:19:26.784Z)"
+				},
+				"wasNotGiven": false,
+				"whenGiven": {
+					"start": "2016-01-27T15:38:21.294Z",
+					"end": "2016-01-27T15:38:21.294Z"
+				},
+				"medication": {
+					"reference": "Medication/216092",
+					"display": "aspirin (Oral) 500 mg tablet"
+				},
+				"dosage": [
+					{
+						"route": {
+							"coding": [
+								{
+									"code": "212",
+									"system": "http://infoworld.ro/nxt/fdb_medication_route",
+									"display": "Oral"
+								}
+							]
+						},
+						"quantity": {
+							"value": 2,
+							"units": "cap",
+							"system": "http://infoworld.ro/nxt/fdb_medication_dose_units",
+							"code": "132"
+						}
+					}
+				],
+				"extension": [
+					{
+						"url": "http://infoworld.ro/nxt/Profile/extensions#medicationSig",
+						"valueString": "Take 2 cap oral every 8 hours"
+					}
+				],
+				"text": {
+					"div": "<div><p><b>Status: </b> completed</p> <p><b>Patient: </b> LUPESCU MAGDA</p> <p><b>Administered by: </b> FERCHE OANA</p><p><b>Encounter: </b> inpatient encounter in OANA WARD</p><p><b>Prescription: </b> Prescription for LUPESCU MAGDA (2016-01-27T15:19:26.784Z)</p><p><b>Was Not Given: </b> false</p><p><b>Reason Not Given: </b><ul></ul></p><p><b>When given: </b> 2016-01-27T15:38:21.294Z - 2016-01-27T15:38:21.294Z</p><p><b>Medication: </b> aspirin (Oral) 500 mg tablet</p><p><b>Dosage: </b><table border=\"1\"> <tr><td>Site</td><td>Route</td><td>Dose</td></tr><tr><td></td><td>Oral</td><td>2 cap</td></tr></table></p></div>",
+					"status": "generated"
+				}
+			}
+		},
+		{
+			"resource": {
+				"resourceType": "MedicationAdministration",
+				"status": "completed",
+				"patient": {
+					"reference": "Patient/f06ff7c7-f3d7-4ac0-9041-2cbad28b3c8c",
+					"display": "EMILIAN PACIENT DRAGAN"
+				},
+				"practitioner": {
+					"reference": "Practitioner/0113ab41-ad06-4216-bd72-21fcfdc32b57",
+					"display": "SILVIA PLETEA"
+				},
+				"encounter": {
+					"reference": "Encounter/30f22612-50d7-479b-ba10-e6a00bf96201",
+					"display": "inpatient encounter in WARD1 - ROOM 101"
+				},
+				"prescription": {
+					"reference": "MedicationPrescription/beb5f08f-e448-4d71-bc46-c2fbb8f0e4cd",
+					"display": "Prescription for CPOE PATIENT 2 (2015-08-05T13:51:56.249Z)"
+				},
+				"wasNotGiven": false,
+				"whenGiven": {
+					"start": "2015-09-30T10:59:10.947Z",
+					"end": "2015-09-30T10:59:10.947Z"
+				},
+				"medication": {
+					"reference": "Medication/445972",
+					"display": "escitalopram (Oral) 10 mg tablet"
+				},
+				"dosage": [
+					{
+						"route": {
+							"coding": [
+								{
+									"code": "212",
+									"system": "http://infoworld.ro/nxt/fdb_medication_route",
+									"display": "Oral"
+								}
+							]
+						},
+						"quantity": {
+							"value": 10,
+							"units": "mg",
+							"system": "http://infoworld.ro/nxt/fdb_medication_dose_units",
+							"code": "367"
+						}
+					}
+				],
+				"extension": [
+					{
+						"url": "http://infoworld.ro/nxt/Profile/extensions#medicationSig",
+						"valueString": "Take 10 mg oral twice a day"
+					}
+				],
+				"text": {
+					"div": "<div><p><b>Status: </b> completed</p> <p><b>Patient: </b> CPOE PATIENT 2</p> <p><b>Administered by: </b> SILVIA PLETEA</p><p><b>Encounter: </b> inpatient encounter in WARD1 - ROOM 101</p><p><b>Prescription: </b> Prescription for CPOE PATIENT 2 (2015-08-05T13:51:56.249Z)</p><p><b>Was Not Given: </b> false</p><p><b>Reason Not Given: </b><ul></ul></p><p><b>When given: </b> 2015-09-30T10:59:10.947Z - 2015-09-30T10:59:10.947Z</p><p><b>Medication: </b> escitalopram (Oral) 10 mg tablet</p><p><b>Dosage: </b><table border=\"1\"> <tr><td>Site</td><td>Route</td><td>Dose</td></tr><tr><td></td><td>Oral</td><td>10 mg</td></tr></table></p></div>",
+					"status": "generated"
+				}
+			}
+		},
+		{
+			"id": "Immunization/13d59042-b86b-4808-a560-9c956c0f3b14",
+			"resource": {
+				"resourceType": "Immunization",
+				"contained": [
+					{
+						"resourceType": "Practitioner",
+						"id": "actorPerson0",
+						"name": {
+							"family": [
+								"Nurse"
+							],
+							"given": [
+								"Nancy"
+							]
+						},
+						"telecom": [
+							{
+								"system": "phone",
+								"value": "+1-(555)555-4220"
+							}
+						],
+						"extension": [
+							{
+								"url": "http://infoworld.ro/nxt/Profile/extensions#practitioner-isExternal",
+								"valueBoolean": true
+							}
+						]
+					}
+				],
+				"subject": {
+					"reference": "Patient/7a0eea37-44b4-44b4-b30b-151ace0fe66e",
+					"display": "EMILIAN DRAGAN"
+				},
+				"reported": false,
+				"performer": {
+					"reference": "#actorPerson0"
+				},
+				"date": "2011-03-12T00:00:00.000Z",
+				"vaccineType": {
+					"coding": [
+						{
+							"system": "http://hl7.org/fhir/sid/cvx ",
+							"code": "03",
+							"display": "MMR"
+						}
+					],
+					"text": "Measles, Mumps and Rubella virus vaccine"
+				},
+				"route": {
+					"coding": [
+						{
+							"system": "http://ncit.nci.nih.gov/",
+							"code": "C28161",
+							"display": "INTRAMUSCULAR"
+						}
+					],
+					"text": "INTRAMUSCULAR"
+				},
+				"site": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "368208006",
+							"display": "Left Arm"
+						}
+					],
+					"text": "Left Arm"
+				},
+				"refusedIndicator": false,
+				"identifier": [
+					{
+						"system": "urn:ietf:rfc:3986",
+						"value": "1.3.6.1.4.1.22812.3.99930.3.4.4"
+					},
+					{
+						"system": "urn:ietf:rfc:3986",
+						"value": "1.3.6.1.4.1.22812.3.99930.3.4.4"
+					}
+				],
+				"id": "Immunization/13d59042-b86b-4808-a560-9c956c0f3b14"
+			}
+		},
+		{
+			"id": "Procedure/13d59042-b86b-4808-a560-9c956c0f3b14",
+			"resource": {
+				"resourceType": "Procedure",
+				"subject": {
+					"reference": "Patient/baf7e2b7-753c-4b2f-87df-af737900df9c",
+					"display": "PACIENT DOI"
+				},
+				"type": {
+					"coding": [
+						{
+							"code": "86658",
+							"system": "urn:oid:2.16.840.1.113883.6.12",
+							"display": "Antibody; enterovirus (eg, coxsackie, echo, polio)"
+						}
+					],
+					"text": "Antibody; enterovirus (eg, coxsackie, echo, polio)"
+				},
+				"bodySite": [
+					{
+						"coding": [
+							{
+								"code": "416949008",
+								"system": "http://snomed.info/sct",
+								"display": "Abdomen and pelvis"
+							}
+						],
+						"text": "Abdomen and pelvis"
+					}
+				],
+				"indication": [
+					{
+						"text": "various reasons"
+					}
+				],
+				"performer": [
+					{
+						"person": {
+							"reference": "Practitioner/1013944115",
+							"display": "WARDWELL AMANDA"
+						}
+					}
+				],
+				"date": {
+					"start": "2016-11-23T14:04:02.670Z"
+				},
+				"followUp": "follow up",
+				"notes": "comments",
+				"text": {
+					"div": "<div><p><b>Subject:</b>PACIENT DOI</p><p><b>Performer:</b>WARDWELL AMANDA</p><p><b>Encounter:</b></p><p><b>Type:</b>Antibody; enterovirus (eg, coxsackie, echo, polio)</p><p><b>Body Site:</b>Abdomen and pelvis</p><p><b>Indication:</b>various reasons</p><p><b>Date:</b>2016-11-23T14:04:02.670Z - </p><p><b>Follow up:</b>follow up</p><p><b>Notes:</b>comments</p></div>",
+					"status": "generated"
+				}
 			}
 		}
-	}],
-	"total": 10
+	],
+	"total": 12
 }

@@ -1,0 +1,25 @@
+{
+    "primary": [{
+        "path": "vaccineType",
+        "type": "codedEntry",
+        "percent": 30
+    }],
+    "secondary": [{
+        "path": "date",
+        "type": "dateTime",
+        "percent": 20
+    }, {
+        "path": "refusedIndicator",
+        "type": "string",
+        "percent": 10
+    }, {
+        "path": "route",
+        "type": "codedEntry",
+        "percent": 20
+    }, {
+        "path": "site",
+        "type": "codedEntry",
+        "percent": 20
+    }],
+    "subArrays": []
+}

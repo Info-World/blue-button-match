@@ -2,12 +2,16 @@
     "primary": [{
         "path": "medication",
         "type": "resourceReference",
-        "percent": 40
+        "percent": 20
     }],
     "secondary": [{
-        "path": "whenGiven",
-        "type": "object",
-        "percent": 30
+        "path": "whenGiven.start",
+        "type": "dateTime",
+        "percent": 20
+    }, {
+        "path": "status",
+        "type": "string",
+        "percent": 10
     }],
     "subArrays": [{
         "dosage": {
@@ -15,6 +19,15 @@
                 "path": "quantity",
                 "type": "object",
                 "percent": 30
+            }],
+            "secondary": [{
+                "path": "route",
+                "type": "codedEntry",
+                "percent": 10
+            }, {
+                "path": "rate",
+                "type": "object",
+                "percent": 10
             }]
         }
     }]
