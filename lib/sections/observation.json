@@ -2,7 +2,7 @@
     "primary": [{
         "path": "name",
         "type": "codedEntry",
-        "percent": 10
+        "percent": 20
     }],
     "secondary": [{
         "path": "issued",
