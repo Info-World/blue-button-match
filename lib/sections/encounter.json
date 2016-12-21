@@ -1,0 +1,12 @@
+{
+    "primary": [{
+        "path": "class",
+        "type": "string",
+        "percent": 40
+    }],
+    "secondary": [{
+        "path": "period.start",
+        "type": "dateTime",
+        "percent": 60
+    }]
+}
